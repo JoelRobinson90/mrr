@@ -1,0 +1,17 @@
+mutation CancelVisitMutation($id: ID!, $cancel_code_id: ID!, $note: String, $ma_id: ID) {
+  cancelVisit(input: {
+    id: $id,
+    cancelCodeId: $cancel_code_id,
+    note: $note,
+    maId: $ma_id,
+  }) {
+    visit {
+      id
+      adminNotes {
+        id
+        content
+      }
+    }
+    errors
+  }
+}

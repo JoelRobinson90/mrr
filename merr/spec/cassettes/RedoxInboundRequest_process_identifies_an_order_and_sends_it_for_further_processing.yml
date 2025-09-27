@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"birthday":"1964-02-21","first_name":"Natisha","gender":null,"last_name":"Bogisich","phone_main":"+13395973556","phone_other":"+13742138689","phone_personal":"+13395973556"},"external_id":"26","branch_id":2001,"profile_id":12345,"language":"Hausa","timezone":"America/Toronto"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Length:
+      - '294'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 20:36:06 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '115'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 4e11cd73206dec44daec3e8c91cc98e9
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"message": {"_schema": ["Fields `demographics` and `profile_id` can''t
+        be provided simultaneously"]}, "code": 400}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

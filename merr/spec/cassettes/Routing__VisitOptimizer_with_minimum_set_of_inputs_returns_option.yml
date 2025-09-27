@@ -1,0 +1,327 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.747795,-73.985071&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.6860072,-73.851524
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 19 Oct 2022 19:51:24 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=103
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "23 E 33rd St, New York, NY 10016, USA" ],
+           "origin_addresses" : [ "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.5 km",
+                          "value" : 17490
+                       },
+                       "duration" : {
+                          "text" : "32 mins",
+                          "value" : 1923
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.659569,-73.933783&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.747795,-73.985071
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 19 Oct 2022 19:51:24 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=73
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "585 Schenectady Ave, Brooklyn, NY 11203, USA" ],
+           "origin_addresses" : [ "23 E 33rd St, New York, NY 10016, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.2 km",
+                          "value" : 17175
+                       },
+                       "duration" : {
+                          "text" : "40 mins",
+                          "value" : 2428
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.658141,-95.355308&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.734886,-95.322579%7C29.717654,-95.387073
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 02 Dec 2022 09:40:43 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=149
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "origin_addresses" : [
+              "Polk St @ Henninger St, Houston, TX 77023, USA",
+              "Concert Drive, Houston, TX 77030, USA"
+           ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "15.1 km",
+                          "value" : 15082
+                       },
+                       "duration" : {
+                          "text" : "17 mins",
+                          "value" : 1036
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11211
+                       },
+                       "duration" : {
+                          "text" : "14 mins",
+                          "value" : 810
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.717654,-95.387073%7C29.734886,-95.322579&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.658141,-95.355308
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 02 Dec 2022 09:40:44 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=98
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [
+              "Concert Drive, Houston, TX 77030, USA",
+              "Polk St @ Henninger St, Houston, TX 77023, USA"
+           ],
+           "origin_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11206
+                       },
+                       "duration" : {
+                          "text" : "14 mins",
+                          "value" : 840
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "15.0 km",
+                          "value" : 14959
+                       },
+                       "duration" : {
+                          "text" : "15 mins",
+                          "value" : 904
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+recorded_with: VCR 6.0.0

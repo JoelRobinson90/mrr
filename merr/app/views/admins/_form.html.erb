@@ -1,0 +1,55 @@
+<%= form_with(model: admin, url: admins_path, local: true) do |form| %>
+  <% if admin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin.errors.count, "error") %> prohibited this admin from being saved:</h2>
+
+      <ul>
+        <% admin.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% unless admin.class.name == 'MedarriveAdmin' %>
+    <div class="field">
+      <%= form.label :field_org_id %>
+      <%= select(admin.type, "field_org_id", FieldOrg.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }) %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <%= form.fields_for :user do |user_form| %>
+    <div class="field">
+      <%= user_form.label :email %>
+      <%= user_form.text_field :email %>
+    </div>
+
+    <% unless admin.persisted? %>
+      <div class="field">
+        <%= user_form.label :password %>
+        <%= user_form.text_field :password %>
+      </div>
+
+      <div class="field">
+        <%= user_form.label :password_confirmation %>
+        <%= user_form.text_field :password_confirmation %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= hidden_field_tag 'type', admin.type %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

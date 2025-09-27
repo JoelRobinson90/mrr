@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Jan 2022 23:00:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 9a17a85a013fbe0f6c007c66a5f4371b
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":6,"items":[{"active_client_count":22,"active_employee_count":5,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1032,"is_disabled":false,"name":"Bright
+        Health"},{"active_client_count":28,"active_employee_count":10,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1178,"is_disabled":false,"name":"Bright
+        Healthcare"},{"active_client_count":0,"active_employee_count":3,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1033,"is_disabled":false,"name":"FCC"},{"active_client_count":8,"active_employee_count":3,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1030,"is_disabled":false,"name":"Molina"},{"active_client_count":1,"active_employee_count":0,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1031,"is_disabled":false,"name":"MPG"},{"active_client_count":0,"active_employee_count":1,"active_facility_count":0,"active_supplier_count":0,"branch":{"id":1000,"name":"medarrive"},"description":null,"id":1087,"is_disabled":false,"name":"SCAN
+        HEALTH"}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

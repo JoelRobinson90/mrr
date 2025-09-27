@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/departments?limit=5000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer tlPAACyh4U2nRE1zJsNt2vYe7f1b
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2023 21:09:14 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '5813'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49994'
+      X-Request-Id:
+      - rrt-1862861966674668189-a-gwo1-24776-186814700-1
+    body:
+      encoding: UTF-8
+      string: '{"totalcount":8,"departments":[{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"4","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Arizona
+        Complete Health","chartsharinggroupid":"1","name":"Arizona Complete Health","placeofservicetypename":"TELEHEALTH
+        - PATIENTS HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"5","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Blue
+        Cross Blue Shield of Kansas City","chartsharinggroupid":"1","name":"Blue Cross
+        Blue Shield of Kansas City","placeofservicetypename":"TELEHEALTH - PATIENTS
+        HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"7","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Optum
+        Serve Health Services","chartsharinggroupid":"1","name":"Optum Serve Health
+        Services","placeofservicetypename":"TELEHEALTH - PATIENTS HOME","phone":"(817)
+        946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"8","address":"950
+        N. GLEBE RD SUITE 700","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Privia
+        Health","chartsharinggroupid":"1","name":"Privia Health","placeofservicetypename":"TELEHEALTH
+        - PATIENTS HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"9","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Superior
+        Health Plan","chartsharinggroupid":"1","name":"Superior Health Plan","placeofservicetypename":"TELEHEALTH
+        - PATIENTS HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"10","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"CLOVER
+        HEALTH","chartsharinggroupid":"1","name":"CLOVER HEALTH","placeofservicetypename":"TELEHEALTH
+        - PATIENTS HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"11","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"Molina","chartsharinggroupid":"1","name":"Molina","placeofservicetypename":"TELEHEALTH
+        - PATIENTS HOME","phone":"(817) 946-6240","zip":"75201-3140","timezonename":"America\/Chicago"},{"medicationhistoryconsent":false,"timezoneoffset":-6,"ishospitaldepartment":false,"providergroupid":"1","state":"TX","portalurl":"https:\/\/27646.portal.athenahealth.com\/","city":"DALLAS","placeofservicefacility":false,"servicedepartment":true,"fax":"(855)
+        975-2772","providergroupname":"HARRIS COUNTY MIH PLLC","doesnotobservedst":false,"departmentid":"12","address":"1999
+        BRYAN STREET,SUITE 900","placeofservicetypeid":"10","federaltaxid":"863227390","clinicals":"ON","timezone":-6,"patientdepartmentname":"ALAMEDA
+        ALLIANCE FOR HEALTH","chartsharinggroupid":"1","name":"ALAMEDA ALLIANCE FOR
+        HEALTH","placeofservicetypename":"TELEHEALTH - PATIENTS HOME","phone":"(817)
+        946-6240","zip":"75201-3140","timezonename":"America\/Chicago"}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

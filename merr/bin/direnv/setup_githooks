@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+echo "Setting up Five Star Git Hooks for MedArrive"
+
+# Checing for getopt
+getopt -T
+if [[ $? -ne 4 ]]; then
+    brew install gnu-getopt
+fi
+
+brew install bash
+
+# https://github.com/nektos/act
+if ! command -v brew &> /dev/null
+then
+  echo "Installing act via bash and curl"
+  curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+else
+  echo "Installing act via homebrew"
+  brew install act
+fi
+
+
+# Clone git hooks
+echo "Installing Git Hooks"
+git clone https://github.com/fivestars/git-hooks.git ../git-hooks
+../git-hooks/git-hooks install-command
+git hooks install --no-preserve 
+
+git hooks list
+
+git config "hooks.pre-commit.parallel" 4

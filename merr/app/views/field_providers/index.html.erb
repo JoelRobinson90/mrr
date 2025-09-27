@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Field Providers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Organization</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Address</th>
+      <th>Provider level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @field_providers.each do |field_provider| %>
+      <% proficiency_presenter = ProficiencyPresenter.new(field_provider) %>
+      <tr>
+        <td><%= field_provider.field_org.name %></td>
+        <td><%= field_provider.first_name %></td>
+        <td><%= field_provider.last_name %></td>
+        <td><%= field_provider.email %></td>
+        <td><%= field_provider.phone %></td>
+        <td><%= field_provider.address.address_line_one %></td>
+        <td><%= field_provider.provider_level %></td>
+        <td><%= link_to 'Show', field_provider %></td>
+        <td><%= link_to 'Edit', edit_field_provider_path(field_provider) %></td>
+        <td><%= button_to 'Destroy', field_provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Field Provider', new_field_provider_path %>

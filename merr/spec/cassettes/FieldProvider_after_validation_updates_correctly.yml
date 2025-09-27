@@ -1,0 +1,324 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/34t45g45
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"first_name":"Nova","last_name":"Batz","email":"maryjane_bode@mueller.co","address":"274
+        Albert Plains","address_suite":"Suite 820","city":"Jorgeville","state":"ME","zip":"63556"},"username":"maryjane_bode@mueller.co"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '235'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Apr 2022 23:28:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '37'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - c950e508451086b9661b02ee008008ef
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"34t45g45","id":1461}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.wheniwork.com/2/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <WHENIWORK_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Apr 2022 23:28:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Set-Cookie:
+      - wheniwork_cred=d7918f81496d62e6eff7dfa6076e80fa; expires=Thu, 28-Apr-2022
+        23:28:16 GMT; Max-Age=86400; path=/; domain=.wheniwork.com; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - ro
+      X-State:
+      - 'RequestId: b7169f70-c681-11ec-8509-82cffd97466d, LoginId: 19274266, AccountId:
+        3788256'
+      X-Timer-Database:
+      - '0.0078146457672119'
+      X-Timer-Total:
+      - '0.063309192657471'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"users":[{"id":42656040,"account_id":3788256,"login_id":18900192,"timezone_id":0,"created_by":42335354,"role":1,"is_payroll":true,"is_trusted":0,"type":1,"email":"baylee@medarrive.com","first_name":"Baylee","last_name":"Mabe","phone_number":"+12763409493","employee_code":"","activated":true,"is_hidden":false,"uuid":"db6d21afe2f416f9c9fa49dc417841064897fab9","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":false},"swaps":{"sms":false,"email":false},"schedule":{"sms":false,"email":false},"reminders":{"sms":false,"email":false},"availability":{"sms":false,"email":false},"new_employee":{"sms":false,"email":false},"attendance":{"sms":true,"email":false},"payroll":{"sms":true,"email":false},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":false},"shift-bidding":{"sms":false,"email":false},"workplace_alerts":{"sms":false,"email":false},"ot_alerts":{"sms":false,"email":false}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Fri,
+        07 Jan 2022 15:04:53 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Fri, 07 Jan 2022
+        09:28:18 -0500","updated_at":"Wed, 23 Mar 2022 16:54:26 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/b11d0f0a1b1790f7316f470ec3177928e52cedeb\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":42658906,"account_id":3788256,"login_id":19045470,"timezone_id":11,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"baymabe@gmail.com","first_name":"Baylee
+        Texas","last_name":"Mabe","phone_number":"","employee_code":"8055","activated":true,"is_hidden":false,"uuid":"4569110c6694a496bb4840512ccc9e7dd6ebbbca","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":false},"swaps":{"sms":false,"email":false},"schedule":{"sms":false,"email":false},"reminders":{"sms":false,"email":false},"availability":{"sms":false,"email":false},"new_employee":{"sms":false,"email":false},"attendance":{"sms":true,"email":false},"payroll":{"sms":true,"email":false},"hire":{"sms":false,"email":false},"workchat":{"alerts":true,"badge_icon":true,"in_app":true,"email":false},"reporting":{"sms":false,"email":false},"shift-bidding":{"sms":true,"email":false},"workplace_alerts":{"sms":true,"email":false},"ot_alerts":{"sms":true,"email":false}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Fri,
+        07 Jan 2022 15:07:34 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-01-07 20:07:21","created_at":"Fri,
+        07 Jan 2022 15:07:21 -0500","updated_at":"Fri, 15 Apr 2022 12:46:11 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Chicago","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/767522c6a72120dccd4b5c84d6903da9c2c2c18d\/%s","size":"%s"},"positions":[],"locations":[5204524],"position_rates":[],"position_quality":[],"sort":{"5204524":0}},{"id":42681862,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Bright
+        FP","last_name":"Test","phone_number":"","employee_code":"12316","activated":true,"is_hidden":false,"uuid":"c3f844b60a3c722dacc27060a4bd00ad18b1c41c","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Tue, 11 Jan 2022
+        16:41:44 -0500","updated_at":"Tue, 11 Jan 2022 16:42:20 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/d766126a89717845e7c92a43264cb2567beece1e\/%s","size":"%s"},"positions":[10610616],"locations":[5203341],"position_rates":{"10610616":0},"position_quality":{"10610616":3},"sort":{"5203341":0}},{"id":42702883,"account_id":3788256,"login_id":0,"timezone_id":15,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Centene","last_name":"FP","phone_number":"","employee_code":"13244","activated":true,"is_hidden":false,"uuid":"ebb7e0c55a96ddcf25f422616dca1b521c480d30","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Fri, 14 Jan 2022
+        15:40:14 -0500","updated_at":"Mon, 11 Apr 2022 13:08:35 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Los_Angeles","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/a8ec8087ee03014ca10e0061a83d156052a4b54a\/%s","size":"%s"},"positions":[10610616],"locations":[5204802],"position_rates":{"10610616":0},"position_quality":{"10610616":3},"sort":{"5204802":0}},{"id":42972169,"account_id":3788256,"login_id":19072665,"timezone_id":0,"created_by":0,"role":1,"is_payroll":true,"is_trusted":0,"type":1,"email":"elena@medarrive.com","first_name":"Elena","last_name":"Ondich","phone_number":"+15075812417","employee_code":"","activated":true,"is_hidden":false,"uuid":"0daf7daab967425bbffe9453f00744aa38f0469f","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"01:00:00","sleep_end":"07:00:00","my_positions":[],"is_onboarded":false,"last_login":"Thu,
+        03 Mar 2022 16:53:53 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Tue, 01 Mar 2022
+        10:42:38 -0500","updated_at":"Thu, 03 Mar 2022 16:53:53 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/338f8b11928d51ca4d4311c235ad7708265dc178\/%s","size":"%s"},"positions":[],"locations":[],"position_rates":[],"position_quality":[],"sort":{}},{"id":43108827,"account_id":3788256,"login_id":0,"timezone_id":11,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Houston
+        TX","last_name":"FP","phone_number":"","employee_code":"45540","activated":true,"is_hidden":false,"uuid":"7597c34e92d3f7c06443f1b20e741e230fda6178","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Wed, 23 Mar 2022
+        16:35:28 -0400","updated_at":"Fri, 15 Apr 2022 13:18:07 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Chicago","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/115fff66542d23edb0cf381ab4629b197d0f3d95\/%s","size":"%s"},"positions":[],"locations":[5204524],"position_rates":[],"position_quality":[],"sort":{"5204524":0}},{"id":42693278,"account_id":3788256,"login_id":19273595,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"jonathan@medarrive.com","first_name":"Jonathan","last_name":"D''Souza","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"9615bc672d3efafd80924723500acd98a40990ec","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-01-13 17:01:13","created_at":"Thu,
+        13 Jan 2022 12:01:13 -0500","updated_at":"Thu, 13 Jan 2022 12:02:54 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/632e4fe2fe08babe57deb36d93cbd84992bab042\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":42861909,"account_id":3788256,"login_id":19139429,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"leslie@medarrive.com","first_name":"Leslie","last_name":"Anderson","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"2b102510e0268a11dfbdf51c40a6f241b19d9a38","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Thu,
+        10 Feb 2022 10:24:31 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-02-10 15:23:15","created_at":"Thu,
+        10 Feb 2022 10:23:15 -0500","updated_at":"Thu, 10 Feb 2022 10:24:31 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/cfa1b9c821ff2e8919d92e3a4809b7ec86e4816f\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":42972706,"account_id":3788256,"login_id":19481946,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"liliana.liu@medarrive.com","first_name":"Liliana","last_name":"Liu","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"4022c6577f1edcf2832c30e83ade1dd70e984538","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Tue,
+        01 Mar 2022 11:48:46 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-03-01 16:41:58","created_at":"Tue,
+        01 Mar 2022 11:41:58 -0500","updated_at":"Tue, 01 Mar 2022 11:57:29 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/a45466908128500973599a6e726d3bed3761f98c\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":43049961,"account_id":3788256,"login_id":19018091,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"marlonm@medarrive.com","first_name":"Marlon","last_name":"M","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"80f82b8c13a799d37e2c46029afde5630ec9934f","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Mon,
+        14 Mar 2022 15:43:28 -0400","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-03-14 16:34:23","created_at":"Mon,
+        14 Mar 2022 12:34:23 -0400","updated_at":"Mon, 14 Mar 2022 15:43:28 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/b7b7d3239dfcb37add77931cc4315a48fdad34a1\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":43272790,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"julio@anderson-little.biz","first_name":"Nova","last_name":"Koss","phone_number":"","employee_code":"34t45g45","activated":true,"is_hidden":false,"uuid":"729a53dbd523318c337170adcd97f5289d6e8826","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-04-19 18:30:14","created_at":"Tue,
+        19 Apr 2022 14:30:14 -0400","updated_at":"Wed, 27 Apr 2022 19:26:26 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/2e04f261fca5ff42bfbb6bcc69517d99e4a14676\/%s","size":"%s"},"positions":[],"locations":[],"position_rates":[],"position_quality":[],"sort":{}},{"id":42718083,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Optum
+        Serve","last_name":"FL","phone_number":"","employee_code":"13292","activated":true,"is_hidden":false,"uuid":"a647365cbda55bda3bcd332b18b508e348f59d42","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Mon, 17 Jan 2022
+        21:13:49 -0500","updated_at":"Mon, 17 Jan 2022 21:16:14 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/29ceece165acb3483354903fb4f344382230d518\/%s","size":"%s"},"positions":[],"locations":[5208607],"position_rates":[],"position_quality":[],"sort":{"5208607":0}},{"id":42980695,"account_id":3788256,"login_id":19487503,"timezone_id":0,"created_by":42972839,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"pete@medarrive.com","first_name":"Pete","last_name":"Burns","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"a2ff6a2d70912164621f9d54c9b782ddbf416d82","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Wed,
+        02 Mar 2022 13:08:33 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Tue,
+        05 Apr 2022 19:02:49 -0400","invited_at":"2022-03-02 17:54:54","created_at":"Wed,
+        02 Mar 2022 12:54:54 -0500","updated_at":"Mon, 25 Apr 2022 15:42:33 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/367c5417843221c1e7b9840a349439f033dc4a33\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":43273708,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"soren+fp2@medarrive.com","first_name":"S2","last_name":"FP","phone_number":"+14356547689","employee_code":"34tf34g34ghh","activated":true,"is_hidden":false,"uuid":"2c6902402cad8395f5f1851605bea2c37222590c","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-04-19 19:42:18","created_at":"Tue,
+        19 Apr 2022 15:42:18 -0400","updated_at":"Tue, 19 Apr 2022 18:11:19 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/0b6efe573242bc27beab7e074f815d65a4d1104a\/%s","size":"%s"},"positions":[],"locations":[],"position_rates":[],"position_quality":[],"sort":{}},{"id":42672280,"account_id":3788256,"login_id":19274266,"timezone_id":0,"created_by":42659902,"role":1,"is_payroll":true,"is_trusted":0,"type":1,"email":"soren+wiwsandbox@medarrive.com","first_name":"Sandbox","last_name":"Admin","phone_number":"+17345467319","employee_code":"","activated":true,"is_hidden":false,"uuid":"4ac27c38d0d35e7079080bde2984f9d239658ab9","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"05:00:00","sleep_end":"11:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-01-10 18:39:19","created_at":"Mon,
+        10 Jan 2022 13:39:19 -0500","updated_at":"Mon, 10 Jan 2022 13:43:35 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/0d791c746f64fb1f9b91f747d13818cb5c792fe0\/%s","size":"%s"},"country_code":"US","is_internal_login":false,"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":42659902,"account_id":3788256,"login_id":19046704,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":true,"is_trusted":0,"type":1,"email":"soren@medarrive.com","first_name":"Soren","last_name":"Berg","phone_number":"","employee_code":"8773","activated":true,"is_hidden":false,"uuid":"0be1949526260abb6129dc80fa657419042abecc","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Mon,
+        10 Jan 2022 13:41:32 -0500","invited_at":"2022-01-07 21:40:12","created_at":"Fri,
+        07 Jan 2022 16:40:12 -0500","updated_at":"Mon, 14 Feb 2022 11:49:45 -0500","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/2f58d7dd6a4d0295e33c58360dd03baa8c1f3d53\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}},{"id":43212745,"account_id":3788256,"login_id":0,"timezone_id":11,"created_by":43190821,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Su","last_name":"Mann","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"670f602eb241679e59ccf5bd6b098fc5a8ec6054","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Fri, 08 Apr 2022
+        19:12:03 -0400","updated_at":"Fri, 08 Apr 2022 19:15:39 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Chicago","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/2285660d343a67464bab321d582b871a5743ca3a\/%s","size":"%s"},"positions":[],"locations":[5204524],"position_rates":[],"position_quality":[],"sort":{"5204524":0}},{"id":43190821,"account_id":3788256,"login_id":19635381,"timezone_id":11,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"sunayana@medarrive.com","first_name":"Sunayana","last_name":"Mann","phone_number":"","employee_code":"9010","activated":true,"is_hidden":false,"uuid":"4a0dd09c9b4b68890cad7917867674460ef43d7b","notes":"","is_private":false,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":false},"swaps":{"sms":false,"email":false},"schedule":{"sms":false,"email":false},"reminders":{"sms":false,"email":false},"availability":{"sms":false,"email":false},"new_employee":{"sms":false,"email":false},"attendance":{"sms":true,"email":false},"payroll":{"sms":true,"email":false},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":false},"shift-bidding":{"sms":false,"email":false},"workplace_alerts":{"sms":false,"email":false},"ot_alerts":{"sms":false,"email":false}},"reminder_time":1,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Tue,
+        05 Apr 2022 19:03:21 -0400","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-04-05 22:39:14","created_at":"Tue,
+        05 Apr 2022 18:39:13 -0400","updated_at":"Fri, 15 Apr 2022 12:47:03 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Chicago","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/98675c2ed1b55b3cf60f3f93ac39553aac0e654a\/%s","size":"%s"},"positions":[10610616],"locations":[5204524],"position_rates":{"10610616":0},"position_quality":{"10610616":3},"sort":{"5204524":0}},{"id":43276521,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"tharika+fpsynctest1@medarrive.com","first_name":"TC","last_name":"Test","phone_number":"","employee_code":"TCExt123","activated":true,"is_hidden":false,"uuid":"824c3579e82cc5338bba013723a57aabfd1780f2","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-04-20 03:20:49","created_at":"Tue,
+        19 Apr 2022 23:20:49 -0400","updated_at":"Tue, 19 Apr 2022 23:20:49 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/b58be018818cfd3acdabb6599712093f09f1d397\/%s","size":"%s"},"positions":[],"locations":[],"position_rates":[],"position_quality":[],"sort":{}},{"id":42972839,"account_id":3788256,"login_id":19482026,"timezone_id":0,"created_by":42656040,"role":2,"is_payroll":false,"is_trusted":0,"type":1,"email":"tharika@medarrive.com","first_name":"Tharika","last_name":"C","phone_number":"","employee_code":"","activated":true,"is_hidden":false,"uuid":"f759a7b720e9676ac42e77724994d7bcba454ffe","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Tue,
+        01 Mar 2022 12:01:34 -0500","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Tue,
+        05 Apr 2022 19:02:49 -0400","invited_at":"2022-03-01 16:57:35","created_at":"Tue,
+        01 Mar 2022 11:57:04 -0500","updated_at":"Tue, 19 Apr 2022 23:26:11 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/33c144e9bd2a5dfb3e181ad691dfc9241124930b\/%s","size":"%s"},"positions":[],"locations":[5203341],"position_rates":[],"position_quality":[],"sort":{"5203341":0}}],"locations":[{"id":5203341,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Bright Health- Charlotte","sort":0,"max_hours":0,"address":"","latitude":32.878819,"longitude":-79.977774,"place_id":2599131,"place_confirmed":true,"ip_address":"","created_at":"Fri,
+        07 Jan 2022 09:28:19 -0500","updated_at":"Mon, 10 Jan 2022 09:07:52 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":[32.878819,-79.977774],"radius":100,"place":{"id":2599131,"business_name":"4642
+        Jenkins Ave","address":"4642 Jenkins Ave, North Charleston, SC 29405, USA","street_name":"Jenkins
+        Ave","street_number":"4642","locality":"North Charleston","sub_locality":"","region":"SC","postal_code":"29405","country":"US","latitude":32.878819,"longitude":-79.977774,"place_type":["street_address"],"place_id":"ChIJi0ZJLOhk_ogRktl7fys4M58","updated_at":"Mon,
+        10 Jan 2022 09:07:52 -0500","updated_by":"42656040"}},{"id":5204524,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Molina- Houston","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        10 Jan 2022 09:07:47 -0500","updated_at":"Mon, 10 Jan 2022 09:07:58 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null},{"id":5204802,"account_id":3788256,"is_default":0,"name":"SANDBOX-
+        Centene","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        10 Jan 2022 15:10:34 -0500","updated_at":"Mon, 10 Jan 2022 15:10:34 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null},{"id":5208607,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Optum Serve FL","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        17 Jan 2022 21:13:06 -0500","updated_at":"Mon, 17 Jan 2022 21:13:06 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null}],"positions":[{"id":10610616,"account_id":3788256,"name":"Paramedic","color":"54ccb8","sort":1,"created_at":"Mon,
+        10 Jan 2022 14:37:31 -0500","updated_at":"Mon, 10 Jan 2022 14:37:31 -0500","is_deleted":false,"updated_by":"42656040"}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.wheniwork.com/2/users/43272790
+    body:
+      encoding: UTF-8
+      string: '{"email":"maryjane_bode@mueller.co","first_name":"Nova","last_name":"Batz","phone_number":null,"employee_code":"34t45g45"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <WHENIWORK_TOKEN>
+      Content-Length:
+      - '122'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Apr 2022 23:28:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Set-Cookie:
+      - wheniwork_cred=d464d167f0cdc43a4c1f2e51d0aa33a9; expires=Thu, 28-Apr-2022
+        23:28:17 GMT; Max-Age=86400; path=/; domain=.wheniwork.com; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - rw
+      X-State:
+      - 'RequestId: b75673d4-c681-11ec-a958-32608acaed2b, LoginId: 19274266, AccountId:
+        3788256'
+      X-Timer-Database:
+      - '0.025864839553833'
+      X-Timer-Total:
+      - '0.10922193527222'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"user":{"id":43272790,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"maryjane_bode@mueller.co","first_name":"Nova","last_name":"Batz","phone_number":"","employee_code":"34t45g45","activated":true,"is_hidden":false,"uuid":"729a53dbd523318c337170adcd97f5289d6e8826","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":"","notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-04-19 18:30:14","created_at":"Tue,
+        19 Apr 2022 14:30:14 -0400","updated_at":"Wed, 27 Apr 2022 19:28:17 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/2e04f261fca5ff42bfbb6bcc69517d99e4a14676\/%s","size":"%s"},"positions":[],"position_quality":[],"position_rates":[],"locations":[],"sort":{}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/FieldProvider_zf7SLCYkuUpGn2FC
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"first_name":"Nova","last_name":"Rohan","email":"kristin@damore.info","address":"50243
+        Cristopher Hills","address_suite":"Apt. 389","city":"Lake Ivoryhaven","state":"GA","zip":"72670-4831"},"username":"kristin@damore.info"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '240'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Fri, 22 Apr 2022 18:55:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 161d6fd91ca8bf945b23b95fdedd7aec
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

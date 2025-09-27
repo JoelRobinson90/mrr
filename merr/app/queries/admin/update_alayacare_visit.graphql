@@ -1,0 +1,18 @@
+mutation UpdateAlayacareVisit(
+  $visitParams: UpdateAlayacareVisitParams!,
+  $runId: String,
+  $logString: String
+) {
+  alayacareUpdateVisit(input: {
+    visitParams: $visitParams,
+    runId: $runId,
+    logString: $logString
+  }) {
+    visit {
+      id
+      externalId
+      maId
+    }
+    errors
+  }
+}

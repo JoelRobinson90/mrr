@@ -1,0 +1,321 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?end_at=2022-05-19T03:59:59Z&start_at=2022-05-18T04:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 752303b9c21445ef0cef78a7ca3055a7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":5,"items":[{"alayacare_client_id":1874,"alayacare_employee_id":null,"alayacare_service_id":592,"alayacare_visit_id":1160,"cancel_code":null,"cancelled":false,"client_id":"7897899","employee_id":null,"end_at":"2022-05-18T12:55:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2022-05-18T11:25:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":19811,"alayacare_employee_id":176,"alayacare_service_id":1003,"alayacare_visit_id":1291,"cancel_code":null,"cancelled":false,"client_id":"123<GOOGLE_SERVICES_API_KEY>1","employee_id":"8055","end_at":"2022-05-18T14:20:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-05-18T14:05:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_D7WL9xSr6a8unau6"},{"alayacare_client_id":19811,"alayacare_employee_id":176,"alayacare_service_id":1003,"alayacare_visit_id":1300,"cancel_code":null,"cancelled":false,"client_id":"123<GOOGLE_SERVICES_API_KEY>1","employee_id":"8055","end_at":"2022-05-18T14:45:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-05-18T14:35:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_gmRqPW186oNkLrE4"},{"alayacare_client_id":19965,"alayacare_employee_id":176,"alayacare_service_id":1004,"alayacare_visit_id":1293,"cancel_code":null,"cancelled":false,"client_id":"FAKE26008250","employee_id":"8055","end_at":"2022-05-18T15:55:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-05-18T15:45:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_BUAFspNd7RvACRGn"},{"alayacare_client_id":8240,"alayacare_employee_id":null,"alayacare_service_id":852,"alayacare_visit_id":1418,"cancel_code":null,"cancelled":false,"client_id":"erik-calviva","employee_id":null,"end_at":"2022-05-18T17:12:00+00:00","notes":[],"service_code_id":13,"service_id":"","start_at":"2022-05-18T16:42:00+00:00","status":"vacant","tags":[],"visit_id":null}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/by_id/7897899
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 2908c5958b24ccf923b46a02bb1bce36
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000005583","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"751
+        Cory Turnpike","address_suite":"Apt. 911","birthday":"1974-02-06","city":"Boscoberg","company":"","country":"US","email":"R_Broke84@gmail","first_name":"Harrison","gender":"M","last_name":"Kamau","location":{"lat":37.839333,"lon":-84.270018,"zip":"44051"},"phone_main":"+15646306982","phone_other":"","phone_personal":"+15646306982","state":"KY","uid":"7897899","zip":"44051"},"external_id":"7897899","groups":[{"id":1030,"name":"Molina"}],"id":1874,"language":"en","profile_id":1168,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/by_id/123<GOOGLE_SERVICES_API_KEY>1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 4b81f84d4daba858454fc142aa191213
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000046222","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"3015
+        Patterson Street","birthday":"1990-08-13","city":"Houston","first_name":"Nemo","gender":"M","last_name":"Fish","location":{"lat":29.780423,"lon":-95.406311,"zip":"77063"},"phone_main":"+18323738968","phone_personal":"+18323738968","state":"Texas","uid":"123<GOOGLE_SERVICES_API_KEY>1","zip":"77063"},"external_id":"123<GOOGLE_SERVICES_API_KEY>1","groups":[{"id":1030,"name":"Molina"}],"id":19811,"language":"en","profile_id":20550,"status":"active","tags":[],"timezone":"America/Chicago"}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/by_id/123<GOOGLE_SERVICES_API_KEY>1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - ee98f6b06f207f4ba4b5bf1137dc3a37
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000046222","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"3015
+        Patterson Street","birthday":"1990-08-13","city":"Houston","first_name":"Nemo","gender":"M","last_name":"Fish","location":{"lat":29.780423,"lon":-95.406311,"zip":"77063"},"phone_main":"+18323738968","phone_personal":"+18323738968","state":"Texas","uid":"123<GOOGLE_SERVICES_API_KEY>1","zip":"77063"},"external_id":"123<GOOGLE_SERVICES_API_KEY>1","groups":[{"id":1030,"name":"Molina"}],"id":19811,"language":"en","profile_id":20550,"status":"active","tags":[],"timezone":"America/Chicago"}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/by_id/FAKE26008250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 979cf7b3bea8b382cc593ba1e29c7256
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000046530","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"3520
+        E NASA PKWY","address_suite":"APT 19","birthday":"1969-04-08","city":"SEABROOK","first_name":"Celeste","gender":"F","last_name":"Vega","location":{"lat":29.56527,"lon":-95.04336,"zip":"77586"},"phone_main":"+12815553400","phone_personal":"+12815553400","state":"TX","uid":"FAKE26008250","zip":"77586"},"external_id":"FAKE26008250","groups":[{"id":1030,"name":"Molina"}],"id":19965,"language":null,"profile_id":20704,"status":"active","tags":[],"timezone":"America/Chicago"}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/by_id/erik-calviva
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 May 2022 19:03:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - ff4ee654b2cf60e6b835b85cdd83856a
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000022005","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"818
+        Orange Grove Ave","birthday":"1987-03-13","city":"Glendale","first_name":"Erik","last_name":"Calviva","location":{"lat":34.14329,"lon":-118.24468,"zip":"91205"},"phone_main":"+13054010579","phone_personal":"+13054010579","state":"CA","uid":"erik-calviva","zip":"91205"},"external_id":"erik-calviva","groups":[{"id":3329,"name":"Centene
+        - Health Net"}],"id":8240,"language":null,"profile_id":8888,"status":"active","tags":[],"timezone":"America/Los_Angeles"}
+
+'
+  recorded_at: Mon, 16 May 2022 12:00:00 GMT
+recorded_with: VCR 6.0.0

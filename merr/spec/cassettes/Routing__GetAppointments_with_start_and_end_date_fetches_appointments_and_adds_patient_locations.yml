@@ -1,0 +1,1937 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?count=100&end_at=2021-11-02T23:59:59Z&page=1&start_at=2021-11-01T00:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 63f6761dad8873c26b6462a361463a6e
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":26,"items":[{"alayacare_client_id":1054,"alayacare_employee_id":116,"alayacare_service_id":53,"alayacare_visit_id":392,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-01T22:00:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1054,"alayacare_employee_id":133,"alayacare_service_id":53,"alayacare_visit_id":394,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"9233","end_at":"2021-11-01T22:10:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:10:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1047,"alayacare_employee_id":137,"alayacare_service_id":44,"alayacare_visit_id":645,"cancel_code":{"code":"Patient
+        Reported COVID Exposure","description":"Patient cancelled because of a possible
+        case of COVID or COVID exposure, and should be called later for a reschedule","id":6},"cancelled":true,"client_id":"3645624t56","employee_id":"1227","end_at":"2021-11-01T23:30:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T22:00:00+00:00","status":"cancelled","tags":[],"visit_id":null},{"alayacare_client_id":1019,"alayacare_employee_id":146,"alayacare_service_id":11,"alayacare_visit_id":396,"cancel_code":null,"cancelled":false,"client_id":"1234","employee_id":null,"end_at":"2021-11-01T23:55:00+00:00","notes":[],"service_code_id":3,"service_id":"","start_at":"2021-11-01T22:55:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":116,"alayacare_service_id":236,"alayacare_visit_id":393,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-02T00:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T23:00:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":133,"alayacare_service_id":236,"alayacare_visit_id":395,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"9233","end_at":"2021-11-02T01:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T00:00:00+00:00","status":"clocked","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":99,"alayacare_visit_id":301,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":101,"alayacare_visit_id":303,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":106,"alayacare_visit_id":305,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":108,"alayacare_visit_id":307,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":110,"alayacare_visit_id":309,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":112,"alayacare_visit_id":311,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":115,"alayacare_visit_id":314,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":118,"alayacare_visit_id":317,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":121,"alayacare_visit_id":320,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":125,"alayacare_visit_id":324,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":137,"alayacare_service_id":236,"alayacare_visit_id":397,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"1227","end_at":"2021-11-02T15:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T14:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":612,"alayacare_visit_id":754,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":613,"alayacare_visit_id":755,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":679,"alayacare_visit_id":791,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":680,"alayacare_visit_id":792,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":681,"alayacare_visit_id":793,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":682,"alayacare_visit_id":794,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1054,"alayacare_employee_id":104,"alayacare_service_id":53,"alayacare_visit_id":390,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"17","end_at":"2021-11-02T22:00:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-02T21:00:00+00:00","status":"clocked","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":104,"alayacare_service_id":236,"alayacare_visit_id":391,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"17","end_at":"2021-11-03T00:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T23:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1021,"alayacare_employee_id":146,"alayacare_service_id":13,"alayacare_visit_id":406,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-03T00:00:00+00:00","notes":[],"service_code_id":3,"service_id":"","start_at":"2021-11-02T23:00:00+00:00","status":"missed","tags":[],"visit_id":null}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 59dff5df5579aa17a328fc71bcd735d1
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - d1703b05c5ca74a0cf119d3e3c0119ad
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b87526044acb773ffb063f08404d276c
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 0e7468dd845d6e736933c546cb3f805b
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 2482b1edd6a2a807ac32cb127149c791
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?count=100&end_at=2021-11-02T23:59:59Z&page=1&start_at=2021-11-01T00:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 36696aae129c7f9f4de38fc5eabb5be6
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":26,"items":[{"alayacare_client_id":1054,"alayacare_employee_id":116,"alayacare_service_id":53,"alayacare_visit_id":392,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-01T22:00:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1054,"alayacare_employee_id":133,"alayacare_service_id":53,"alayacare_visit_id":394,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"9233","end_at":"2021-11-01T22:10:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:10:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1047,"alayacare_employee_id":137,"alayacare_service_id":44,"alayacare_visit_id":645,"cancel_code":{"code":"Patient
+        Reported COVID Exposure","description":"Patient cancelled because of a possible
+        case of COVID or COVID exposure, and should be called later for a reschedule","id":6},"cancelled":true,"client_id":"3645624t56","employee_id":"1227","end_at":"2021-11-01T23:30:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T22:00:00+00:00","status":"cancelled","tags":[],"visit_id":null},{"alayacare_client_id":1019,"alayacare_employee_id":146,"alayacare_service_id":11,"alayacare_visit_id":396,"cancel_code":null,"cancelled":false,"client_id":"1234","employee_id":null,"end_at":"2021-11-01T23:55:00+00:00","notes":[],"service_code_id":3,"service_id":"","start_at":"2021-11-01T22:55:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":116,"alayacare_service_id":236,"alayacare_visit_id":393,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-02T00:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T23:00:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":133,"alayacare_service_id":236,"alayacare_visit_id":395,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"9233","end_at":"2021-11-02T01:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T00:00:00+00:00","status":"clocked","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":99,"alayacare_visit_id":301,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":101,"alayacare_visit_id":303,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":106,"alayacare_visit_id":305,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":108,"alayacare_visit_id":307,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":110,"alayacare_visit_id":309,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":112,"alayacare_visit_id":311,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":115,"alayacare_visit_id":314,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":118,"alayacare_visit_id":317,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":121,"alayacare_visit_id":320,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1068,"alayacare_employee_id":null,"alayacare_service_id":125,"alayacare_visit_id":324,"cancel_code":null,"cancelled":false,"client_id":"594989134","employee_id":null,"end_at":"2021-11-02T08:40:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2021-11-02T08:10:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":137,"alayacare_service_id":236,"alayacare_visit_id":397,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"1227","end_at":"2021-11-02T15:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T14:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":612,"alayacare_visit_id":754,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":613,"alayacare_visit_id":755,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":679,"alayacare_visit_id":791,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":680,"alayacare_visit_id":792,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":681,"alayacare_visit_id":793,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1059,"alayacare_employee_id":null,"alayacare_service_id":682,"alayacare_visit_id":794,"cancel_code":null,"cancelled":false,"client_id":"735858774","employee_id":null,"end_at":"2021-11-02T16:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T15:00:00+00:00","status":"vacant","tags":[],"visit_id":null},{"alayacare_client_id":1054,"alayacare_employee_id":104,"alayacare_service_id":53,"alayacare_visit_id":390,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"17","end_at":"2021-11-02T22:00:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-02T21:00:00+00:00","status":"clocked","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":104,"alayacare_service_id":236,"alayacare_visit_id":391,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"17","end_at":"2021-11-03T00:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-02T23:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1021,"alayacare_employee_id":146,"alayacare_service_id":13,"alayacare_visit_id":406,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-03T00:00:00+00:00","notes":[],"service_code_id":3,"service_id":"","start_at":"2021-11-02T23:00:00+00:00","status":"missed","tags":[],"visit_id":null}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 1b7f68e7c15fd9db2b5d969ab5263720
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1047
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 54fbe87c6459ab5d67bd1fb385d89d65
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001210","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"3818
+        Eastern Ave N","birthday":"1974-01-23","city":"Seattle","country":"US","fcc_region":"<GOOGLE_SERVICES_API_KEY>_REGION","first_name":"Rubi","last_name":"Bogan","location":{"lat":47.65373,"lon":-122.32868,"zip":null},"phone_main":"+19334567019","phone_other":"1-613-392-5434
+        x18104","phone_personal":"+19334567019","state":"WA","uid":"3645624t56"},"external_id":"3645624t56","groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1047,"language":"other","profile_id":129,"status":"active","tags":[],"timezone":"America/Los_Angeles"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:27 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - e2fef58340c5018bcb07199c48b4d708
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:27 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b729ec54854374b5a968ae17bdfb5384
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - f56e7f36a9cdb0ffce89426e628ca7a1
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Mar 2022 22:52:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 6dba4fa704c899da5ce7cd35ee7e59ea
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:44:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 823921deb67a6b8252f04673368bea37
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001021","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"kevin@medarrive.com","first_name":"Kevin","last_name":"Harris","location":null,"uid":"9233"},"departments":[],"designation":null,"employment_type":null,"external_id":"9233","groups":[{"id":1030,"name":"Molina"}],"id":133,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":107,"roles":[{"id":41,"name":"MedArrive
+        Operations Manager"},{"id":32,"name":"Field Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:44:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 2b234032906e0e0855e26edf836edb18
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001021","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"kevin@medarrive.com","first_name":"Kevin","last_name":"Harris","location":null,"uid":"9233"},"departments":[],"designation":null,"employment_type":null,"external_id":"9233","groups":[{"id":1030,"name":"Molina"}],"id":133,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":107,"roles":[{"id":41,"name":"MedArrive
+        Operations Manager"},{"id":32,"name":"Field Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/1227
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:44:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 47cc3b2293b277676d327df77ea3a1d6
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001227","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"901
+        Bagby St","city":"Houston","country":"US","email":"baylee+fp@medarrive.com","first_name":"Baylee","last_name":"FP","location":{"lat":29.76018,"lon":-95.36935,"zip":"77002"},"state":"TX","uid":"1227","zip":"77002"},"departments":[],"designation":null,"employment_type":null,"external_id":"1227","groups":[],"id":137,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":130,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:44:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 9acaca7c998ce0abaed0458bd935864d
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000019","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"bo@medarrive.com","first_name":"Bo","last_name":"Cross","location":null,"uid":"17"},"departments":[{"id":1001,"name":"Amphibious"}],"designation":null,"employment_type":null,"external_id":"17","groups":[{"id":1178,"name":"Bright
+        Healthcare"}],"id":104,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":7,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":41,"name":"MedArrive Operations Manager"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:03 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - f669fd8cad186f8a750fde4a40998118
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000019","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"bo@medarrive.com","first_name":"Bo","last_name":"Cross","location":null,"uid":"17"},"departments":[{"id":1001,"name":"Amphibious"}],"designation":null,"employment_type":null,"external_id":"17","groups":[{"id":1178,"name":"Bright
+        Healthcare"}],"id":104,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":7,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":41,"name":"MedArrive Operations Manager"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 2518ab32f708653dd44881a81cb81c66
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001021","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"kevin@medarrive.com","first_name":"Kevin","last_name":"Harris","location":null,"uid":"9233"},"departments":[],"designation":null,"employment_type":null,"external_id":"9233","groups":[{"id":1030,"name":"Molina"}],"id":133,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":107,"roles":[{"id":41,"name":"MedArrive
+        Operations Manager"},{"id":32,"name":"Field Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/1227
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - c5cbdb630c076455fcd65ba879422f03
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001227","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"901
+        Bagby St","city":"Houston","country":"US","email":"baylee+fp@medarrive.com","first_name":"Baylee","last_name":"FP","location":{"lat":29.76018,"lon":-95.36935,"zip":"77002"},"state":"TX","uid":"1227","zip":"77002"},"departments":[],"designation":null,"employment_type":null,"external_id":"1227","groups":[],"id":137,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":130,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9233
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b25c295231e23fd1bfd97b0dd44394fb
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001021","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"kevin@medarrive.com","first_name":"Kevin","last_name":"Harris","location":null,"uid":"9233"},"departments":[],"designation":null,"employment_type":null,"external_id":"9233","groups":[{"id":1030,"name":"Molina"}],"id":133,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":107,"roles":[{"id":41,"name":"MedArrive
+        Operations Manager"},{"id":32,"name":"Field Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/1227
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b522df4f0af5fa2eb8a147867881d681
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001227","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"901
+        Bagby St","city":"Houston","country":"US","email":"baylee+fp@medarrive.com","first_name":"Baylee","last_name":"FP","location":{"lat":29.76018,"lon":-95.36935,"zip":"77002"},"state":"TX","uid":"1227","zip":"77002"},"departments":[],"designation":null,"employment_type":null,"external_id":"1227","groups":[],"id":137,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":130,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 1600a4fb832c2d7155042fcc1fa9ec2f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000019","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"bo@medarrive.com","first_name":"Bo","last_name":"Cross","location":null,"uid":"17"},"departments":[{"id":1001,"name":"Amphibious"}],"designation":null,"employment_type":null,"external_id":"17","groups":[{"id":1178,"name":"Bright
+        Healthcare"}],"id":104,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":7,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":41,"name":"MedArrive Operations Manager"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Jul 2022 23:45:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 42c3be764e80ed7cae92a22b74e9c45f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000019","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"bo@medarrive.com","first_name":"Bo","last_name":"Cross","location":null,"uid":"17"},"departments":[{"id":1001,"name":"Amphibious"}],"designation":null,"employment_type":null,"external_id":"17","groups":[{"id":1178,"name":"Bright
+        Healthcare"}],"id":104,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":7,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":41,"name":"MedArrive Operations Manager"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 16:59:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 8d0eac4c498af916e4e61cab1bafbbcf
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 16:59:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 65c037511ebda2de04796cc1490710c0
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1047
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 16:59:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 25baf3a4a58381a125c86c22341695dd
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001210","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"3818
+        Eastern Ave N","birthday":"1974-01-23","city":"Seattle","country":"US","fcc_region":"<GOOGLE_SERVICES_API_KEY>_REGION","first_name":"Rubi","last_name":"Bogan","location":{"lat":47.65373,"lon":-122.32868,"zip":null},"phone_main":"+19334567019","phone_other":"1-613-392-5434
+        x18104","phone_personal":"+19334567019","state":"WA","uid":"3645624t56"},"external_id":"3645624t56","groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1047,"language":"other","profile_id":129,"status":"active","tags":[],"timezone":"America/Los_Angeles"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 16:59:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - e451998d8f49f47f088f13df63d50cc7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 16:59:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 93559c5e20dcaa6f1cfd3bafcb65eae3
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 40156446fa8c66514021aa9102767b8c
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 645b5886de907707c7afa770a85a4468
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - d5b60e79f9bc431e5ac4b8d80dc2cdac
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1054
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - e55441aaebc0c6260a5eec8a3bdcadc8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000001330","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"15135
+        North Fwy","city":"Houston","company":"","country":"US","first_name":"Molina","last_name":"Patient","location":{"lat":29.98892,"lon":-95.42545,"zip":"77090"},"phone_main":"","state":"TX","zip":"77090"},"external_id":null,"groups":[],"id":1054,"language":"en","profile_id":141,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 65b1ce3704539f73f880c0130958e270
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients/1077
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jul 2022 17:00:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - d874058eb735dbef41dd72daa4355f86
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000002251","branch_id":1000,"care_team":[],"contacts":[],"cost_centre":null,"demographics":{"address":"85
+        5th Ave, 8th FL","city":"New York","company":"","country":"US","first_name":"Bright","last_name":"Patient","location":{"lat":40.73735,"lon":-73.99243,"zip":"10003"},"phone_main":"","state":"NY","zip":"10003"},"external_id":null,"groups":[{"id":1032,"name":"Bright
+        Health"}],"id":1077,"language":"en","profile_id":236,"status":"active","tags":[],"timezone":"America/New_York"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?count=100&end_at=2021-11-01T23:59:59Z&page=1&start_at=2021-11-01T00:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Aug 2022 02:11:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 0052020377e64b31e74bd82c71a5ad55
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":5,"items":[{"alayacare_client_id":1054,"alayacare_employee_id":116,"alayacare_service_id":53,"alayacare_visit_id":392,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-01T22:00:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:00:00+00:00","status":"completed","tags":[],"visit_id":null},{"alayacare_client_id":1054,"alayacare_employee_id":133,"alayacare_service_id":53,"alayacare_visit_id":394,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":"9233","end_at":"2021-11-01T22:10:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2021-11-01T21:10:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1047,"alayacare_employee_id":137,"alayacare_service_id":44,"alayacare_visit_id":645,"cancel_code":{"code":"Patient
+        Reported COVID Exposure","description":"Patient cancelled because of a possible
+        case of COVID or COVID exposure, and should be called later for a reschedule","id":6},"cancelled":true,"client_id":"3645624t56","employee_id":"1227","end_at":"2021-11-01T23:30:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T22:00:00+00:00","status":"cancelled","tags":[],"visit_id":null},{"alayacare_client_id":1019,"alayacare_employee_id":146,"alayacare_service_id":11,"alayacare_visit_id":396,"cancel_code":null,"cancelled":false,"client_id":"1234","employee_id":null,"end_at":"2021-11-01T23:55:00+00:00","notes":[],"service_code_id":3,"service_id":"","start_at":"2021-11-01T22:55:00+00:00","status":"missed","tags":[],"visit_id":null},{"alayacare_client_id":1077,"alayacare_employee_id":116,"alayacare_service_id":236,"alayacare_visit_id":393,"cancel_code":null,"cancelled":false,"client_id":null,"employee_id":null,"end_at":"2021-11-02T00:00:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2021-11-01T23:00:00+00:00","status":"missed","tags":[],"visit_id":null}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

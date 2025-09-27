@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MedArrive</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
+    <%= favicon_pack_tag 'favicon.png' %>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <%# Temporary header for scaffolded pages %>
+    <% unless @react_view %>
+      <% if user_signed_in? %>
+        <%= form_tag destroy_user_session_path, method: :delete do %>
+          <%= submit_tag 'Logout' %>
+          <%= link_to 'Dashboard', current_user_dashboard_path %>
+        <% end %>
+      <% else %>
+        <%= button_to('Login', new_user_session_path) %>
+      <% end %>
+
+      <% if notice %>
+        <div class="notice" style="background-color: #CCFFCC; padding: 0.5em">
+          <% if notice.is_a?(Array) %>
+            <ul>
+              <% notice.each do |message| %><li><%= message %></li><% end %>
+            </ul>
+          <% else %>
+            <%= notice %>
+          <% end %>
+        </div>
+      <% end %>
+
+      <% if alert %>
+        <div class="alert" style="background-color: #FFCCCC; padding: 0.5em">
+          <% if alert.is_a?(Array) %>
+            <ul>
+              <% alert.each do |message| %><li><%= message %></li><% end %>
+            </ul>
+          <% else %>
+            <%= alert %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <%= yield %>
+
+    <%= render "common_js" %>
+
+    <% if @react_view %>
+      <%= stylesheet_packs_with_chunks_tag 'application' %>
+      <%= javascript_packs_with_chunks_tag 'application' %>
+    <% end %>
+  </body>
+</html>

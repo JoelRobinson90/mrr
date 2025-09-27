@@ -1,0 +1,197 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wheniwork.com/2/shifts?end=2021-11-01T23:59:59Z&start=2021-11-01T00:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <WHENIWORK_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Aug 2022 01:59:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Set-Cookie:
+      - wheniwork_cred=376762c3cb0e66f6e604f0fd598140d4; expires=Wed, 17-Aug-2022
+        01:59:14 GMT; Max-Age=86400; path=/; domain=.wheniwork.com; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - ro
+      X-State:
+      - 'RequestId: 073a13d4-1d07-11ed-a089-5e15f9643f82, LoginId: 19274266, AccountId:
+        3788256'
+      X-Timer-Database:
+      - '0.004734992980957'
+      X-Timer-Total:
+      - '0.07953405380249'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"start":"Sun, 31 Oct 2021 20:00:00 -0400","end":"Mon, 01 Nov 2021
+        19:59:59 -0400","shifts":[{"id":2897018599,"account_id":3788256,"user_id":43521995,"location_id":5204524,"position_id":0,"site_id":0,"start_time":"Mon,
+        01 Nov 2021 09:00:00 -0400","end_time":"Mon, 01 Nov 2021 19:00:00 -0400","break_time":0,"color":"cccccc","notes":"","alerted":false,"linked_users":null,"shiftchain_key":"","published":true,"published_date":"Mon,
+        15 Aug 2022 21:33:09 -0400","notified_at":"Mon, 15 Aug 2022 21:33:09 -0400","instances":1,"created_at":"Mon,
+        15 Aug 2022 21:32:58 -0400","updated_at":"Mon, 15 Aug 2022 21:33:09 -0400","acknowledged":0,"acknowledged_at":null,"creator_id":42659902,"is_open":false,"actionable":false,"block_id":0,"requires_openshift_approval":false,"openshift_approval_request_id":0},{"id":2897018610,"account_id":3788256,"user_id":43108827,"location_id":5204524,"position_id":0,"site_id":0,"start_time":"Mon,
+        01 Nov 2021 09:00:00 -0400","end_time":"Mon, 01 Nov 2021 19:00:00 -0400","break_time":0,"color":"cccccc","notes":"","alerted":false,"linked_users":null,"shiftchain_key":"","published":true,"published_date":"Mon,
+        15 Aug 2022 21:33:09 -0400","notified_at":"Mon, 15 Aug 2022 21:33:09 -0400","instances":1,"created_at":"Mon,
+        15 Aug 2022 21:33:01 -0400","updated_at":"Mon, 15 Aug 2022 21:33:09 -0400","acknowledged":0,"acknowledged_at":null,"creator_id":42659902,"is_open":false,"actionable":false,"block_id":0,"requires_openshift_approval":false,"openshift_approval_request_id":0}],"users":[{"id":43108827,"account_id":3788256,"login_id":0,"timezone_id":11,"created_by":42656040,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Houston
+        TX","last_name":"FP","phone_number":"","employee_code":"45540","activated":true,"is_hidden":false,"uuid":"7597c34e92d3f7c06443f1b20e741e230fda6178","notes":"","is_private":true,"hours_preferred":0,"hours_max":0,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"absences":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":null,"notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"","created_at":"Wed, 23 Mar 2022
+        16:35:28 -0400","updated_at":"Wed, 10 Aug 2022 17:29:44 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/Chicago","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/115fff66542d23edb0cf381ab4629b197d0f3d95\/%s","size":"%s"},"positions":[],"locations":[5204524,5306500],"position_rates":[],"position_quality":[],"sort":{"5204524":0,"5306500":0}},{"id":43521995,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Dallas","last_name":"FP","phone_number":"","employee_code":"FieldProvider_NKVMBzw5FQuHzhc5","activated":true,"is_hidden":false,"uuid":"6667d3a5dc92407e8d7d3c67920437129c0b7466","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"absences":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":null,"notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-05-24 20:46:40","created_at":"Tue,
+        24 May 2022 16:46:40 -0400","updated_at":"Fri, 05 Aug 2022 09:39:28 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/7eeaee17e9b03ca3cafd64bad1d744d73c83a412\/%s","size":"%s"},"positions":[],"locations":[5204524,5306500],"position_rates":[],"position_quality":[],"sort":{"5204524":0,"5306500":0}}],"locations":[{"id":5204524,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Molina- Houston","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        10 Jan 2022 09:07:47 -0500","updated_at":"Mon, 10 Jan 2022 09:07:58 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null},{"id":5306500,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Superior Texas- Dallas","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Wed,
+        27 Jul 2022 11:46:22 -0400","updated_at":"Wed, 27 Jul 2022 11:46:33 -0400","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/FieldProvider_NKVMBzw5FQuHzhc5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Aug 2022 01:59:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - '05087a8d6081dbedcabc98b1c33170f2'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000049673","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"400
+        N Ervay St","city":"Dallas","first_name":"Dallas","last_name":"FP","location":{"lat":32.78385,"lon":-96.79827,"zip":"75201"},"state":"TX","uid":"FieldProvider_NKVMBzw5FQuHzhc5","zip":"75201"},"departments":[],"designation":null,"employment_type":null,"external_id":"FieldProvider_NKVMBzw5FQuHzhc5","groups":[],"id":1469,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":22007,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":"FieldProvider_NKVMBzw5FQuHzhc5"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/45540
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Aug 2022 01:59:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - cd6b463f2181d19bcde5b6624de19327
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000045540","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"800
+        Town and Country Blvd, ","city":"Houston, ","country":"US","first_name":"Houston
+        TX","last_name":"FP","location":{"lat":29.77985,"lon":-95.56049,"zip":"77024"},"state":"TX
+        77024","uid":"45540","zip":"77024"},"departments":[],"designation":null,"employment_type":null,"external_id":"45540","groups":[{"id":1030,"name":"Molina"}],"id":1452,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":20412,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/Chicago","username":"45540"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Medarrive Native App",
+    "slug": "medarrive-native-app",
+    "owner": "medarrive",
+    "scheme": "com.medarrive.medarriveapp",
+    "version": "1.0.17",
+    "platforms": ["ios", "android"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

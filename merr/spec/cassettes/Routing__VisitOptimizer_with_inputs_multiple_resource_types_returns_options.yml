@@ -1,0 +1,359 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.658141,-95.355308&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.734886,-95.322579%7C29.717654,-95.387073%7C%7C
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 07 Jan 2023 01:28:16 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=142
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "origin_addresses" : [
+              "Polk St @ Henninger St, Houston, TX 77023, USA",
+              "Concert Drive, Houston, TX 77030, USA"
+           ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "15.0 km",
+                          "value" : 15044
+                       },
+                       "duration" : {
+                          "text" : "17 mins",
+                          "value" : 1023
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11173
+                       },
+                       "duration" : {
+                          "text" : "13 mins",
+                          "value" : 795
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.717654,-95.387073%7C29.734886,-95.322579%7C%7C&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.658141,-95.355308
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 07 Jan 2023 01:28:16 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=116
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [
+              "Concert Drive, Houston, TX 77030, USA",
+              "Polk St @ Henninger St, Houston, TX 77023, USA"
+           ],
+           "origin_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11206
+                       },
+                       "duration" : {
+                          "text" : "14 mins",
+                          "value" : 849
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "15.0 km",
+                          "value" : 14959
+                       },
+                       "duration" : {
+                          "text" : "15 mins",
+                          "value" : 903
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.658141,-95.355308&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.734886,-95.322579%7C29.734886,-95.322579
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 07 Jan 2023 03:55:38 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=52
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "origin_addresses" : [
+              "Polk St @ Henninger St, Houston, TX 77023, USA",
+              "Polk St @ Henninger St, Houston, TX 77023, USA"
+           ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "15.0 km",
+                          "value" : 15044
+                       },
+                       "duration" : {
+                          "text" : "17 mins",
+                          "value" : 1023
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "15.0 km",
+                          "value" : 15044
+                       },
+                       "duration" : {
+                          "text" : "17 mins",
+                          "value" : 1023
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=29.717654,-95.387073%7C29.717654,-95.387073&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=29.658141,-95.355308
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 07 Jan 2023 03:55:38 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=43
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [
+              "Concert Drive, Houston, TX 77030, USA",
+              "Concert Drive, Houston, TX 77030, USA"
+           ],
+           "origin_addresses" : [ "9203 Cullen Blvd, Houston, TX 77051, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11206
+                       },
+                       "duration" : {
+                          "text" : "14 mins",
+                          "value" : 849
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "11.2 km",
+                          "value" : 11206
+                       },
+                       "duration" : {
+                          "text" : "14 mins",
+                          "value" : 849
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <td>First name</td>
+      <td>Last name</td>
+      <td>Email</td>
+      <td>Role</td>
+      <td>Status</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accounts.each do |account| %>
+      <tr>
+        <td><%= account.first_name %></td>
+        <td><%= account.last_name %></td>
+        <td><%= account.user.email %></td>
+        <td><%= account.class.name %></td>
+        <td>
+          <% if account.user.has_random_password? %>
+            Invited
+            <%= form_tag resend_invite_dashboard_field_admin_user_path(id: account.user.id), method: :post do %>
+              <%= submit_tag 'Resend Invite' %>
+            <% end %>
+          <% else %>
+            Active
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

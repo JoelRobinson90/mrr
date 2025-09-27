@@ -1,0 +1,278 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://maps.googleapis.com/maps/api/geocode/json?address=3818%20Eastern%20Ave%20N%20Seattle%20WA%2098103&key=<GOOGLE_MAPS_API_KEY>
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept:
+          - '*/*'
+        User-Agent:
+          - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Host:
+          - maps.googleapis.com
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Content-Type:
+          - application/json; charset=UTF-8
+        Date:
+          - Fri, 03 Sep 2021 16:59:20 GMT
+        Pragma:
+          - no-cache
+        Expires:
+          - Fri, 01 Jan 1990 00:00:00 GMT
+        Cache-Control:
+          - no-cache, must-revalidate
+        Vary:
+          - Accept-Language
+        Access-Control-Allow-Origin:
+          - '*'
+        X-Goog-Maps-Metro-Area:
+          - Seattle, WA
+        Server:
+          - mafe
+        X-Xss-Protection:
+          - '0'
+        X-Frame-Options:
+          - SAMEORIGIN
+        Server-Timing:
+          - gfet4t7; dur=416
+        Alt-Svc:
+          - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443";
+            ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
+            ma=2592000; v="46,43"
+        Transfer-Encoding:
+          - chunked
+      body:
+        encoding: ASCII-8BIT
+        string: |
+          {
+             "results" : [
+                {
+                   "address_components" : [
+                      {
+                         "long_name" : "3818",
+                         "short_name" : "3818",
+                         "types" : [ "street_number" ]
+                      },
+                      {
+                         "long_name" : "Eastern Avenue North",
+                         "short_name" : "Eastern Ave N",
+                         "types" : [ "route" ]
+                      },
+                      {
+                         "long_name" : "Wallingford",
+                         "short_name" : "Wallingford",
+                         "types" : [ "neighborhood", "political" ]
+                      },
+                      {
+                         "long_name" : "Seattle",
+                         "short_name" : "Seattle",
+                         "types" : [ "locality", "political" ]
+                      },
+                      {
+                         "long_name" : "King County",
+                         "short_name" : "King County",
+                         "types" : [ "administrative_area_level_2", "political" ]
+                      },
+                      {
+                         "long_name" : "Washington",
+                         "short_name" : "WA",
+                         "types" : [ "administrative_area_level_1", "political" ]
+                      },
+                      {
+                         "long_name" : "United States",
+                         "short_name" : "US",
+                         "types" : [ "country", "political" ]
+                      },
+                      {
+                         "long_name" : "98103",
+                         "short_name" : "98103",
+                         "types" : [ "postal_code" ]
+                      },
+                      {
+                         "long_name" : "8453",
+                         "short_name" : "8453",
+                         "types" : [ "postal_code_suffix" ]
+                      }
+                   ],
+                   "formatted_address" : "3818 Eastern Ave N, Seattle, WA 98103, USA",
+                   "geometry" : {
+                      "bounds" : {
+                         "northeast" : {
+                            "lat" : 47.6537787,
+                            "lng" : -122.3287055
+                         },
+                         "southwest" : {
+                            "lat" : 47.6537028,
+                            "lng" : -122.3289293
+                         }
+                      },
+                      "location" : {
+                         "lat" : 47.6537318,
+                         "lng" : -122.3288229
+                      },
+                      "location_type" : "ROOFTOP",
+                      "viewport" : {
+                         "northeast" : {
+                            "lat" : 47.6550897302915,
+                            "lng" : -122.3274684197085
+                         },
+                         "southwest" : {
+                            "lat" : 47.6523917697085,
+                            "lng" : -122.3301663802915
+                         }
+                      }
+                   },
+                   "place_id" : "ChIJKRPnhfkUkFQRQJhsfKwrewI",
+                   "types" : [ "premise" ]
+                }
+             ],
+             "status" : "OK"
+          }
+    recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+  - request:
+      method: get
+      uri: https://maps.googleapis.com/maps/api/geocode/json?address=3818%20Eastern%20Ave%20N%20Seattle%20WA%2098103&key=<GOOGLE_MAPS_API_KEY>
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept:
+          - '*/*'
+        User-Agent:
+          - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Host:
+          - maps.googleapis.com
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Content-Type:
+          - application/json; charset=UTF-8
+        Date:
+          - Mon, 06 Jun 2022 20:16:23 GMT
+        Pragma:
+          - no-cache
+        Expires:
+          - Fri, 01 Jan 1990 00:00:00 GMT
+        Cache-Control:
+          - no-cache, must-revalidate
+        Vary:
+          - Accept-Language
+        Access-Control-Allow-Origin:
+          - '*'
+        X-Goog-Maps-Metro-Area:
+          - Seattle, WA
+        Server:
+          - mafe
+        X-Xss-Protection:
+          - '0'
+        X-Frame-Options:
+          - SAMEORIGIN
+        Server-Timing:
+          - gfet4t7; dur=169
+        Alt-Svc:
+          - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+            ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+        Transfer-Encoding:
+          - chunked
+      body:
+        encoding: ASCII-8BIT
+        string: |
+          {
+             "results" : [
+                {
+                   "address_components" : [
+                      {
+                         "long_name" : "3818",
+                         "short_name" : "3818",
+                         "types" : [ "street_number" ]
+                      },
+                      {
+                         "long_name" : "Eastern Avenue North",
+                         "short_name" : "Eastern Ave N",
+                         "types" : [ "route" ]
+                      },
+                      {
+                         "long_name" : "Wallingford",
+                         "short_name" : "Wallingford",
+                         "types" : [ "neighborhood", "political" ]
+                      },
+                      {
+                         "long_name" : "Seattle",
+                         "short_name" : "Seattle",
+                         "types" : [ "locality", "political" ]
+                      },
+                      {
+                         "long_name" : "King County",
+                         "short_name" : "King County",
+                         "types" : [ "administrative_area_level_2", "political" ]
+                      },
+                      {
+                         "long_name" : "Washington",
+                         "short_name" : "WA",
+                         "types" : [ "administrative_area_level_1", "political" ]
+                      },
+                      {
+                         "long_name" : "United States",
+                         "short_name" : "US",
+                         "types" : [ "country", "political" ]
+                      },
+                      {
+                         "long_name" : "98103",
+                         "short_name" : "98103",
+                         "types" : [ "postal_code" ]
+                      },
+                      {
+                         "long_name" : "8453",
+                         "short_name" : "8453",
+                         "types" : [ "postal_code_suffix" ]
+                      }
+                   ],
+                   "formatted_address" : "3818 Eastern Ave N, Seattle, WA 98103, USA",
+                   "geometry" : {
+                      "bounds" : {
+                         "northeast" : {
+                            "lat" : 47.6537799,
+                            "lng" : -122.3287016
+                         },
+                         "southwest" : {
+                            "lat" : 47.6537041,
+                            "lng" : -122.3289254
+                         }
+                      },
+                      "location" : {
+                         "lat" : 47.6537318,
+                         "lng" : -122.3288229
+                      },
+                      "location_type" : "ROOFTOP",
+                      "viewport" : {
+                         "northeast" : {
+                            "lat" : 47.6550909802915,
+                            "lng" : -122.3275375697085
+                         },
+                         "southwest" : {
+                            "lat" : 47.6523930197085,
+                            "lng" : -122.3302355302915
+                         }
+                      }
+                   },
+                   "place_id" : "ChIJKRPnhfkUkFQRQJhsfKwrewI",
+                   "types" : [ "premise" ]
+                }
+             ],
+             "status" : "OK"
+          }
+    recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

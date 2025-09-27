@@ -1,0 +1,217 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kustomerapp.com/v1/customers/externalId=3645624t56
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 16 May 2022 19:03:47 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1993'
+      Cache-Control:
+      - no-cache,private
+      Etag:
+      - W/"a09-mfevOe6mUggcYOuaXhXgvAho/AY"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 84fa053e0c6199c972b828d9a4b4a106.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL52-C1
+      X-Amz-Cf-Id:
+      - 97HMW9wLq2hKX9n1yHMmV1DubnEQLBspIC4cv4w-oXb2BBhNYXX8RQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"type":"customer","id":"6165b404259bf04dee2682f0","attributes":{"name":"API
+        Works","displayName":"API Works","displayColor":"black","displayIcon":"compass","externalId":"3645624t56","externalIds":[{"verified":true,"externalId":"3645624t56"}],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":true,"phone":"+17345467319"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[{"type":"website","url":"http://localhost:3000/admin/patients/492"}],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-10-12T16:12:52.593Z"},"gender":null,"createdAt":"2021-10-12T16:12:52.592Z","updatedAt":"2022-05-16T19:02:55.832Z","modifiedAt":"2022-05-16T19:02:55.594Z","lastActivityAt":"2022-05-16T19:02:55.832Z","deleted":false,"lastMessageIn":{"sentiment":{}},"lastMessageOut":{},"lastMessageUnrespondedTo":{},"lastConversation":{"sentiment":{},"channels":[],"tags":[]},"conversationCounts":{"done":7,"open":0,"snoozed":0,"all":7},"preview":{},"tags":[],"custom":{"demandPartnerStr":"Molina","regionStr":"Seattle","lastOutreachDateAt":"2022-05-16T19:02:55.589Z"},"progressiveStatus":"done","verified":true,"rev":65,"recentItems":[{"meta":{},"type":"conversation","id":"62829fdfc6698a49064a55ea","updatedAt":"2022-05-16T19:02:55.594Z"},{"meta":{},"type":"conversation","id":"62829e5ec94c93ce0712ca5b","updatedAt":"2022-05-16T18:56:30.300Z"},{"meta":{},"type":"conversation","id":"619442db09ce066097987c98","updatedAt":"2021-11-16T23:46:35.503Z"},{"meta":{},"type":"conversation","id":"6194428de746a5d311521002","updatedAt":"2021-11-16T23:45:17.635Z"},{"meta":{},"type":"conversation","id":"6193f0f16e333643b5aa0492","updatedAt":"2021-11-16T17:57:05.267Z"}],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"API","lastName":"Works","unmaskingWindow":{"updatedAt":"2022-05-16T19:03:47.320Z","createdAt":"2022-05-16T19:03:47.320Z"}},"relationships":{"messages":{"links":{"self":"/v1/customers/6165b404259bf04dee2682f0/messages"}},"createdBy":{"links":{"self":"/v1/users/613791e78f967b001928de15"},"data":{"type":"user","id":"613791e78f967b001928de15"}},"modifiedBy":{"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"},"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/6165b404259bf04dee2682f0"}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.kustomerapp.com/v1/conversations
+    body:
+      encoding: UTF-8
+      string: '{"customer":"6165b404259bf04dee2682f0","name":"Appointment Reminder
+        SMS: Thursday Nov 18 2021 at  7:00AM","custom":{"appointmentTimeStr":"Thursday
+        Nov 18 2021 at  7:00AM","partnerDisplayNameStr":"Health Net","regardingProgramStr":"Centene
+        - Health Net (LA, CA) - Vaccine"},"status":"done"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Content-Length:
+      - '289'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 16 May 2022 19:03:47 GMT
+      Vary:
+      - X-HTTP-Method-Override, Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1992'
+      Cache-Control:
+      - no-cache,private
+      X-Ratelimit-Object-Limit:
+      - '120'
+      X-Ratelimit-Object-Remaining:
+      - '118'
+      Etag:
+      - W/"a1e-N0NCDLAyI3M1/cQV1YYglfDPnF4"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 dc88537beb5e26d4e490ca74560553cc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL52-C1
+      X-Amz-Cf-Id:
+      - oA8Z5-nOBhJ04LYiQYQIFyC3FGeUS_qAjNuUafPKwGm2kyE-d4qHLg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"type":"conversation","id":"6282a01343f7b91da4ee0ecc","attributes":{"name":"Appointment
+        Reminder SMS: Thursday Nov 18 2021 at  7:00AM","channels":[],"status":"done","messageCount":0,"noteCount":0,"satisfaction":0,"satisfactionLevel":{"sentByTeams":[],"answers":[]},"createdAt":"2022-05-16T19:03:47.618Z","updatedAt":"2022-05-16T19:03:47.618Z","modifiedAt":"2022-05-16T19:03:47.618Z","lastActivityAt":"2022-05-16T19:03:47.619Z","spam":false,"ended":true,"endedAt":"2022-05-16T19:03:47.618Z","endedReason":"user_ended","endedByType":"user","tags":[],"suggestedTags":[],"predictions":[],"sentiment":{},"suggestedShortcuts":[],"firstMessageIn":{"firstDelivered":{}},"firstMessageOut":{"firstDelivered":{},"createdByTeams":[]},"lastMessageIn":{},"lastMessageOut":{},"lastMessageUnrespondedTo":{},"lastMessageUnrespondedToSinceLastDone":{},"assignedUsers":[],"assignedTeams":[],"firstResponse":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"firstResponseSinceLastDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"lastResponse":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"firstDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"lastDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"direction":"in","custom":{"appointmentTimeStr":"Thursday
+        Nov 18 2021 at  7:00AM","partnerDisplayNameStr":"Health Net","regardingProgramStr":"Centene
+        - Health Net (LA, CA) - Vaccine"},"outboundMessageCount":0,"inboundMessageCount":0,"rev":1,"priority":3,"totalSnooze":{},"totalDone":{},"totalOpen":{},"roleGroupVersions":[],"accessOverride":[],"assistant":{"fac":{"source":{},"reasons":[]},"assistantId":[]},"phase":"initial"},"relationships":{"messages":{"links":{"self":"/v1/conversations/6282a01343f7b91da4ee0ecc/messages"}},"createdBy":{"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"},"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"}},"modifiedBy":{"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"},"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"}},"org":{"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"},"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"}},"customer":{"data":{"type":"customer","id":"6165b404259bf04dee2682f0"},"links":{"self":"/v1/customers/6165b404259bf04dee2682f0"}},"endedBy":{"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"},"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"}},"brand":{"data":{"type":"brand","id":"611be9dc124a3e7775f2aaa5"},"links":{"self":"/v1/brands/611be9dc124a3e7775f2aaa5"}}},"links":{"self":"/v1/conversations/6282a01343f7b91da4ee0ecc"}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.kustomerapp.com/v1/conversations/6282a01343f7b91da4ee0ecc
+    body:
+      encoding: UTF-8
+      string: '{"tags":["62054968da3be2fc9826c1ce"]}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 16 May 2022 19:03:47 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1991'
+      Cache-Control:
+      - no-cache,private
+      X-Ratelimit-Object-Limit:
+      - '100'
+      X-Ratelimit-Object-Remaining:
+      - '99'
+      Etag:
+      - W/"a38-4UvdxpiK5R8Q2heSaQEIds8KZow"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a0538eb5a32d7c22fe436214e4dfb72e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL52-C1
+      X-Amz-Cf-Id:
+      - pUBZbvTFao2DptnaAQlzezjxFnr2Q95ktn130zECM9cZV-i8MGGMag==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"type":"conversation","id":"6282a01343f7b91da4ee0ecc","attributes":{"name":"Appointment
+        Reminder SMS: Thursday Nov 18 2021 at  7:00AM","channels":[],"status":"done","messageCount":0,"noteCount":0,"satisfaction":0,"satisfactionLevel":{"sentByTeams":[],"answers":[]},"createdAt":"2022-05-16T19:03:47.618Z","updatedAt":"2022-05-16T19:03:47.898Z","modifiedAt":"2022-05-16T19:03:47.898Z","lastActivityAt":"2022-05-16T19:03:47.619Z","spam":false,"ended":true,"endedAt":"2022-05-16T19:03:47.618Z","endedReason":"user_ended","endedByType":"user","tags":["62054968da3be2fc9826c1ce"],"suggestedTags":[],"predictions":[],"sentiment":{},"suggestedShortcuts":[],"firstMessageIn":{"firstDelivered":{}},"firstMessageOut":{"firstDelivered":{},"createdByTeams":[]},"lastMessageIn":{},"lastMessageOut":{},"lastMessageUnrespondedTo":{},"lastMessageUnrespondedToSinceLastDone":{},"assignedUsers":[],"assignedTeams":[],"firstResponse":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"firstResponseSinceLastDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"lastResponse":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"firstDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"lastDone":{"createdByTeams":[],"assignedTeams":[],"assignedUsers":[]},"direction":"in","custom":{"appointmentTimeStr":"Thursday
+        Nov 18 2021 at  7:00AM","partnerDisplayNameStr":"Health Net","regardingProgramStr":"Centene
+        - Health Net (LA, CA) - Vaccine"},"outboundMessageCount":0,"inboundMessageCount":0,"rev":2,"priority":3,"totalSnooze":{},"totalDone":{},"totalOpen":{},"roleGroupVersions":[],"accessOverride":[],"assistant":{"fac":{"source":{},"reasons":[]},"assistantId":[]},"phase":"initial"},"relationships":{"messages":{"links":{"self":"/v1/conversations/6282a01343f7b91da4ee0ecc/messages"}},"createdBy":{"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"},"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"}},"modifiedBy":{"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"},"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"}},"org":{"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"},"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"}},"customer":{"data":{"type":"customer","id":"6165b404259bf04dee2682f0"},"links":{"self":"/v1/customers/6165b404259bf04dee2682f0"}},"endedBy":{"data":{"type":"user","id":"61f96c44bc70fd5808e0f1fc"},"links":{"self":"/v1/users/61f96c44bc70fd5808e0f1fc"}},"brand":{"data":{"type":"brand","id":"611be9dc124a3e7775f2aaa5"},"links":{"self":"/v1/brands/611be9dc124a3e7775f2aaa5"}}},"links":{"self":"/v1/conversations/6282a01343f7b91da4ee0ecc"}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

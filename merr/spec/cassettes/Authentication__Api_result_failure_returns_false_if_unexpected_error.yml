@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.redoxengine.com/auth/authenticate
+    body:
+      encoding: UTF-8
+      string: apiKey=<GOOGLE_SERVICES_API_KEY>&secret=<GOOGLE_SERVICES_API_KEY>
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.7.2p137
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.redoxengine.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 21 Jun 2021 22:41:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '15'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=300; includeSubdomains;
+      Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"f-wrqBpHoIpKHXInTVASrQWM4Xb04"
+    body:
+      encoding: UTF-8
+      string: Invalid request
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

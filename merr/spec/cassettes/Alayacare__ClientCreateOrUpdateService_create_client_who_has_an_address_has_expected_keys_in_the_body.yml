@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Oct 2021 16:30:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 87fa64fe7b866e7c4d00530bb9f8dff7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n  \"count\": 4, \n  \"items\": [\n    {\n      \"active_client_count\":
+        1, \n      \"active_employee_count\": 3, \n      \"active_facility_count\":
+        0, \n      \"active_supplier_count\": 0, \n      \"branch\": {\n        \"id\":
+        1000, \n        \"name\": \"medarrive\"\n      }, \n      \"description\":
+        null, \n      \"id\": 1032, \n      \"is_disabled\": false, \n      \"name\":
+        \"Bright Health\"\n    }, \n    {\n      \"active_client_count\": 0, \n      \"active_employee_count\":
+        1, \n      \"active_facility_count\": 0, \n      \"active_supplier_count\":
+        0, \n      \"branch\": {\n        \"id\": 1000, \n        \"name\": \"medarrive\"\n
+        \     }, \n      \"description\": null, \n      \"id\": 1033, \n      \"is_disabled\":
+        false, \n      \"name\": \"FCC\"\n    }, \n    {\n      \"active_client_count\":
+        5, \n      \"active_employee_count\": 2, \n      \"active_facility_count\":
+        0, \n      \"active_supplier_count\": 0, \n      \"branch\": {\n        \"id\":
+        1000, \n        \"name\": \"medarrive\"\n      }, \n      \"description\":
+        null, \n      \"id\": 1030, \n      \"is_disabled\": false, \n      \"name\":
+        \"Molina\"\n    }, \n    {\n      \"active_client_count\": 1, \n      \"active_employee_count\":
+        0, \n      \"active_facility_count\": 0, \n      \"active_supplier_count\":
+        0, \n      \"branch\": {\n        \"id\": 1000, \n        \"name\": \"medarrive\"\n
+        \     }, \n      \"description\": null, \n      \"id\": 1031, \n      \"is_disabled\":
+        false, \n      \"name\": \"MPG\"\n    }\n  ], \n  \"items_per_page\": 100,
+        \n  \"page\": 1, \n  \"total_pages\": 1\n}\n"
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

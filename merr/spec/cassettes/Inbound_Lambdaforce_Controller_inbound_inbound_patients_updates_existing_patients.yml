@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=4057%20MAYBERRY%20LN%20CHARLOTTE%20NC%2028212&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Apr 2023 22:31:24 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Charlotte, NC
+      Server:
+      - mafe
+      Content-Length:
+      - '2601'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=113
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "4057",
+                       "short_name" : "4057",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Mayberry Lane",
+                       "short_name" : "Mayberry Ln",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Eastland - Wilora Lake",
+                       "short_name" : "Eastland - Wilora Lake",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Charlotte",
+                       "short_name" : "Charlotte",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Mecklenburg County",
+                       "short_name" : "Mecklenburg County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "North Carolina",
+                       "short_name" : "NC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "28212",
+                       "short_name" : "28212",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "8466",
+                       "short_name" : "8466",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "4057 Mayberry Ln, Charlotte, NC 28212, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 35.2164506,
+                          "lng" : -80.75167879999999
+                       },
+                       "southwest" : {
+                          "lat" : 35.2162998,
+                          "lng" : -80.7518243
+                       }
+                    },
+                    "location" : {
+                       "lat" : 35.2163478,
+                       "lng" : -80.75173239999999
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.2177183802915,
+                          "lng" : -80.75032846970849
+                       },
+                       "southwest" : {
+                          "lat" : 35.2150204197085,
+                          "lng" : -80.7530264302915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJVztKnGMfVIgR20JLRuMSjAI",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

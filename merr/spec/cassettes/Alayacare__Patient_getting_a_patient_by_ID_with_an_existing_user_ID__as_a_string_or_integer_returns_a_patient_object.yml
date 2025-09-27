@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2//patients/clients/1002
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.7.2p137
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic cVV1QjZRY2tXQ2NEbHVIZ0RPbU1QNDdGRmV3Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Apr 2021 18:40:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - f3652b132804e0056c3ca285f1878240
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n  \"ac_id\": \"AC000000024\", \n  \"branch_id\": 1000, \n  \"care_team\":
+        [], \n  \"contacts\": [], \n  \"cost_centre\": null, \n  \"demographics\":
+        {\n    \"address\": \"1503 King St\", \n    \"care_needs\": \"kajskljarerlgserrlneslkrslnserglrk\",
+        \n    \"city\": \"Charleston\", \n    \"company\": \"\", \n    \"country\":
+        \"US\", \n    \"first_name\": \"Baylee\", \n    \"last_name\": \"Patient\",
+        \n    \"location\": {\n      \"lat\": 32.81815, \n      \"lon\": -79.95178,
+        \n      \"zip\": \"29405\"\n    }, \n    \"phone_main\": \"2763409493\", \n
+        \   \"state\": \"SC\", \n    \"zip\": \"29405\"\n  }, \n  \"external_id\":
+        null, \n  \"groups\": [], \n  \"id\": 1002, \n  \"language\": \"en\", \n  \"profile_id\":
+        10, \n  \"status\": \"active\", \n  \"tags\": [], \n  \"timezone\": \"UTC\"\n}\n"
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2//patients/clients/1002
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.7.2p137
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic cVV1QjZRY2tXQ2NEbHVIZ0RPbU1QNDdGRmV3Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Apr 2021 18:40:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 67580f0eedd4a6098d5a85a006963e62
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n  \"ac_id\": \"AC000000024\", \n  \"branch_id\": 1000, \n  \"care_team\":
+        [], \n  \"contacts\": [], \n  \"cost_centre\": null, \n  \"demographics\":
+        {\n    \"address\": \"1503 King St\", \n    \"care_needs\": \"kajskljarerlgserrlneslkrslnserglrk\",
+        \n    \"city\": \"Charleston\", \n    \"company\": \"\", \n    \"country\":
+        \"US\", \n    \"first_name\": \"Baylee\", \n    \"last_name\": \"Patient\",
+        \n    \"location\": {\n      \"lat\": 32.81815, \n      \"lon\": -79.95178,
+        \n      \"zip\": \"29405\"\n    }, \n    \"phone_main\": \"2763409493\", \n
+        \   \"state\": \"SC\", \n    \"zip\": \"29405\"\n  }, \n  \"external_id\":
+        null, \n  \"groups\": [], \n  \"id\": 1002, \n  \"language\": \"en\", \n  \"profile_id\":
+        10, \n  \"status\": \"active\", \n  \"tags\": [], \n  \"timezone\": \"UTC\"\n}\n"
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

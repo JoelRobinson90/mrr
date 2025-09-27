@@ -1,0 +1,102 @@
+<%= javascript_tag nonce: true do %>
+  function hideMedArriveImportIfKustomerOnly() {
+    var selectElement = document.querySelector('#import_to');
+    if (selectElement.value === "Kustomer" || selectElement.value === "Alayacare") {
+      document.querySelector('#type_select').style.display = "none";
+    } else {
+      document.querySelector('#type_select').style.display = "inline";
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', (_event) => {
+    document.querySelector("#import_to").addEventListener('change', hideMedArriveImportIfKustomerOnly);
+    document.querySelector('#type_select').style.display = "none";
+  });
+
+  var selectElement = document.querySelector('#import_to');
+
+<% end %>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  table, tbody {
+    width: 700px
+  }
+
+  th, td {
+    width: "33%";
+    padding: 0 0 0 12px;
+  }
+</style>
+
+<h2>Import Data</h2>
+<%= form_tag data_import_data_import_path, multipart: true do |form| %>
+
+  <p>
+    <%= label_tag :demand_partner_id %>
+    <%= select_tag("demand_partner_id", options_from_collection_for_select(@demand_partners, "id", "name")) %>
+  </p>
+
+  <p>
+    <%= label_tag :import_to %>
+    <%= select_tag("import_to", options_for_select(["", "Kustomer", "Alayacare", "MedArrive"])) %>
+  </p>
+
+  <p id="type_select">
+    <%= label_tag :type %>
+    <%= select_tag("type", options_for_select(@types)) %>
+  </p>
+
+  <p>
+    <%= label_tag :run_mode %>
+    <%= select_tag("run_mode", options_for_select(["Run in background", "Run in foreground"])) %>
+  </p>
+  <p>
+    <%= label_tag :update_mode %>
+    <%= select_tag("update_mode", options_for_select(["Create or Update", "Update Only"])) %>
+  </p>
+
+  <p>
+    <%= label_tag :file %>
+    <%= file_field_tag :file %>
+  </p>
+
+  <p>
+    <%= submit_tag "Import File" %>
+  </p>
+<% end %>
+
+<% if @results %>
+  <h2>Data Import Results</h2>
+  <table style="width: 100%">
+    <tr>
+      <th>Date</th>
+      <th>Type</th>
+      <th>File</th>
+      <th>Status</th>
+      <th>Result</th>
+      <th>Failures</th>
+    </tr>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= time_ago_in_words(result.created_at) %></td>
+        <td><%= result.job_type.humanize %></td>
+        <td><%= result.label %></td>
+        <td><%= result.status.humanize %></td>
+        <td><%= result.message %></td>
+        <td>
+          <% if result.error_list %>
+            <ul>
+              <% result.error_list.each do |err| %>
+                <li><%= err %></li>
+              <% end %>
+            </ul>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

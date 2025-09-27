@@ -1,0 +1,10 @@
+<h1><%= params[:action].humanize %></h1>
+
+<%= link_to 'Office Users', office_users_dashboard_field_admin_users_path %>
+|
+<%= link_to 'Field Providers', field_providers_dashboard_field_admin_users_path %>
+<br/><br/>
+
+<%= link_to 'Invite new users', new_dashboard_field_admin_user_path %>
+
+<%= render "#{params[:action]}_table" %>

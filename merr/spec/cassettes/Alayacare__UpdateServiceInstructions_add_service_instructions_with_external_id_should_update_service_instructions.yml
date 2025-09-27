@@ -1,0 +1,3029 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/by_id/external_8408
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:32:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 1c1111f4c803809c70604b364d07c686
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":1233,"alayacare_employee_id":157,"alayacare_service_id":558,"alayacare_visit_id":729,"cancel_code":{"code":"Patient
+        Refused Visit","description":"","id":3},"cancelled":true,"client_id":"8408","employee_id":"55669","end_at":"2021-12-30T23:36:00+00:00","notes":[{"created_at":"2022-06-21T21:34:01+00:00","text":"<GOOGLE_SERVICES_API_KEY>"},{"created_at":"2022-06-21T21:45:15+00:00","text":"<GOOGLE_SERVICES_API_KEY>
+        NOTE\n\nClarence Lowe"},{"created_at":"2022-06-21T21:48:52+00:00","text":"<GOOGLE_SERVICES_API_KEY>
+        NOTE"},{"created_at":"2022-06-21T21:48:58+00:00","text":"<GOOGLE_SERVICES_API_KEY>
+        NOTE\n\nBob Hope"}],"service_code_id":6,"service_id":"","start_at":"2021-12-30T22:06:00+00:00","status":"cancelled","tags":[],"visit_id":"external_8408"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?%7B:alayacare_client_id=%3E1233,%20:start_date_from=%3EFri,%2020%20Mar%202020%2000:00:00.000000000%20UTC%20%2000:00,%20:start_date_to=%3ESun,%2021%20Mar%202021%2000:00:00.000000000%20UTC%20%2000:00%7D.to_query%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:32:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 78de75bda9f0aedfc3fc1bec8fc1bea7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":11,"items":[{"alayacare_client_id":21200,"alayacare_employee_id":176,"alayacare_service_id":1091,"alayacare_visit_id":1501,"cancel_code":null,"cancelled":false,"client_id":"lksdjkl","employee_id":"8055","end_at":"2022-07-01T21:53:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-01T21:23:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_VvRQ8JGbkqYNgDXm"},{"alayacare_client_id":21170,"alayacare_employee_id":181,"alayacare_service_id":1132,"alayacare_visit_id":1612,"cancel_code":null,"cancelled":false,"client_id":"FAKE70751904","employee_id":"12316","end_at":"2022-07-02T16:30:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2022-07-02T15:00:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_NjDnvZ8JFDfLcQxd"},{"alayacare_client_id":21188,"alayacare_employee_id":181,"alayacare_service_id":1135,"alayacare_visit_id":1615,"cancel_code":null,"cancelled":false,"client_id":"FAKE71333369","employee_id":"12316","end_at":"2022-07-02T18:05:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2022-07-02T16:45:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_7xCwsPLe9iVJD6bY"},{"alayacare_client_id":8244,"alayacare_employee_id":1452,"alayacare_service_id":1118,"alayacare_visit_id":1566,"cancel_code":null,"cancelled":false,"client_id":"ASODIU1123001","employee_id":"45540","end_at":"2022-07-04T13:48:00+00:00","notes":[],"service_code_id":8,"service_id":"","start_at":"2022-07-04T13:18:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_1hNNKF2sFMBRH53V"},{"alayacare_client_id":19984,"alayacare_employee_id":176,"alayacare_service_id":1108,"alayacare_visit_id":1542,"cancel_code":null,"cancelled":false,"client_id":"FAKE56734525","employee_id":"8055","end_at":"2022-07-04T14:20:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2022-07-04T13:20:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_CqZFMrK9X3QdYDmJ"},{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":1130,"alayacare_visit_id":1619,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T14:42:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T14:12:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_wLxqx9YG9JBt6i73"},{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1602,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T15:23:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T14:53:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_9nWsaZUdrQCxzuxT"},{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1601,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T16:48:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T16:18:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_E6MafYU8rx6aWAZ8"},{"alayacare_client_id":19716,"alayacare_employee_id":176,"alayacare_service_id":953,"alayacare_visit_id":1604,"cancel_code":null,"cancelled":false,"client_id":"U022213330","employee_id":"8055","end_at":"2022-07-05T14:40:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2022-07-05T13:40:00+00:00","status":"scheduled","tags":[],"visit_id":null},{"alayacare_client_id":19712,"alayacare_employee_id":null,"alayacare_service_id":1112,"alayacare_visit_id":1621,"cancel_code":null,"cancelled":false,"client_id":"AWODIU1BB30011","employee_id":null,"end_at":"2022-07-08T13:29:00+00:00","notes":[],"service_code_id":16,"service_id":"","start_at":"2022-07-08T13:09:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_fMmVCw1N1YbGSiaw"},{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1545,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-08T13:48:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-08T13:18:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_WTGoNGBM5yirmnL8"}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1501
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:32:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 5e8d858382d0ac01b27425c2bc7b9f1f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":21200,"alayacare_employee_id":176,"alayacare_service_id":1091,"alayacare_visit_id":1501,"cancel_code":null,"cancelled":false,"client_id":"lksdjkl","employee_id":"8055","end_at":"2022-07-01T21:53:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-01T21:23:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_VvRQ8JGbkqYNgDXm"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1612
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:32:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 27ceca0062fbf53ddd1caa62ad18767f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":21170,"alayacare_employee_id":181,"alayacare_service_id":1132,"alayacare_visit_id":1612,"cancel_code":null,"cancelled":false,"client_id":"FAKE70751904","employee_id":"12316","end_at":"2022-07-02T16:30:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2022-07-02T15:00:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_NjDnvZ8JFDfLcQxd"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1615
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:32:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 869934bb3c5f6356f9770cf4bbc07207
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":21188,"alayacare_employee_id":181,"alayacare_service_id":1135,"alayacare_visit_id":1615,"cancel_code":null,"cancelled":false,"client_id":"FAKE71333369","employee_id":"12316","end_at":"2022-07-02T18:05:00+00:00","notes":[],"service_code_id":6,"service_id":"","start_at":"2022-07-02T16:45:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_7xCwsPLe9iVJD6bY"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1566
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 324dcfd81a78531ebb18779b460ee1e1
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":8244,"alayacare_employee_id":1452,"alayacare_service_id":1118,"alayacare_visit_id":1566,"cancel_code":null,"cancelled":false,"client_id":"ASODIU1123001","employee_id":"45540","end_at":"2022-07-04T13:48:00+00:00","notes":[],"service_code_id":8,"service_id":"","start_at":"2022-07-04T13:18:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_1hNNKF2sFMBRH53V"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1542
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 0e469438f2037f910ce90682846806b8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":19984,"alayacare_employee_id":176,"alayacare_service_id":1108,"alayacare_visit_id":1542,"cancel_code":null,"cancelled":false,"client_id":"FAKE56734525","employee_id":"8055","end_at":"2022-07-04T14:20:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2022-07-04T13:20:00+00:00","status":"scheduled","tags":[],"visit_id":"Visit_CqZFMrK9X3QdYDmJ"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1619
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - d526960691ff80d65ce62098170cf7b7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":1130,"alayacare_visit_id":1619,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T14:42:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T14:12:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_wLxqx9YG9JBt6i73"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1602
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - efafb552c6af00fe72a55ba0d016e4f6
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1602,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T15:23:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T14:53:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_9nWsaZUdrQCxzuxT"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1601
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:03 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 02e604f63e6e3a8159d38f17f0379609
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1601,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-04T16:48:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-04T16:18:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_E6MafYU8rx6aWAZ8"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1604
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 95863c9fe51c8659ce17936cb641be5a
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":19716,"alayacare_employee_id":176,"alayacare_service_id":953,"alayacare_visit_id":1604,"cancel_code":null,"cancelled":false,"client_id":"U022213330","employee_id":"8055","end_at":"2022-07-05T14:40:00+00:00","notes":[],"service_code_id":9,"service_id":"","start_at":"2022-07-05T13:40:00+00:00","status":"scheduled","tags":[],"visit_id":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1621
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 839eae0ff7c9748b68b5132a399f32af
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":19712,"alayacare_employee_id":null,"alayacare_service_id":1112,"alayacare_visit_id":1621,"cancel_code":null,"cancelled":false,"client_id":"AWODIU1BB30011","employee_id":null,"end_at":"2022-07-08T13:29:00+00:00","notes":[],"service_code_id":16,"service_id":"","start_at":"2022-07-08T13:09:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_fMmVCw1N1YbGSiaw"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/1545
+    body:
+      encoding: UTF-8
+      string: '{"service_instructions":"<GOOGLE_SERVICES_API_KEY> LOCAL NOTE"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jul 2022 20:33:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 3ab8cf07af61547d49cb5aab2404d32f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"alayacare_client_id":1044,"alayacare_employee_id":null,"alayacare_service_id":963,"alayacare_visit_id":1545,"cancel_code":null,"cancelled":false,"client_id":"165983429","employee_id":null,"end_at":"2022-07-08T13:48:00+00:00","notes":[],"service_code_id":7,"service_id":"","start_at":"2022-07-08T13:18:00+00:00","status":"vacant","tags":[],"visit_id":"Visit_WTGoNGBM5yirmnL8"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=39084%20Moore%20Curve%20Feestside%20SD%2007077-3589&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 01 Jul 2022 20:55:56 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=151
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "07077",
+                       "short_name" : "07077",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Sewaren",
+                       "short_name" : "Sewaren",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Middlesex County",
+                       "short_name" : "Middlesex County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Jersey",
+                       "short_name" : "NJ",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Sewaren, NJ 07077, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.568245,
+                          "lng" : -74.22858900000001
+                       },
+                       "southwest" : {
+                          "lat" : 40.536874,
+                          "lng" : -74.2717249
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.5513168,
+                       "lng" : -74.2590148
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.568245,
+                          "lng" : -74.22858900000001
+                       },
+                       "southwest" : {
+                          "lat" : 40.536874,
+                          "lng" : -74.2717249
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJn6PF2gK1w4kRlslnPtXprR8",
+                 "postcode_localities" : [ "Perth Amboy", "Woodbridge Township" ],
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=381%20Jolene%20Vista%20West%20Zofiaside%20GA%2086849-4857&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 01 Jul 2022 20:56:34 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=84
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=2137%20Rice%20Harbor%20North%20Koreyville%20WI%2015219&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 18 Jul 2022 18:32:46 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Sydney
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=115
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "North Kellyville",
+                       "short_name" : "North Kellyville",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "The Hills Shire",
+                       "short_name" : "The Hills Shire",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2155",
+                       "short_name" : "2155",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "North Kellyville NSW 2155, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.6597877,
+                          "lng" : 150.9699648
+                       },
+                       "southwest" : {
+                          "lat" : -33.7007754,
+                          "lng" : 150.9282737
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.6852445,
+                       "lng" : 150.9525664
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.6597877,
+                          "lng" : 150.9699648
+                       },
+                       "southwest" : {
+                          "lat" : -33.7007754,
+                          "lng" : 150.9282737
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJ8exvWiagEmsRmMX6sxgkCHs",
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Wisconsin",
+                       "short_name" : "WI",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Wisconsin, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.3098219,
+                          "lng" : -86.2495479
+                       },
+                       "southwest" : {
+                          "lat" : 42.4917199,
+                          "lng" : -92.88943309999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 43.7844397,
+                       "lng" : -88.7878678
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.3098219,
+                          "lng" : -86.2495479
+                       },
+                       "southwest" : {
+                          "lat" : 42.4917199,
+                          "lng" : -92.88943309999999
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJr-OEkw_0qFIR1kmG-LjV1fI",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits?alayacare_client_id=1233&end_at=2021-03-21T00:00:00%2B00:00&start_at=2020-03-20T00:00:00%2B00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jul 2022 18:32:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '69'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - b7eed74870f2fc183fd41694a11c4663
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"count":0,"items":[],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=811%20Kohler%20Alley%20Port%20Johnsonberg%20MD%2040918&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 29 Jul 2022 16:28:43 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=136
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Johnsonburg",
+                       "short_name" : "Johnsonburg",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Ridgway Township",
+                       "short_name" : "Ridgway Township",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Elk County",
+                       "short_name" : "Elk County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Pennsylvania",
+                       "short_name" : "PA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "15845",
+                       "short_name" : "15845",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "Johnsonburg, PA 15845, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.512426,
+                          "lng" : -78.657338
+                       },
+                       "southwest" : {
+                          "lat" : 41.4791509,
+                          "lng" : -78.69784509999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.4906172,
+                       "lng" : -78.675026
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.512426,
+                          "lng" : -78.657338
+                       },
+                       "southwest" : {
+                          "lat" : 41.4791509,
+                          "lng" : -78.69784509999999
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJiUbaupUHzYkRQRUBSyn9nIA",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=2743%20Daniell%20Manors%20Ednastad%20FL%2068196&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 29 Jul 2022 16:29:24 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Miami, FL
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=154
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Wilton Manors",
+                       "short_name" : "Wilton Manors",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Broward County",
+                       "short_name" : "Broward County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Florida",
+                       "short_name" : "FL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Wilton Manors, FL, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 26.1665621,
+                          "lng" : -80.117766
+                       },
+                       "southwest" : {
+                          "lat" : 26.150662,
+                          "lng" : -80.16056689999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 26.1603626,
+                       "lng" : -80.13893399999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 26.1665621,
+                          "lng" : -80.117766
+                       },
+                       "southwest" : {
+                          "lat" : 26.150662,
+                          "lng" : -80.16056689999999
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJr_1ZR5wB2YgRlnt3S6KDCbY",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=952%20Howe%20Well%20Port%20Ezekiel%20WV%2091282-0556&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 09 Aug 2022 22:52:31 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=105
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "West Virginia",
+                       "short_name" : "WV",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "West Virginia, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.638801,
+                          "lng" : -77.7189679
+                       },
+                       "southwest" : {
+                          "lat" : 37.2015399,
+                          "lng" : -82.644413
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.5976262,
+                       "lng" : -80.4549026
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.638801,
+                          "lng" : -77.7189679
+                       },
+                       "southwest" : {
+                          "lat" : 37.2015399,
+                          "lng" : -82.644413
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJRQnL1KVUSogRQzrN3mjHALs",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=3636%20Cummings%20Knolls%20New%20Caitlynbury%20MA%2043783&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 07 Sep 2022 17:04:50 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=120
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=3555%20Ebert%20Fort%20North%20Tashastad%20WV%2095302&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 07 Sep 2022 17:13:39 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=168
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "West Virginia",
+                       "short_name" : "WV",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "West Virginia, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.638801,
+                          "lng" : -77.7189679
+                       },
+                       "southwest" : {
+                          "lat" : 37.2015399,
+                          "lng" : -82.644413
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.5976262,
+                       "lng" : -80.4549026
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.638801,
+                          "lng" : -77.7189679
+                       },
+                       "southwest" : {
+                          "lat" : 37.2015399,
+                          "lng" : -82.644413
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJRQnL1KVUSogRQzrN3mjHALs",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=41765%20Guadalupe%20Creek%20Kuvalisville%20MS%2083741-1747&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 12 Sep 2022 14:05:11 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - San Jose, CA
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=143
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Guadalupe Creek",
+                       "short_name" : "Guadalupe Creek",
+                       "types" : [ "establishment", "natural_feature" ]
+                    },
+                    {
+                       "long_name" : "Santa Clara County",
+                       "short_name" : "Santa Clara County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "California",
+                       "short_name" : "CA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Guadalupe Creek, California, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 37.247944,
+                          "lng" : -121.8733386
+                       },
+                       "southwest" : {
+                          "lat" : 37.1963469,
+                          "lng" : -121.9131761
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.22214544601945,
+                       "lng" : -121.8932573664374
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.247944,
+                          "lng" : -121.8733386
+                       },
+                       "southwest" : {
+                          "lat" : 37.1963469,
+                          "lng" : -121.9131761
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJ7aus5mAxjoARYVOyqQpRyKk",
+                 "types" : [ "establishment", "natural_feature" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=704%20Karl%20Walks%20West%20Benedictbury%20LA%2056769-3146&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 12 Sep 2022 14:31:42 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=164
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=366%20Malik%20Square%20Langport%20MO%2097589&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 12 Sep 2022 18:35:32 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=109
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Langport",
+                       "short_name" : "Langport",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Langport",
+                       "short_name" : "Langport",
+                       "types" : [ "postal_town" ]
+                    },
+                    {
+                       "long_name" : "Somerset",
+                       "short_name" : "Somerset",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "England",
+                       "short_name" : "England",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United Kingdom",
+                       "short_name" : "GB",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "TA10",
+                       "short_name" : "TA10",
+                       "types" : [ "postal_code", "postal_code_prefix" ]
+                    }
+                 ],
+                 "formatted_address" : "Langport TA10, UK",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 51.0484115,
+                          "lng" : -2.7983547
+                       },
+                       "southwest" : {
+                          "lat" : 51.0314384,
+                          "lng" : -2.846301
+                       }
+                    },
+                    "location" : {
+                       "lat" : 51.038134,
+                       "lng" : -2.828719
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 51.0484115,
+                          "lng" : -2.7983547
+                       },
+                       "southwest" : {
+                          "lat" : 51.0314384,
+                          "lng" : -2.846301
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJGYEwvlQMckgRz_hI-YpkQZY",
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Missouri",
+                       "short_name" : "MO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Missouri, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.61364,
+                          "lng" : -89.09949399999999
+                       },
+                       "southwest" : {
+                          "lat" : 35.9956829,
+                          "lng" : -95.774704
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.9642529,
+                       "lng" : -91.83183339999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.61364,
+                          "lng" : -89.09949399999999
+                       },
+                       "southwest" : {
+                          "lat" : 35.9956829,
+                          "lng" : -95.774704
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJfeMiSNXmwIcRcr1mBFnEW7U",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=56787%20Domitila%20Rest%20West%20Kurtstad%20MO%2066793-9806&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 15:02:11 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=98
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=2104%20Vandervort%20Summit%20McGlynnstad%20NM%2028882-4825&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 00:36:48 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1425'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=136
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "New Mexico",
+                       "short_name" : "NM",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "New Mexico, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 37.0002931,
+                          "lng" : -103.001964
+                       },
+                       "southwest" : {
+                          "lat" : 31.3321618,
+                          "lng" : -109.050173
+                       }
+                    },
+                    "location" : {
+                       "lat" : 34.5199402,
+                       "lng" : -105.8700901
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.0002931,
+                          "lng" : -103.001964
+                       },
+                       "southwest" : {
+                          "lat" : 31.3321618,
+                          "lng" : -109.050173
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJqVKY50NQGIcRup41Yxpuv0Y",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=32511%20Daniel%20Curve%20Kautzerstad%20CT%2015424-2753&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 00:43:54 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=157
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=8055%20Hauck%20Ports%20Harveymouth%20MD%2050979-0234&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 01:11:56 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Baltimore, MD
+      Server:
+      - mafe
+      Content-Length:
+      - '1453'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=131
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Maryland",
+                       "short_name" : "MD",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Maryland, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.723037,
+                          "lng" : -74.98628189999999
+                       },
+                       "southwest" : {
+                          "lat" : 37.8866049,
+                          "lng" : -79.48765109999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.0457549,
+                       "lng" : -76.64127119999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.723037,
+                          "lng" : -74.98628189999999
+                       },
+                       "southwest" : {
+                          "lat" : 37.8866049,
+                          "lng" : -79.48765109999999
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJ35Dx6etNtokRsfZVdmU3r_I",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=761%20Galen%20Ferry%20Port%20Arnold%20WA%2053554&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 14:18:46 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=152
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=4440%20Collene%20Fort%20Yundtview%20MI%2024653&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:12:29 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1425'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=110
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Michigan",
+                       "short_name" : "MI",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Michigan, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 48.3056044,
+                          "lng" : -82.1229766
+                       },
+                       "southwest" : {
+                          "lat" : 41.696118,
+                          "lng" : -90.4181358
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.3148443,
+                       "lng" : -85.60236429999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 48.3056044,
+                          "lng" : -82.1229766
+                       },
+                       "southwest" : {
+                          "lat" : 41.696118,
+                          "lng" : -90.4181358
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJEQTKxz2qTE0Rs8liellI3Zc",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=1765%20Clemmie%20Square%20Lestermouth%20VT%2059346&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:22:11 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1435'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=86
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Vermont",
+                       "short_name" : "VT",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Vermont, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 45.016658,
+                          "lng" : -71.46503899999999
+                       },
+                       "southwest" : {
+                          "lat" : 42.7268499,
+                          "lng" : -73.437905
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.5588028,
+                       "lng" : -72.57784149999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 45.016658,
+                          "lng" : -71.46503899999999
+                       },
+                       "southwest" : {
+                          "lat" : 42.7268499,
+                          "lng" : -73.437905
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJ_87aSGzctEwRtGtUNnSJTSY",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=9263%20Quigley%20Stream%20Port%20Kayleen%20OH%2056753-0506&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:29:47 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=71
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=832%20Odette%20Junctions%20North%20Carylonborough%20AR%2016304-6340&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:35:43 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=111
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=276%20Marquardt%20Island%20West%20Bessiebury%20LA%2004332&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:47:17 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1633'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=145
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "04332",
+                       "short_name" : "04332",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Augusta",
+                       "short_name" : "Augusta",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Kennebec County",
+                       "short_name" : "Kennebec County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Augusta, ME 04332, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 44.31,
+                       "lng" : -69.78
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.3113489802915,
+                          "lng" : -69.77865101970849
+                       },
+                       "southwest" : {
+                          "lat" : 44.3086510197085,
+                          "lng" : -69.7813489802915
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJY86kSrUGskwRMfD-F-OCgyA",
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=748%20Merlin%20Motorway%20Candimouth%20CA%2007526-9267&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 15:54:08 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1494'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=164
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Merlin",
+                       "short_name" : "Merlin",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Plumas County",
+                       "short_name" : "Plumas County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "California",
+                       "short_name" : "CA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Merlin, CA, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.88833,
+                       "lng" : -121.36583
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.8896789802915,
+                          "lng" : -121.3644810197085
+                       },
+                       "southwest" : {
+                          "lat" : 39.8869810197085,
+                          "lng" : -121.3671789802915
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJUWtnYLrYnIARKlTBK5KNAbo",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=29385%20Koch%20Rest%20Seritaland%20KY%2064395-9226&key=<GOOGLE_MAPS_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Apr 2023 16:03:02 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '1418'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=94
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Kentucky",
+                       "short_name" : "KY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Kentucky, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.147458,
+                          "lng" : -81.9649708
+                       },
+                       "southwest" : {
+                          "lat" : 36.4971289,
+                          "lng" : -89.5715089
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.8393332,
+                       "lng" : -84.2700179
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.147458,
+                          "lng" : -81.9649708
+                       },
+                       "southwest" : {
+                          "lat" : 36.4971289,
+                          "lng" : -89.5715089
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "place_id" : "ChIJyVMZi0xzQogR_N_MxU5vH3c",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=4235%20Hettinger%20Heights%20Nikolausshire%20MT%2003547&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 09 May 2023 18:48:14 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=129
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=276%20Tromp%20Highway%20Markettamouth%20MA%2050576-2116&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 16 May 2023 17:35:38 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '52'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=113
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

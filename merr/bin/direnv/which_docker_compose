@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  echo "docker compose"
+else
+  echo "docker-compose"
+fi

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+
+# Alias for 
+# shellcheck disable=SC2209
+RAILS_ENV=test bundle exec rescue rspec
+
+# And run this after
+# shellcheck disable=SC2209
+RAILS_ENV=test bundle exec rescue rspec -t browser

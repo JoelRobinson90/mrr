@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://medarrive.okta.com/oauth2/v1/userinfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - Bearer eyJraWQiOiJUaEJXcFRhSkJUNUczSWtJZWRNVmF2eWU4eElIMV95M2MtdXBNbjFoX1JBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk5yUHg4elhjVEVhNnQtQVlsREt4VHJxVno0bkx1TXhQQmpNd1BmUGFfejAub2FyZG9wd3Z5V3ljSzB3ZFU2OTYiLCJpc3MiOiJodHRwczovL21lZGFycml2ZS5va3RhLmNvbSIsImF1ZCI6Imh0dHBzOi8vbWVkYXJyaXZlLm9rdGEuY29tIiwic3ViIjoiZXJpa0BtZWRhcnJpdmUuY29tLnBvYyIsImlhdCI6MTY2ODUzMDQ2OCwiZXhwIjoxNjY4NTM0MDY4LCJjaWQiOiIwb2Eydzl1cDBmTTc0WlhZYTY5NyIsInVpZCI6IjAwdThybDdhcjJZYlJvZWh2Njk2Iiwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIl0sImF1dGhfdGltZSI6MTY2ODUyNjIxNX0.IRgVhPeVQQLnnSSwtDyiBXmDy81ifze14CJ3qhiHC5yaRl78najJBrgceCAEtBxJaJ8Q9b9sQv2k82gBCFE1iUHNMvXIKFX9DeWHUxQLwwtzIkP8coZ8JR1CTwrcbo8t1Uplr5AS5Cg-HS0VP6kNSFLXHe1RN6M6TFuQvYqf-Rmnqk8eB7YZsXXvLjoVHYwWafiLpNZiHy7mL3jckjyMtzNQnkfBWz6K6oYPtgWIUXelN3DAzEdOzRcfYVwkVyo8rwQNdK0c-V2_0FJjkv6i0rQQYnYMh7BzH82dn21peCGDbw3SEas4J8oTQkJ9rIbQqKqFSlAK1B7iU6SZHLzRSg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.okta.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Nov 2022 16:43:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Public-Key-Pins-Report-Only:
+      - pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ=";
+        pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg=";
+        max-age=60; report-uri="https://okta.report-uri.com/r/default/hpkp/reportOnly"
+      X-Okta-Request-Id:
+      - Y3PBmntPfEak6GF4EzwziAAAAeM
+      X-Xss-Protection:
+      - '0'
+      P3p:
+      - CP="HONK"
+      Content-Security-Policy-Report-Only:
+      - 'default-src ''self'' medarrive.okta.com *.oktacdn.com; connect-src ''self''
+        medarrive.okta.com medarrive-admin.okta.com *.oktacdn.com *.mixpanel.com *.mapbox.com
+        app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com
+        pendo-static-5391521872216064.storage.googleapis.com medarrive.kerberos.okta.com
+        https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''unsafe-eval''
+        ''self'' medarrive.okta.com *.oktacdn.com; style-src ''unsafe-inline'' ''self''
+        medarrive.okta.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com
+        pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' medarrive.okta.com
+        medarrive-admin.okta.com login.okta.com; img-src ''self'' medarrive.okta.com
+        *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io
+        pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com
+        data: blob:; font-src ''self'' medarrive.okta.com data: *.oktacdn.com fonts.gstatic.com;
+        frame-ancestors ''self'''
+      Content-Security-Policy:
+      - 'default-src ''self'' medarrive.okta.com *.oktacdn.com; connect-src ''self''
+        medarrive.okta.com medarrive-admin.okta.com *.oktacdn.com *.mixpanel.com *.mapbox.com
+        app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com
+        pendo-static-5391521872216064.storage.googleapis.com medarrive.kerberos.okta.com
+        https://oinmanager.okta.com data:; script-src ''unsafe-inline'' ''unsafe-eval''
+        ''self'' medarrive.okta.com *.oktacdn.com; style-src ''unsafe-inline'' ''self''
+        medarrive.okta.com *.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com
+        pendo-static-5391521872216064.storage.googleapis.com; frame-src ''self'' medarrive.okta.com
+        medarrive-admin.okta.com login.okta.com; img-src ''self'' medarrive.okta.com
+        *.oktacdn.com *.tiles.mapbox.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io
+        pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com
+        data: blob:; font-src ''self'' medarrive.okta.com data: *.oktacdn.com fonts.gstatic.com'
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1668530646'
+      Cache-Control:
+      - no-cache, no-store
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Expect-Ct:
+      - report-uri="https://oktaexpectct.report-uri.com/r/t/ct/reportOnly", max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=315360000; includeSubDomains
+      X-Robots-Tag:
+      - noindex,nofollow
+      Set-Cookie:
+      - JSESSIONID=1CE7A1E2AD59DADC616FFAF9808ADDE6; Path=/; Secure; HttpOnly
+      - autolaunch_triggered=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+      - sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"sub":"00u8rl7ar2YbRoehv696","name":"Erik Lyngved","locale":"en_US","email":"erik@medarrive.com","preferred_username":"erik@medarrive.com.poc","given_name":"Erik","family_name":"Lyngved","zoneinfo":"America/Los_Angeles","updated_at":1667841639,"email_verified":true}'
+  recorded_at: Tue, 15 Nov 2022 16:41:43 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Who is lazy :this guy:
+apt update && apt install direnv -y
+
+# Adding direnv to bash and activate
+cat >> /root/.bashrc <<'EOF'
+eval "$(direnv hook bash)"
+EOF
+
+cat >> ./.envrc <<'EOF'
+export PATH="./bin/direnv/:$PATH"
+EOF
+
+# shellcheck disable=SC1091
+source /root/.bashrc
+
+# Add bin to path for project
+direnv allow

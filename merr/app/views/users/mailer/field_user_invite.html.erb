@@ -1,0 +1,5 @@
+<p>Hi,</p>
+<p>You have been invited to MedArrive by <%= @field_org.name %>.</p>
+<p><%=link_to "Use this invite link", users_invites_url(token: @token), html_options = { style: "font-weight: bold" } %> to sign up. This link will expire in 1 week.</p>
+<p>If you run into any issues, please email <a href="mailto:hello@medarrive.com">hello@medarrive.com</a>. Our Support Team will be happy to help you.</p>
+<p>Thank you!</p>

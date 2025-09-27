@@ -1,0 +1,10 @@
+query PatientsIndex($page: Int, $perPage: Int, $search: String, $programId: String) {
+  getPatients(page: $page, perPage: $perPage, search: $search, programId: $programId) {
+    id
+    firstName
+    lastName
+    medical_record_number: medicalRecordNumber
+    external_id: externalId
+    maId
+  }
+}

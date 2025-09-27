@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+INITIAL_WORKING_DIRECTORY=$(pwd)
+MD5_COMMAND="$INITIAL_WORKING_DIRECTORY/bin/direnv/which_md5"
+
+yarn_tag=$("$MD5_COMMAND" package.json | cut -c1-5)
+yarn_lock_tag=$("$MD5_COMMAND" yarn.lock | cut -c1-5)
+gem_tag=$("$MD5_COMMAND" Gemfile | cut -c1-5)
+gem_lock_tag=$("$MD5_COMMAND" Gemfile.lock | cut -c1-5)
+image_name=medarrive.web:${yarn_lock_tag}.${yarn_tag}-${gem_tag}.${gem_lock_tag}
+
+echo "$image_name"

@@ -1,0 +1,1684 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/oauth2/v1/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.*&client_id=0oag8cvsnzNt58Vwl297&client_secret=3Q4CJrXaY_hgz-nNscFFVm02SpKOrcJS75tesqkl
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '156'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Host:
+      - api.preview.platform.athenahealth.com
+      X-Forwarded-For:
+      - 75.172.95.66
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      X-Forwarded-Host:
+      - api.preview.platform.athenahealth.com
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"b7YLBdNXfOOkdHjxozzbDfJmlxg9","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=3&providerid=4&appointmentdate=01%2F20%2F2030&appointmenttime=15%3A00&appointmenttypeid=41
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '37'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=C281D51D15B0B8E933E891424CB240F7|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49930'
+      X-Request-Id:
+      - rrt-8672300127860001356-c-gwo1-3746-242967032-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"117872":"15:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872
+    body:
+      encoding: UTF-8
+      string: patientid=4&appointmenttypeid=41&departmentid=3&ignoreschedulablepermission=true&nopatientcase=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '99'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '376'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=CA41A465D4F714A7517C6A326143B448|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49930'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11272-242816389-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117872","starttime":"15:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"referringproviderid":"","renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872/nativeathenatelehealthroom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=6C339EEB2AD1F7AE3FE7B11722B71532|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49929'
+      X-Request-Id:
+      - rrt-697533293649322457-b-gwo1-16023-47314324-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentid":"117872","patienturl":"https:\/\/telehealth-preview.px.athena.io\/join\/rWdVPcB8AyBBF8D7BTmB.27646","jointoken":"rWdVPcB8AyBBF8D7BTmB.27646"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872/customfields
+    body:
+      encoding: UTF-8
+      string: customfields=%5B%7B%22customfieldid%22%3A%2245%22%2C%22customfieldvalue%22%3A%22spec_Visit_27%22%7D%5D
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '102'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '50'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=B6876CFF31465101967A970527669B00|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49928'
+      X-Request-Id:
+      - rrt-4496086946722584349-c-gwo1-22514-243779318-1
+    body:
+      encoding: UTF-8
+      string: '{"success":1,"updatedcount":0,"disallowedcount":1}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '476'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=4C8CFE5E0CD18C8748C2D55DEA9FF98B|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49929'
+      X-Request-Id:
+      - rrt-169068805170602309-b-gwo1-25862-562543-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117872","starttime":"15:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '476'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=45D13A69E57772380A4F7C520E90C7D8|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49928'
+      X-Request-Id:
+      - rrt-4496086946722584349-c-gwo1-22514-243779365-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117872","starttime":"15:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '476'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=BD393609D1E9A1C32B4788D6A83FC51F|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49927'
+      X-Request-Id:
+      - rrt-697533293649322457-b-gwo1-16023-47314402-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117872","starttime":"15:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=3&providerid=4&appointmentdate=01%2F20%2F2030&appointmenttime=16%3A00&appointmenttypeid=41
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:51 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '37'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=AFB3E5044646647B3A4B527D6D717A8A|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49927'
+      X-Request-Id:
+      - rrt-9061640493790364004-c-gwo1-24625-242670103-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"117873":"16:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872/reschedule
+    body:
+      encoding: UTF-8
+      string: patientid=4&newappointmentid=117873&ignoreschedulablepermission=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '68'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '194'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=06BBCE261C32C0D01E84EBC0238B7878|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49930'
+      X-Request-Id:
+      - rrt-639959609228624226-a-gwo1-3062-243318875-1
+    body:
+      encoding: UTF-8
+      string: '[{"appointmentid":"117873","departmentid":"3","referringproviderid":"","providerid":"","supervisingproviderid":"","appointmentstatus":"f","duration":60,"patientid":"4","appointmenttypeid":"41"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117873/nativeathenatelehealthroom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=237E8AE405096BD63552CA980A31CD22|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49926'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11272-242816558-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentid":"117873","patienturl":"https:\/\/telehealth-preview.px.athena.io\/join\/A1IUl54JRZCIWA1bmO8V.27646","jointoken":"A1IUl54JRZCIWA1bmO8V.27646"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: delete
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117872
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Set-Cookie:
+      - dtCookie=356A3042B8B4ECB6ABE6A8F312098C8A|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49929'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11271-242816569-1
+    body:
+      encoding: UTF-8
+      string: |2-
+
+
+        {"error":"Cannot delete a scheduled or non-existing appointment slot."}
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117873
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '476'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=5725165B457D04B0D10D35FEB89961D8|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49925'
+      X-Request-Id:
+      - rrt-169068805170602309-b-gwo1-25863-562679-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117873","starttime":"16:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117873
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '476'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=6F1531DCCC4191EBA35DB08402E7157E|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49930'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11273-242816599-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117873","starttime":"16:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=3&providerid=5&appointmentdate=01%2F20%2F2030&appointmenttime=16%3A00&appointmenttypeid=41
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '37'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=7FA30EAB521730C788E22507E7002EC3|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49924'
+      X-Request-Id:
+      - rrt-8764313905186707226-a-gwo1-27007-243654100-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"117875":"16:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117873/reschedule
+    body:
+      encoding: UTF-8
+      string: patientid=4&newappointmentid=117875&ignoreschedulablepermission=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '68'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '194'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=5A347ABACCFFE84520C6E6F141F06A8C|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49923'
+      X-Request-Id:
+      - rrt-9061640493790364004-c-gwo1-24627-242670225-1
+    body:
+      encoding: UTF-8
+      string: '[{"appointmentid":"117875","departmentid":"3","referringproviderid":"","providerid":"","supervisingproviderid":"","appointmentstatus":"f","duration":60,"patientid":"4","appointmenttypeid":"41"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875/nativeathenatelehealthroom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=2B942AA2192F054E82B698558FA17F24|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49928'
+      X-Request-Id:
+      - rrt-169068805170602309-b-gwo1-25860-562760-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentid":"117875","patienturl":"https:\/\/telehealth-preview.px.athena.io\/join\/a3tUjV7T8Fssns68bp6q.27646","jointoken":"a3tUjV7T8Fssns68bp6q.27646"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: delete
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117873
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Set-Cookie:
+      - dtCookie=23A6BFA7B1A479DCF10A07AC8C7EE596|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49926'
+      X-Request-Id:
+      - rrt-169068805170602309-b-gwo1-25860-562774-1
+    body:
+      encoding: UTF-8
+      string: |2-
+
+
+        {"error":"Cannot delete a scheduled or non-existing appointment slot."}
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875/startcheckin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '0'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '16'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=A12A88135A8BC00ED5336C14D696891D|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49927'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11272-242816704-1
+    body:
+      encoding: UTF-8
+      string: '{"success":true}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '561'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=7083D9155EE6707479D5B6A2150B4DC1|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49922'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11271-242816732-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117875","starttime":"16:00","departmentid":"3","encounterstate":"PEND","appointmentstatus":"f","patientid":"4","duration":60,"encounterid":"1750","startcheckin":"05\/18\/2023
+        21:32:55","appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"5","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"5","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '561'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=0FD252EDE5E5AFD041AF137D74C9565C|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49925'
+      X-Request-Id:
+      - rrt-169068805170602309-b-gwo1-25860-562831-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117875","starttime":"16:00","departmentid":"3","encounterstate":"PEND","appointmentstatus":"f","patientid":"4","duration":60,"encounterid":"1750","startcheckin":"05\/18\/2023
+        21:32:55","appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"5","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"5","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '561'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=92AB2B9479966C0FEF4A3EC504EE1526|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49926'
+      X-Request-Id:
+      - rrt-9061640493790364004-c-gwo1-24627-242670349-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117875","starttime":"16:00","departmentid":"3","encounterstate":"PEND","appointmentstatus":"f","patientid":"4","duration":60,"encounterid":"1750","startcheckin":"05\/18\/2023
+        21:32:55","appointmentcopay":{"collectedforother":0,"collectedforappointment":0,"insurancecopay":0},"referringproviderid":"","copay":0,"renderingproviderid":"5","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"5","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875/cancel
+    body:
+      encoding: UTF-8
+      string: patientid=4&ignoreschedulablepermission=true&appointmentcancelreasonid=13
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '73'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:57 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '14'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=EB91DB25C20AC9D2B49043623473710F|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49924'
+      X-Request-Id:
+      - rrt-4496086946722584349-c-gwo1-22514-243779629-1
+    body:
+      encoding: UTF-8
+      string: '{"status":"x"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: delete
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117875
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Set-Cookie:
+      - dtCookie=FA9A086749038EE561278C1C37D5F89A|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49925'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11273-242816787-1
+    body:
+      encoding: UTF-8
+      string: |2-
+
+
+        {"error":"Cannot delete a scheduled or non-existing appointment slot."}
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=3&providerid=5&appointmentdate=01%2F20%2F2030&appointmenttime=16%3A00&appointmenttypeid=41
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '37'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=5EB02F11F6F0B6B950C12D782E8B1F18|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49921'
+      X-Request-Id:
+      - rrt-697533293649322457-b-gwo1-16023-47314717-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"117878":"16:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117878
+    body:
+      encoding: UTF-8
+      string: patientid=4&appointmenttypeid=41&departmentid=3&ignoreschedulablepermission=true&nopatientcase=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '99'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:59 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '376'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=A971F9D2E8EF7E74B787128514B53FC3|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49929'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-11272-242816826-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2030","appointmentid":"117878","starttime":"16:00","departmentid":"3","appointmentstatus":"f","patientid":"4","duration":60,"referringproviderid":"","renderingproviderid":"","appointmenttypeid":"41","appointmenttype":"Home+Telehealth","providerid":"5","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Home+Telehealth"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117878/nativeathenatelehealthroom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:32:59 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=8ED4A8D87271918301DA618278858A27|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49928'
+      X-Request-Id:
+      - rrt-639959609228624226-a-gwo1-3060-243319212-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentid":"117878","patienturl":"https:\/\/telehealth-preview.px.athena.io\/join\/VT8pm6BFESPofzSxuq3r.27646","jointoken":"VT8pm6BFESPofzSxuq3r.27646"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/117878/customfields
+    body:
+      encoding: UTF-8
+      string: customfields=%5B%7B%22customfieldid%22%3A%2245%22%2C%22customfieldvalue%22%3A%22spec_Visit_27%22%7D%5D
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer b7YLBdNXfOOkdHjxozzbDfJmlxg9
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '102'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2023 01:33:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '50'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Set-Cookie:
+      - dtCookie=3E5E1C12FD9FC93DF24661509183AD19|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49920'
+      X-Request-Id:
+      - rrt-4496086946722584349-c-gwo1-22515-243779744-1
+    body:
+      encoding: UTF-8
+      string: '{"success":1,"updatedcount":0,"disallowedcount":1}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

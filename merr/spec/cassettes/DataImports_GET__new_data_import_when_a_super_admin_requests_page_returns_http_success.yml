@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kustomerapp.com/v1/metadata/customer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <GOOGLE_SERVICES_API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '103'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 12 Apr 2022 20:18:53 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 96.236.152.12
+      Etag:
+      - W/"67-C2nIm7SnG9n7ZvH74D9uB8xZapQ"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 0d3bc0372b2119705524079214a98b3e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - EWR52-C2
+      X-Amz-Cf-Id:
+      - 5jM600BDb6_wZbSOIoIYqemUrZrP77lpGecoldO1hZGYW-_B-HHMbA==
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"status":401,"code":"unauthorized","title":"Unauthorized","source":{"parameter":"token"}}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

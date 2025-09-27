@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/visits/by_id/Visit_VMNEt2frXJFZvELf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 30 Oct 2022 17:55:49 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - e11b4c317917fca8d1966c711199bf0b
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+      X-Robots-Tag:
+      - none
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activity_codes":[],"adls":[],"alayacare_client_id":21330,"alayacare_employee_id":1452,"alayacare_service_id":1405,"alayacare_visit_id":2336,"cancel_code":{"code":"Patient
+        Refused Visit","description":"","id":3},"cancelled":true,"client":{"branch_id":1000,"external_id":"fake2222","full_name":"Zulu
+        Tango","id":21330,"profile_id":22307,"timezone":"America/Chicago"},"client_id":"fake2222","employee":{"email":"houstontxfp@medarrive.com","external_id":"45540","full_name":"Houston
+        TX FP","id":1452,"profile_id":20412,"timezone":"America/Chicago"},"employee_id":"45540","end_at":"2022-10-27T20:05:00+00:00","facility":null,"funders":[{"code":"MA","external_id":null,"id":1,"name":"MedArrive","organization":null,"organization_code":null,"percentage":100}],"notes":[{"created_at":"2022-10-25T23:23:20+00:00","text":"hi
+        there -Sunayana Mann"},{"created_at":"2022-10-25T23:23:48+00:00","text":"hi
+        there -Sunayana Mann"}],"route":[],"service":{"external_id":"","id":1405,"name":"MA
+        Service - 295","service_code_id":7,"service_code_name":"Molina Door to Door"},"service_code_id":7,"service_code_name":"Molina
+        Door to Door","service_id":"","service_instructions":"","skills":[],"start_at":"2022-10-27T19:35:00+00:00","status":"cancelled","tags":[],"timekeeping":null,"visit_id":"Visit_VMNEt2frXJFZvELf","work_sessions":[{"clock_in":"2022-10-27T17:39:36+00:00","clock_in_location":null,"clock_out":null,"clock_out_location":null,"employee_id":1452}]}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,159 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kustomerapp.com/v1/customers/searches/6254958e93a82b001a157da1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 11 Apr 2022 20:56:44 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1999'
+      Cache-Control:
+      - no-cache,private
+      Etag:
+      - W/"505-x3VHBJepdn0AkTtYMnj3odJujuQ"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 372faa8e4440bc3498fcf7c090617014.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL56-P2
+      X-Amz-Cf-Id:
+      - YM5CjQ5ano-ZF0IYYCtA49cfL1G9dRsNDnHCy7dUVHT4qa7ajoJ5RQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"type":"search","id":"6254958e93a82b001a157da1","attributes":{"name":"a
+        few","data":{"and":[{"customer_created_at":{"lt":"2021-08-21T15:00:00.000Z"}}],"or":[],"fields":[{"key":"activity"},{"key":"customer"},{"key":"lastMessage"},{"key":"status"},{"key":"updatedAt"}],"queryContext":"customer","sort":[{"customer_activity_at":"asc"}],"timeZone":"America/New_York"},"dataHash":"06d756539c78017d3e59d3077c5b20cd","icon":"account-search","badgeColor":null,"showBadge":false,"position":1649710478546,"createdAt":"2022-04-11T20:54:38.546Z","modifiedAt":"2022-04-11T20:55:32.549Z","updatedAt":"2022-04-11T20:55:32.549Z","defaultVisibility":"all","teamVisibilities":[],"userVisibilities":[{"id":"611e8711e81cf3001a147a3b","visibility":"all"}],"private":false,"accessTeams":[],"accessUsers":["611e8711e81cf3001a147a3b"],"cacheable":true},"relationships":{"org":{"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"},"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"}},"createdBy":{"links":{"self":"/v1/users/611e8711e81cf3001a147a3b"},"data":{"type":"user","id":"611e8711e81cf3001a147a3b"}},"modifiedBy":{"links":{"self":"/v1/users/611e8711e81cf3001a147a3b"},"data":{"type":"user","id":"611e8711e81cf3001a147a3b"}}},"links":{"self":"/v1/customer/searches/6254958e93a82b001a157da1"}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.kustomerapp.com/v1/customers/search?page=1&pageSize=500
+    body:
+      encoding: UTF-8
+      string: '{"and":[{"customer_created_at":{"lt":"2021-08-21T15:00:00.000Z"}}],"or":[],"fields":[{"key":"activity"},{"key":"customer"},{"key":"lastMessage"},{"key":"status"},{"key":"updatedAt"}],"queryContext":"customer","sort":[{"customer_updated_at":"asc"}],"timeZone":"America/New_York"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Content-Length:
+      - '278'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 11 Apr 2022 20:56:44 GMT
+      Vary:
+      - X-HTTP-Method-Override, Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1998'
+      Cache-Control:
+      - no-cache,private
+      Etag:
+      - W/"5317-1TA+/hIKQzp0mxXmCG5WqjxpS+I"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 372faa8e4440bc3498fcf7c090617014.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL56-P2
+      X-Amz-Cf-Id:
+      - 7e5BUMxp39hQMKi5NaMjYlEvZuIRivcW2B6wZJIIJTQgGMdrx_B5-Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"pageSize":500,"page":1,"total":12,"totalPages":1,"aggregations":{},"timed_out":false,"took":3},"links":{"self":"/v1/customers/search?page=1&pageSize=500","first":"/v1/customers/search?page=1&pageSize=500","prev":null,"next":null,"last":"/v1/customers/search?page=1&pageSize=500"},"data":[{"type":"customer","id":"611fcb6c43d4c677f524a11d","attributes":{"name":"lja_import
+        eleven","displayName":"lja_import eleven","displayColor":"purple","displayIcon":"sun","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+11111111123"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-20T15:34:04.684Z"},"createdAt":"2021-08-20T15:34:04.682Z","updatedAt":"2021-08-20T15:34:04.682Z","modifiedAt":"2021-08-20T15:34:04.682Z","lastActivityAt":"2021-08-20T15:34:04.682Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"eleven"},"relationships":{"messages":{"links":{"self":"/v1/customers/611fcb6c43d4c677f524a11d/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/611fcb6c43d4c677f524a11d"}},{"type":"customer","id":"6120195543d4c634d32d59dc","attributes":{"name":"lja_import
+        eleven","displayName":"lja_import eleven","displayColor":"yellow","displayIcon":"bus","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+11111111188"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[{"type":"home","address":"22
+        Fairview Ave","countryName":"United States","cityName":"Pittsburgh","zipCode":"15229"}],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-20T21:06:29.351Z"},"createdAt":"2021-08-20T21:06:29.350Z","updatedAt":"2021-08-20T21:06:29.350Z","modifiedAt":"2021-08-20T21:06:29.350Z","lastActivityAt":"2021-08-20T21:06:29.350Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"eleven"},"relationships":{"messages":{"links":{"self":"/v1/customers/6120195543d4c634d32d59dc/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/6120195543d4c634d32d59dc"}},{"type":"customer","id":"61210214c48a295d4a40fb0f","attributes":{"name":"lja_import
+        eleven","displayName":"lja_import eleven","displayColor":"maroon","displayIcon":"cake","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+11111111100"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T13:39:32.870Z"},"birthdayAt":null,"gender":null,"createdAt":"2021-08-21T13:39:32.869Z","updatedAt":"2021-08-21T13:39:32.869Z","modifiedAt":"2021-08-21T13:39:32.869Z","lastActivityAt":"2021-08-21T13:39:32.869Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"eleven"},"relationships":{"messages":{"links":{"self":"/v1/customers/61210214c48a295d4a40fb0f/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61210214c48a295d4a40fb0f"}},{"type":"customer","id":"612108e06a205783b8761317","attributes":{"name":"lja_import
+        eleven","displayName":"lja_import eleven","displayColor":"black","displayIcon":"bike","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+13000000001"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:08:32.397Z"},"birthdayAt":null,"gender":null,"createdAt":"2021-08-21T14:08:32.396Z","updatedAt":"2021-08-21T14:08:32.396Z","modifiedAt":"2021-08-21T14:08:32.396Z","lastActivityAt":"2021-08-21T14:08:32.396Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"eleven"},"relationships":{"messages":{"links":{"self":"/v1/customers/612108e06a205783b8761317/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/612108e06a205783b8761317"}},{"type":"customer","id":"61210d97c8acb9d03be67fde","attributes":{"name":"lja_import
+        two-one","displayName":"lja_import two-one","displayColor":"red","displayIcon":"brush","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+13000000002"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:28:39.265Z"},"birthdayAt":null,"gender":"f","createdAt":"2021-08-21T14:28:39.264Z","updatedAt":"2021-08-21T14:28:39.264Z","modifiedAt":"2021-08-21T14:28:39.264Z","lastActivityAt":"2021-08-21T14:28:39.264Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"two-one"},"relationships":{"messages":{"links":{"self":"/v1/customers/61210d97c8acb9d03be67fde/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61210d97c8acb9d03be67fde"}},{"type":"customer","id":"61210fda0d20ad67fa9c1a3b","attributes":{"name":"lja_import
+        two-two","displayName":"lja_import two-two","displayColor":"green","displayIcon":"plane","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+13000000003"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:38:18.272Z"},"birthdayAt":null,"gender":"f","createdAt":"2021-08-21T14:38:18.270Z","updatedAt":"2021-08-21T14:38:18.270Z","modifiedAt":"2021-08-21T14:38:18.270Z","lastActivityAt":"2021-08-21T14:38:18.270Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"defaultLang":null,"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"two-two"},"relationships":{"messages":{"links":{"self":"/v1/customers/61210fda0d20ad67fa9c1a3b/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61210fda0d20ad67fa9c1a3b"}},{"type":"customer","id":"61211487cdf40944962f3163","attributes":{"name":"lja_import
+        one-two","displayName":"lja_import one-two","displayColor":"black","displayIcon":"plane","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+12000000004"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[{"type":"home","address":"20
+        Fairview Ave","address2":"Unit #4","countryName":"United States","regionName":"PA","cityName":"West
+        View","zipCode":"15228"}],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:58:15.408Z"},"birthdayAt":null,"gender":"m","createdAt":"2021-08-21T14:58:15.406Z","updatedAt":"2021-08-21T14:58:15.406Z","modifiedAt":"2021-08-21T14:58:15.406Z","lastActivityAt":"2021-08-21T14:58:15.406Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"defaultLang":null,"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"one-two"},"relationships":{"messages":{"links":{"self":"/v1/customers/61211487cdf40944962f3163/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61211487cdf40944962f3163"}},{"type":"customer","id":"61211487f9c363cd0129c093","attributes":{"name":"lja_import
+        two-two","displayName":"lja_import two-two","displayColor":"orange","displayIcon":"broom","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+13000000004"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:58:15.689Z"},"birthdayAt":null,"gender":"f","createdAt":"2021-08-21T14:58:15.688Z","updatedAt":"2021-08-21T14:58:15.688Z","modifiedAt":"2021-08-21T14:58:15.688Z","lastActivityAt":"2021-08-21T14:58:15.688Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":1,"recentItems":[],"defaultLang":null,"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"two-two"},"relationships":{"messages":{"links":{"self":"/v1/customers/61211487f9c363cd0129c093/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61211487f9c363cd0129c093"}},{"type":"customer","id":"61210214c48a296e6d40fb0c","attributes":{"name":"lja_import
+        ten","displayName":"lja_import ten","displayColor":"teal","displayIcon":"broom","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+11111111199"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[{"type":"home","address":"20
+        Fairview Ave","countryName":"United States","cityName":"Pittsburgh","zipCode":"15229"}],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T13:39:32.700Z"},"birthdayAt":null,"gender":null,"createdAt":"2021-08-21T13:39:32.699Z","updatedAt":"2021-09-07T16:36:44.897Z","modifiedAt":"2021-08-21T13:39:32.699Z","lastActivityAt":"2021-08-21T13:39:32.699Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":47,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"ten"},"relationships":{"messages":{"links":{"self":"/v1/customers/61210214c48a296e6d40fb0c/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61210214c48a296e6d40fb0c"}},{"type":"customer","id":"61210d95f9c363061829035c","attributes":{"name":"lja_import
+        one-one","displayName":"lja_import one-one","displayColor":"red","displayIcon":"stereo","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+12000000002"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[{"type":"home","address":"20
+        Fairview Ave","address2":"Unit #4","countryName":"United States","regionName":"PA","cityName":"West
+        View","zipCode":"15228"}],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:28:37.901Z"},"birthdayAt":null,"gender":"m","createdAt":"2021-08-21T14:28:37.895Z","updatedAt":"2021-09-07T16:36:44.926Z","modifiedAt":"2021-08-21T14:28:37.895Z","lastActivityAt":"2021-08-21T14:28:37.895Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":43,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"one-one"},"relationships":{"messages":{"links":{"self":"/v1/customers/61210d95f9c363061829035c/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/61210d95f9c363061829035c"}},{"type":"customer","id":"612108e00d20ad1af99b481f","attributes":{"name":"lja_import
+        ten","displayName":"lja_import ten","displayColor":"black","displayIcon":"bus","externalIds":[],"sharedExternalIds":[],"emails":[],"sharedEmails":[],"phones":[{"type":"home","verified":false,"phone":"+12000000001"}],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[{"type":"home","address":"20
+        Fairview Ave","address2":"Unit #4","countryName":"United States","regionCode":"TE","regionName":"LONG
+        TE","cityName":"West View","zipCode":"15228"}],"activeUsers":[],"watchers":[],"recentLocation":{"updatedAt":"2021-08-21T14:08:32.236Z"},"birthdayAt":null,"gender":null,"createdAt":"2021-08-21T14:08:32.235Z","updatedAt":"2021-09-07T16:36:44.953Z","modifiedAt":"2021-08-21T14:08:32.235Z","lastActivityAt":"2021-08-21T14:08:32.235Z","deleted":false,"lastConversation":{"channels":[],"tags":[]},"conversationCounts":{"done":0,"open":0,"snoozed":0,"all":0},"preview":{},"tags":[],"progressiveStatus":null,"verified":true,"rev":43,"recentItems":[],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"lja_import","lastName":"ten"},"relationships":{"messages":{"links":{"self":"/v1/customers/612108e00d20ad1af99b481f/messages"}},"createdBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"modifiedBy":{"links":{"self":"/v1/users/611fc79badd31700198bb43e"},"data":{"type":"user","id":"611fc79badd31700198bb43e"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/612108e00d20ad1af99b481f"}},{"type":"customer","id":"611be9dcdc0c0912652cb3e7","attributes":{"name":"Brad
+        Birnbaum","displayName":"Brad Birnbaum","displayColor":"black","displayIcon":"bus","externalIds":[],"sharedExternalIds":[],"emails":[{"type":"work","verified":false,"email":"bb@kustomer.com"}],"sharedEmails":[],"phones":[],"sharedPhones":[],"whatsapps":[],"facebookIds":[],"instagramIds":[],"socials":[],"sharedSocials":[],"urls":[],"locations":[],"activeUsers":["612b930b8e53e5001adde2f2"],"watchers":[],"recentLocation":{"updatedAt":"2021-08-17T16:54:52.614Z"},"createdAt":"2021-08-17T16:54:52.612Z","updatedAt":"2022-04-07T20:58:26.955Z","modifiedAt":"2021-08-17T16:54:53.095Z","lastActivityAt":"2021-08-17T16:54:53.022Z","lastCustomerActivityAt":"2021-08-17T16:54:52.836Z","deleted":false,"lastMessageIn":{"channel":"email","sentiment":null,"sentAt":"2021-08-17T16:54:52.838Z"},"lastMessageUnrespondedTo":{"sentAt":"2021-08-17T16:54:52.838Z","channel":"email"},"lastMessageAt":"2021-08-17T16:54:52.838Z","lastConversation":{"id":"611be9dc1179ba4326c9ee8d","channels":["email"],"tags":[],"sentiment":{}},"conversationCounts":{"open":1,"done":0,"snoozed":0,"all":1},"preview":{"subject":"Welcome
+        to Kustomer!","text":"Notes are a great way to collaborate with other Kustomer
+        users, all without having to change assignment. They are not visible to your
+        customers, only your teammates.  You can simply @mention a teammate to notify
+        them that you need help, or leave a note to provide context if you choose
+        to re-assign","type":"note","previewAt":"2021-08-17T16:54:53.022Z"},"tags":[],"progressiveStatus":"open","verified":true,"rev":103,"recentItems":[{"type":"conversation","id":"611be9dc1179ba4326c9ee8d","updatedAt":"2021-08-17T16:54:52.931Z"}],"satisfactionLevel":{"firstSatisfaction":{"sentByTeams":[]},"lastSatisfaction":{"sentByTeams":[]}},"roleGroupVersions":[],"accessOverride":[],"firstName":"Brad","lastName":"Birnbaum"},"relationships":{"messages":{"links":{"self":"/v1/customers/611be9dcdc0c0912652cb3e7/messages"}},"modifiedBy":{"links":{"self":"/v1/users/611be9daf1551b0012f2913b"},"data":{"type":"user","id":"611be9daf1551b0012f2913b"}},"org":{"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"},"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"}}},"links":{"self":"/v1/customers/611be9dcdc0c0912652cb3e7"}}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

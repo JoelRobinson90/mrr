@@ -1,0 +1,6 @@
+mutation CreateVisitGroup($visitId: Int, $patientId: Int) {
+  createVisitGroup(input: { visitId: $visitId, patientId: $patientId }) {
+    id
+    errors
+  }
+}

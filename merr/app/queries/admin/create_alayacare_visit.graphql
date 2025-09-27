@@ -1,0 +1,16 @@
+mutation CreateAlayacareVisit(
+  $visitParams: CreateAlayacareVisitParams!,
+  $runId: String,
+  $logString: String,
+  $schedulingStartedAt: String
+) {
+  createAlayacareVisit(input: {
+    visitParams: $visitParams,
+    runId: $runId,
+    logString: $logString,
+    schedulingStartedAt: $schedulingStartedAt
+  }) {
+    visitId
+    errors
+  }
+}

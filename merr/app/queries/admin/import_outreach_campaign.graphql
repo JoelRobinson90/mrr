@@ -1,0 +1,6 @@
+mutation ImportOutreachCampaign($id: ID!) {
+  importOutreachCampaignContacts(input: {id: $id}) {
+    success
+    errors
+  }
+}

@@ -1,0 +1,22 @@
+# Reference: https://docs.convox.com/configuration/convox-yml
+
+services:
+  web:
+    build: .
+    test: bin/run_tests
+    port: 3000
+    links:
+      - test_db
+    environment:
+      - "*"
+    scale:
+      cpu: 512
+      memory: 1024
+  test_db:
+    image: postgres
+    port: 5432
+    environment:
+      - POSTGRES_PASSWORD=password
+    scale:
+      cpu: 512
+      memory: 1024

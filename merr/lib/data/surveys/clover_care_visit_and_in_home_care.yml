@@ -1,0 +1,152 @@
+meta:
+  title: In-Home Care & Clover Care Visit Program
+
+template:
+  - type: content
+    content: >
+      _You will be introducing the Clover member to the Clover Care Visit and/or In-Home Care Visit,
+      depending on which program the member qualifies for. Follow the script below and select the member's
+      response to each question from the dropdown. This data will be reported back to Clover._
+
+  - type: content
+    content: >
+      At Clover, the top priority is your health. So we have a program in which we work alongside your
+      primary doctor to give you a more personalized and thorough healthcare experience.
+      It’s a free, optional service called the In-Home Care Program.
+
+      - The program is run by a team of doctors, nurse practitioners, nurses, and medical assistants who specialize in “house calls.” 
+
+
+      - The In-Home Care team doesn’t replace your doctor but works with your doctor to provide all of your primary care needs—and they are a backup when your doctor isn’t available. 
+
+
+      - They can also help you find community resources that you may qualify for, such as financial assistance to help pay for things like medications, transportation, and utility bills.
+
+  - type: select
+    id: interested_in_home_care
+    question: 1. How does that sound? Do you think you might be interested in In-Home Care?
+    options:
+      - text: "Yes"
+      - text: "No"
+
+  - type: content
+    content: >
+      #### If Yes, Read:
+
+      Wonderful! Let’s schedule an initial In-Home Care visit so we can learn more about your health and you can learn about the program.
+
+
+      _Connect Member with IHC Agent at: **(201) 374-9451**_
+  
+  - type: select
+    id: ihc_agent_over_phone
+    question: 2. Was the member connected with an IHC Agent over the phone during the visit?
+    options:
+      - text: "Yes"
+      - text: "No"
+
+  - type: content
+    content: >
+      #### If No, **Pitch CCV**:
+
+      No worries. At Clover, we want to help in any way we can. We also provide Clover Care visits by video.
+
+  - type: select
+    id: familiar_with_visit_program
+    question: 3. Are you familiar with our Clover Care Visit program?
+    options:
+      - text: "Yes"
+      - text: "No"
+
+  - type: content
+    content: >
+      #### If Yes, Read:
+
+      Wonderful! I'm glad you’ve heard of the program. As much as we would love to have nurse practitioners
+      come to your home, it’s important to keep you safe during the pandemic.
+      So Clover is currently doing Clover Care Visits by video.
+    
+  - type: content
+    content: >
+      #### If No, Read:
+
+      No problem. Clover Health offers members an annual health assessment, called a Clover Care Visit,
+      with a nurse practitioner. This visit takes about an hour, and they ask about your health concerns,
+      answer questions, review your medical history and prescriptions, and make sure you’re getting the
+      most out of your benefits. They also help communicate your needs to your doctor. Our nurse practitioners
+      usually visit our members at home, but it’s important to keep you safe during the pandemic, so we’re
+      currently doing Clover Care visits by video.
+
+  - type: select
+    id: want_to_schedule
+    question: 4. Are you interested in scheduling a virtual Clover Care Visit? It will only take a couple of minutes to schedule.
+    options:
+      - text: "Yes"
+      - text: "No"
+
+  - type: content
+    content: >
+      #### If Yes, Read:
+
+      Wonderful! Let’s schedule a Clover Care visit so we can learn more about your health.
+
+
+      _Connect Member with a Clover Care Visit Agent at **(201) 374-9451**._
+
+  - type: content
+    content: >
+      #### If No, Read:
+
+      No worries. At Clover, we want to help in any way we can.
+      
+  - type: select
+    id: give_phone_number
+    question: 5. Would it be ok if I give you the phone number so you can call Clover to learn more about the program at your leisure?
+    options:
+      - text: "Yes"
+      - text: "No"
+  
+  - type: content
+    content: >
+      #### If Yes, Read:
+
+      Okay, great.
+
+
+      _Provide Member with number **(201) 374-9451** - (Monday - Friday, 8:30am-6pm EST)_
+
+  - type: select
+    id: ccv_agent_over_phone
+    question: 6. Was the member connected with a CCV Agent over the phone during the visit?
+    options:
+      - text: "Yes"
+      - text: "No"
+  
+  - type: super_select
+    id: refusal_reason
+    question: 7. If a patient refused both programs, please ask why they do not wish to participate.
+    options:
+      - text: Soft Decline
+        subtext: Declined but asked for the phone number to call later
+      - text: Appt. Scheduled
+        subtext: Patient already had/has a virtual visit with their doctor
+      - text: Patient Feels Healthy
+        subtext: Member feels good and visits their doctor regularly
+      - text: Other
+        subtext: Alternate reason
+  
+  - type: text_input
+    id: other_refusal_reason
+    question: Other refusal reason
+
+  - type: content
+    content: >
+      #### If Appt. Scheduled, Read:
+
+      This visit will be perfect for you because our providers ensure that you are getting the most of your Clover health plan benefits! Many members find this valuable to help save money on medications, knowing how to access their dental/vision and more.I understand you already had/have an appointment to see your doctor; however, this visit will allow Clover Health to better coordinate your care with your primary doctor and make sure we establish a quality program to provide better care for you.
+
+  - type: content
+    content: >
+      #### If Patient Feels Healthy, Read:
+
+      I understand that you see your doctor regularly and you feel good- this one time Annual Clover visit is quick and it is offered at no cost to you at the convenience of your home.  This visit will be perfect for you because our providers ensure that you are getting the most of your Clover health plan benefits! Many members find this valuable to help save money on medications, knowing how to access their dental/vision and more.

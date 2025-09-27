@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=100&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Jan 2022 19:42:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - ceecd79aa894fb720265ed6580c94d75
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":100,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":91,"name":"000
+        COVID-19"},{"branch":{"id":1000,"name":"medarrive"},"id":108,"name":"000 COVID-19"},{"branch":{"id":1000,"name":"medarrive"},"id":109,"name":"000
+        COVID-19"},{"branch":{"id":1000,"name":"medarrive"},"id":72,"name":"000A Consent
+        to Treatment"},{"branch":{"id":1000,"name":"medarrive"},"id":33,"name":"000Z
+        Lab Specimen - Prior to Visit"},{"branch":{"id":1000,"name":"medarrive"},"id":36,"name":"001A
+        Post Hospitalization Visit - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":68,"name":"001A
+        Post Hospitalization Visit - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":9,"name":"001A
+        Standard Visit - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":20,"name":"001A
+        Standard Visit - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":58,"name":"001B
+        Standard Visit - CHF - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":56,"name":"001B
+        Standard Visit - COPD - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":10,"name":"001B
+        Standard Visit - Diabetes - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":21,"name":"001B
+        Standard Visit - Diabetes - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":37,"name":"001C
+        Post Hospitalization Visit - CHF - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":46,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":60,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":52,"name":"001C
+        Post Hospitalization Visit - COVID - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":50,"name":"001C
+        Post Hospitalization Visit - Diabetes - Medical History"},{"branch":{"id":1000,"name":"medarrive"},"id":11,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies"},{"branch":{"id":1000,"name":"medarrive"},"id":22,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies"},{"branch":{"id":1000,"name":"medarrive"},"id":47,"name":"002C
+        Post Hospitalization Visit - CHF - Past Medical History and Allergies"},{"branch":{"id":1000,"name":"medarrive"},"id":38,"name":"002C
+        Post Hospitalization Visit - COPD - Past Medical History and Allergies"},{"branch":{"id":1000,"name":"medarrive"},"id":39,"name":"003A
+        Post Hospitalization Visit - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":12,"name":"003A
+        Standard Visit - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":59,"name":"003B
+        Standard Visit - CHF - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":57,"name":"003B
+        Standard Visit - COPD - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":13,"name":"003B
+        Standard Visit - Diabetes - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":53,"name":"003BC
+        Standard/Post Hospitalization Visit - COVID - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":48,"name":"003C
+        Post Hospitalization Visit - CHF - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":40,"name":"003C
+        Post Hospitalization Visit - COPD - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":51,"name":"003C
+        Post Hospitalization Visit - Diabetes - Medication Reconciliation"},{"branch":{"id":1000,"name":"medarrive"},"id":15,"name":"004A
+        Standard/Post Hospitalization Visit - Vitals"},{"branch":{"id":1000,"name":"medarrive"},"id":16,"name":"004Z
+        Standard/Post Hospitalization Visit - Add On - Finger Stick Blood Glucose"},{"branch":{"id":1000,"name":"medarrive"},"id":18,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient"},{"branch":{"id":1000,"name":"medarrive"},"id":63,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient"},{"branch":{"id":1000,"name":"medarrive"},"id":23,"name":"005B
+        Standard Visit - Diabetes - Add On - Foot Exam"},{"branch":{"id":1000,"name":"medarrive"},"id":24,"name":"005B
+        Standard Visit - Diabetes - Add On - Retinal Exam"},{"branch":{"id":1000,"name":"medarrive"},"id":41,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Exercise Spirometry"},{"branch":{"id":1000,"name":"medarrive"},"id":42,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry"},{"branch":{"id":1000,"name":"medarrive"},"id":61,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry"},{"branch":{"id":1000,"name":"medarrive"},"id":25,"name":"006A
+        Standard/Post Hospitalization Visit - Capture Diet SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":49,"name":"006BC
+        Standard/Post Hospitalization Visit - CHF - Capture Diet SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":26,"name":"006BC
+        Standard/Post Hospitalization Visit - Diabetes - Capture Diet SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":43,"name":"007A
+        Post Hospitalization Visit - Capture Medication SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":27,"name":"007A
+        Standard Visit - Capture Medication SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":54,"name":"007C
+        Post Hospitalization Visit - COVID - Capture Medication SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":69,"name":"008A
+        Standard/Post Hospitalization Visit - Exercise & Mobility SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":70,"name":"009A
+        Standard/Post Hospitalization Visit - Allergen SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":28,"name":"010A
+        Standard/Post Hospitalization Visit - Capture Tobacco SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":29,"name":"011A
+        Standard/Post Hospitalization Visit - Appointments SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":71,"name":"012A
+        Standard/Post Hospitalization Visit - Home Assessment SDoH"},{"branch":{"id":1000,"name":"medarrive"},"id":31,"name":"013Z
+        Lab Specimen - Sputum Collection"},{"branch":{"id":1000,"name":"medarrive"},"id":32,"name":"013Z
+        Lab Specimen - Urine Collection"},{"branch":{"id":1000,"name":"medarrive"},"id":30,"name":"013Z
+        Lab Specimen - Venipuncture"},{"branch":{"id":1000,"name":"medarrive"},"id":45,"name":"014Z
+        Standard/Post Hospitalization Visit - Document Specimens"},{"branch":{"id":1000,"name":"medarrive"},"id":44,"name":"015A
+        Standard/Post Hospitalization Visit - Review Plan with Patient"},{"branch":{"id":1000,"name":"medarrive"},"id":34,"name":"016Z
+        Lab Specimen - At Vehicle Prior to Departure"},{"branch":{"id":1000,"name":"medarrive"},"id":35,"name":"017Z
+        Lab Specimen - Centralized Location"},{"branch":{"id":1000,"name":"medarrive"},"id":106,"name":"1000
+        JD Master"},{"branch":{"id":1000,"name":"medarrive"},"id":76,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":96,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":97,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":102,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":103,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":104,"name":"100A
+        Post Hospitalization"},{"branch":{"id":1000,"name":"medarrive"},"id":80,"name":"100B
+        CHF Add-On"},{"branch":{"id":1000,"name":"medarrive"},"id":81,"name":"100C
+        COPD Add-on"},{"branch":{"id":1000,"name":"medarrive"},"id":83,"name":"100D
+        Diabetes Add-On"},{"branch":{"id":1000,"name":"medarrive"},"id":98,"name":"100D
+        Diabetes Add-On"},{"branch":{"id":1000,"name":"medarrive"},"id":84,"name":"100E
+        COVID Add-on"},{"branch":{"id":1000,"name":"medarrive"},"id":100,"name":"Alert
+        Task"},{"branch":{"id":1000,"name":"medarrive"},"id":187,"name":"Bright Health
+        Standard Visit (v102821) - Backup (1028)"},{"branch":{"id":1000,"name":"medarrive"},"id":112,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":113,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":114,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":117,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":123,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":124,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":126,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":128,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":134,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":156,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":191,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":192,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":194,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":195,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":203,"name":"Bright
+        Health Standard Visit (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":115,"name":"Bright
+        Health- Telemedicine"},{"branch":{"id":1000,"name":"medarrive"},"id":119,"name":"Bright
+        Health- Telemedicine"},{"branch":{"id":1000,"name":"medarrive"},"id":121,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":127,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":129,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":146,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":196,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":202,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)"},{"branch":{"id":1000,"name":"medarrive"},"id":2,"name":"CHF
+        Checklist"},{"branch":{"id":1000,"name":"medarrive"},"id":3,"name":"CHF Checklist"},{"branch":{"id":1000,"name":"medarrive"},"id":159,"name":"Clean
+        Catch Urine"},{"branch":{"id":1000,"name":"medarrive"},"id":178,"name":"Consent
+        to Treatment"},{"branch":{"id":1000,"name":"medarrive"},"id":198,"name":"Consent
+        to Treatment"}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

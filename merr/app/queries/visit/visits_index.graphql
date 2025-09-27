@@ -1,0 +1,53 @@
+# TODO: get rid of underscore aliases
+query GetVisit($alayacare_visit_id: Int, $visit_id: ID) {
+  getVisit(alayacareVisitId: $alayacare_visit_id, externalId: $visit_id) {
+    id
+    arrival_window_start: arrivalWindowStart
+    arrival_window_end: arrivalWindowEnd
+    cx_start: cxStart
+    cx_end: cxEnd
+    canceled
+    status: displayStatus
+    athena_telehealth_url: athenaTelehealthUrl
+    field_provider: fieldProvider {
+      id
+      first_name: firstName
+      last_name: lastName
+    }
+    visitType {
+      plus_ones_enabled: plusOnesEnabled
+      name
+    }
+    providers {
+      id
+      first_name: firstName
+      last_name: lastName
+      role
+    }
+    program {
+      id
+      name
+    }
+    notes {
+      text
+      createdAt
+    }
+    adminNotes {
+      text: content
+      createdAt
+      creator {
+        displayName
+      }
+    }
+    visitGroup {
+      id
+      visits {
+        patient {
+          id
+          last_name: lastName
+          first_name: firstName
+        }
+      }
+    }
+  }
+}

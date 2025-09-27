@@ -1,0 +1,59 @@
+<h1>AlayaCare Control Panel</h1>
+
+<p><%= button_to 'Clear caches', alayacare_control_panel_clear_caches_path, method: :post %></p>
+
+<hr>
+
+<p><%= button_to 'Sync Demand Partner IDs', alayacare_control_panel_sync_demand_partner_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Cancel Code IDs', alayacare_control_panel_sync_cancel_code_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Service IDs', alayacare_control_panel_sync_service_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Visit Types', alayacare_control_panel_sync_visit_types_path, method: :post %></p>
+
+<p><%= button_to 'Dedup MRNs', alayacare_control_panel_dedup_mrns_path, method: :post %></p>
+
+<p><%= button_to 'Backfill FPs', alayacare_control_panel_backfill_field_providers_path, method: :post %></p>
+
+<h4>Backfill Visits</h4>
+<p>This pulls data from Alayacare, creates it locally if not found, and updates Alayacare external_id</p>
+<%= form_tag alayacare_control_panel_backfill_visits_path do |form| %>
+
+  <p>
+    <%= label_tag :run_mode %>
+    <%= select_tag("run_mode", options_for_select(["Create", "Dry run"])) %>
+  </p>
+
+  <p>
+    <%= label_tag :async_mode %>
+    <%= select_tag("async_mode", options_for_select(["Run in background", "Run in foreground"])) %>
+  </p>
+
+  <p>
+    <%= label_tag :start_date %>
+    <%= date_field_tag :start_date, Date.today %>
+  </p>
+
+  <p>
+    <%= label_tag :end_date %>
+    <%= date_field_tag :end_date, Date.today %>
+  </p>
+
+  <p>
+    <%= submit_tag "Run backfill script" %>
+  </p>
+<% end %>
+
+<% if @results.blank? %>
+  <h2>Ready to run sync</h2>
+<% else %>
+  <h2>Results:</h2>
+  <% @results.each do |label, result_list| %>
+    <h4><%= label.to_s.humanize(keep_id_suffix: true) %></h4>
+    <% result_list.each do |result| %>
+      <li><%= result %></li>
+    <% end %>
+  <% end %>
+<% end %>
+

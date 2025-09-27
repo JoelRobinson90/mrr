@@ -1,0 +1,357 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/oauth2/v1/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.*&client_id=0oag8cvsnzNt58Vwl297&client_secret=3Q4CJrXaY_hgz-nNscFFVm02SpKOrcJS75tesqkl
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '156'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Host:
+      - api.preview.platform.athenahealth.com
+      X-Forwarded-For:
+      - 97.113.199.203
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      X-Forwarded-Host:
+      - api.preview.platform.athenahealth.com
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"VQ0qSlPrdgynUMFvAETDuEo3E2Iu","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=1&providerid=4&appointmentdate=01%2F20%2F2023&appointmenttime=14%3A00&appointmenttypeid=42
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer VQ0qSlPrdgynUMFvAETDuEo3E2Iu
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '35'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49976'
+      X-Request-Id:
+      - rrt-3251555503423902904-a-gwo1-17862-93467749-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"3693":"14:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/3693
+    body:
+      encoding: UTF-8
+      string: patientid=4&appointmenttypeid=42&departmentid=1&ignoreschedulablepermission=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer VQ0qSlPrdgynUMFvAETDuEo3E2Iu
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '80'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '386'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49975'
+      X-Request-Id:
+      - rrt-3251555503423902904-a-gwo1-17860-93467766-1
+    body:
+      encoding: UTF-8
+      string: '[{"date":"01\/20\/2023","appointmentid":"3693","starttime":"14:00","departmentid":"1","appointmentstatus":"f","patientid":"4","duration":60,"referringproviderid":"","renderingproviderid":"","appointmenttypeid":"42","appointmenttype":"Standard
+        Hybrid Visit","providerid":"4","chargeentrynotrequired":false,"supervisingproviderid":"","patientappointmenttypename":"Standard
+        Hybrid Visit"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/3693/nativeathenatelehealthroom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer VQ0qSlPrdgynUMFvAETDuEo3E2Iu
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '156'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49974'
+      X-Request-Id:
+      - rrt-1175596444023433884-b-gwo1-3992-120001730-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentid":"3693","patienturl":"https:\/\/telehealth-preview.px.athena.io\/join\/xdZQCjG2As5DBBRhnyns.27646","jointoken":"xdZQCjG2As5DBBRhnyns.27646"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/open
+    body:
+      encoding: UTF-8
+      string: departmentid=1&providerid=4&appointmentdate=01%2F20%2F2023&appointmenttime=15%3A00&appointmenttypeid=42
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer VQ0qSlPrdgynUMFvAETDuEo3E2Iu
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '103'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '35'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49975'
+      X-Request-Id:
+      - rrt-2395376630785321433-b-gwo1-4037-121893345-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentids":{"3694":"15:00"}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: put
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/3693/reschedule
+    body:
+      encoding: UTF-8
+      string: patientid=4&newappointmentid=3694&ignoreschedulablepermission=true
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer VQ0qSlPrdgynUMFvAETDuEo3E2Iu
+      Accept-Encoding:
+      - identity
+      Content-Length:
+      - '66'
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jan 2023 16:50:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '192'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49974'
+      X-Request-Id:
+      - rrt-3676726719923562960-c-gwo1-31264-120830902-1
+    body:
+      encoding: UTF-8
+      string: '[{"appointmentid":"3694","departmentid":"1","referringproviderid":"","providerid":"","supervisingproviderid":"","appointmentstatus":"f","duration":60,"patientid":"4","appointmenttypeid":"42"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

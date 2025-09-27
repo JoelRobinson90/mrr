@@ -1,0 +1,19 @@
+.scheduler-calendar {
+  .mbsc-selected {
+    .mbsc-calendar-cell-text {
+        background: none !important;
+        color: #69707d !important;
+        border: none !important;
+    }
+  }
+
+  .mbsc-calendar-today {
+    background: #007aff !important;
+    color: white !important;
+    border: #007aff !important;
+  }
+}
+
+.euiBreadcrumb {
+  z-index: 2;
+}

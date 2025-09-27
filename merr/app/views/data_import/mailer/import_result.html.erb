@@ -1,0 +1,18 @@
+<p>Hi,</p>
+
+<p> Your request to import patients has been completed.</p>
+
+<p> Upload time </p>
+<p> <%= @upload.created_at.strftime("%a, %e %b %Y %H:%M:%S %z") %> </p>
+
+<p> Messages </p>
+<p>  <%= @result.message %> </p>
+
+<p> Errors </p>
+<p>  <%= @result.error %> </p>
+
+<p> If you believe this to be an error, please contact the MedArrive Team. </p>
+
+<p>If you run into any issues, please email <a href="mailto:hello@medarrive.com">hello@medarrive.com</a>. Our Support Team will be happy to help you.</p>
+
+<p>Warmest Regards!</p>

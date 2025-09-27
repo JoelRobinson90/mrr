@@ -1,0 +1,12 @@
+mutation ActivateOutreachCampaign($id: ID!, $active: Boolean!) {
+  updateOutreachCampaignActivity(input: {
+    id: $id,
+    active: $active
+  }) {
+    outreachCampaign {
+      id
+      active
+    }
+    errors
+  }
+}

@@ -1,0 +1,6 @@
+<%= javascript_tag nonce: true do %>
+  window.MedArrive = window.MedArrive || {};
+  window.MedArrive.flash = <%= flash.to_h.to_json.html_safe %>;
+
+  window.__webpack_nonce__ = '<%= content_security_policy_nonce %>';
+<% end %>

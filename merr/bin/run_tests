@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+echo "Running tests"
+echo "TEST_DB_URL=$TEST_DB_URL"
+
+# Set up test environment
+rake db:test:prepare
+
+# Capture any failures
+failures=0
+trap 'failures=$((failures+1))' ERR
+
+# Run all test commands
+rspec
+yarn test
+
+# Report any failures
+if ((failures == 0)); then
+  echo "Success"
+else
+  echo "$failures failures"
+  exit 1
+fi

@@ -1,0 +1,67 @@
+#!/usr/bin/env ruby
+
+require "thor"
+require "digest"
+
+class ManageDocker < Thor
+  AWS_ECR_IMAGE_URL = "915162735042.dkr.ecr.us-east-1.amazonaws.com/medarrive_web"
+  AWS_ECR_LOGIN_COMMAND = "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 915162735042.dkr.ecr.us-east-1.amazonaws.com"
+  STOP_DOCKER_COMMAND = "make docker.stop"
+
+  package_name "ManageDocker"
+  map "-L" => :list
+
+  class << self
+    def exit_on_failure?
+      true
+    end
+  end
+
+  no_tasks do
+    def md5(_file)
+      full_path = "#{working_dir}/file"
+
+      Digest::MD5.hexdigest(File.read(full_path))[0...5]
+    end
+
+    def working_dir
+      "#{__dir__}/../../"
+    end
+
+    def image_tag
+      javascript = [
+        md5("yarn.lock"),
+        md5("package.json")
+      ].join(".")
+
+      ruby = [
+        md5("Gemfile"),
+        md5("Gemfile.lock")
+      ].join(".")
+
+      "#{javascript}-#{ruby}"
+    end
+
+    def docker_compose
+      `./which_docker_compose`
+    end
+
+    def ecr_image_exists
+      `./ecr_image_exists medarrive_web #{image_tag}`
+    end
+  end
+
+  desc "list [SEARCH]", "list all of the known docker images"
+  def list
+    # Load yaml,
+    # render all known images along with known tags locally
+  end
+
+  desc "aslkdjf[SEARCH]", "list all of the known docker images"
+  option :nope
+  def aslkdjf(_search = "")
+    pp "nope option is#{options[:nope]}"
+  end
+end
+
+ManageDocker.start(ARGV)

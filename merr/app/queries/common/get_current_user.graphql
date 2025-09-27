@@ -1,0 +1,19 @@
+query GetCurrentUser {
+  getCurrentUser {
+    id
+    email
+    displayName
+    account {
+      __typename
+      firstName
+      lastName
+
+      ... on DemandCoordinator {
+        demandPartner {
+          id
+          name
+        }
+      }
+    }
+  }
+}

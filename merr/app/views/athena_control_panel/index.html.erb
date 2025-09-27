@@ -1,0 +1,26 @@
+<h1>Athena Control Panel</h1>
+
+<p><%= button_to 'Sync Department IDs', athena_control_panel_sync_department_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Cancel Code IDs', athena_control_panel_sync_cancel_code_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Service IDs', athena_control_panel_sync_service_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Visit Types', athena_control_panel_sync_visit_type_ids_path, method: :post %></p>
+
+<p><%= button_to 'Sync Custom Fields', athena_control_panel_sync_custom_field_ids_path, method: :post %></p>
+
+<p><%= button_to 'Initialize Regression Fixtures', athena_control_panel_initialize_regression_fixtures_path, method: :post %></p>
+
+<% if @results.blank? %>
+  <h2>Ready to run sync</h2>
+<% else %>
+  <h2>Results:</h2>
+  <% @results.each do |label, result_list| %>
+    <h4><%= label.to_s.humanize(keep_id_suffix: true) %></h4>
+    <% result_list.each do |result| %>
+      <li><%= result %></li>
+    <% end %>
+  <% end %>
+<% end %>
+

@@ -1,0 +1,443 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.747795,-73.985071&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.659569,-73.933783%7C40.6860072,-73.851524%7C40.6860072,-73.851524%7C40.659569,-73.933783
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Dec 2021 23:23:49 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=157
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "1 E 33rd St, New York, NY 10016, USA" ],
+           "origin_addresses" : [
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA",
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA"
+           ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "18.6 km",
+                          "value" : 18573
+                       },
+                       "duration" : {
+                          "text" : "39 mins",
+                          "value" : 2326
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.4 km",
+                          "value" : 17431
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1858
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.4 km",
+                          "value" : 17431
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1858
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "18.6 km",
+                          "value" : 18573
+                       },
+                       "duration" : {
+                          "text" : "39 mins",
+                          "value" : 2326
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.6860072,-73.851524%7C40.6860072,-73.851524%7C40.659569,-73.933783%7C40.659569,-73.933783&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.747795,-73.985071
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Dec 2021 23:23:49 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=89
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA",
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA"
+           ],
+           "origin_addresses" : [ "1 E 33rd St, New York, NY 10016, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.0 km",
+                          "value" : 17019
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1888
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "17.0 km",
+                          "value" : 17019
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1888
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "13.7 km",
+                          "value" : 13686
+                       },
+                       "duration" : {
+                          "text" : "43 mins",
+                          "value" : 2577
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "13.7 km",
+                          "value" : 13686
+                       },
+                       "duration" : {
+                          "text" : "43 mins",
+                          "value" : 2577
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.747795,-73.985071&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.659569,-73.933783%7C40.6860072,-73.851524%7C40.659569,-73.933783
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Dec 2021 23:30:47 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=179
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "1 E 33rd St, New York, NY 10016, USA" ],
+           "origin_addresses" : [
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA",
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA"
+           ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "18.6 km",
+                          "value" : 18573
+                       },
+                       "duration" : {
+                          "text" : "39 mins",
+                          "value" : 2326
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.4 km",
+                          "value" : 17431
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1858
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              },
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "18.6 km",
+                          "value" : 18573
+                       },
+                       "duration" : {
+                          "text" : "39 mins",
+                          "value" : 2326
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?destinations=40.6860072,-73.851524%7C40.6860072,-73.851524%7C40.659569,-73.933783&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origins=40.747795,-73.985071
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Dec 2021 23:30:47 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - New York, NY
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=91
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "Parking lot, 8920 Atlantic Ave, Queens, NY 11416, USA",
+              "585 Schenectady Ave, Brooklyn, NY 11203, USA"
+           ],
+           "origin_addresses" : [ "1 E 33rd St, New York, NY 10016, USA" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "17.0 km",
+                          "value" : 17019
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1888
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "17.0 km",
+                          "value" : 17019
+                       },
+                       "duration" : {
+                          "text" : "31 mins",
+                          "value" : 1888
+                       },
+                       "status" : "OK"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "13.7 km",
+                          "value" : 13686
+                       },
+                       "duration" : {
+                          "text" : "43 mins",
+                          "value" : 2577
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

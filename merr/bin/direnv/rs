@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Who is lazy :this guy:
+bundle exec rails server

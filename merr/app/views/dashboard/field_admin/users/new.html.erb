@@ -1,0 +1,17 @@
+<h1>Invite provider users</h1>
+
+<%= form_tag dashboard_field_admin_users_path, method: :post do %>
+  <%= label_tag :role %>
+  <%= select_tag :role, options_for_select(provider_user_types) %>
+  <br/><br/>
+
+  <%= label_tag :emails, 'Emails (comma separated)' %>
+  <%= text_area_tag :emails, @emails %>
+  <br/><br/>
+
+  <%= submit_tag 'Send Invites' %>
+<% end %>
+
+<script>
+  
+</script>

@@ -1,0 +1,156 @@
+{
+    "EmailAddress": "becki.kelley@mpgus.com",
+    "Expiration": "2021-05-19T19:37:11.523Z",
+    "FirstName": "Becki",
+    "IssuedAt": "2021-05-19T19:27:11.523Z",
+    "LastName": "Kelley",
+    "Locale": "",
+    "Meta": {
+        "DataModel": "SSO",
+        "Destinations": [
+            {
+                "ID": "3e7c9d6a-d1dd-4986-85f2-74198872f13e",
+                "Name": "SSO Production MedArrive"
+            }
+        ],
+        "EventDateTime": "",
+        "EventType": "Sign-on",
+        "FacilityCode": "4290",
+        "Source": {
+            "ID": "db330c1e-611c-4d0b-9793-d997b1dfb928",
+            "Name": "Athena SSO Source PREVIEW (p)"
+        },
+        "Test": false,
+        "Transmission": {
+            "ID": 7460164858
+        }
+    },
+    "MiddleName": "",
+    "NPI": "",
+    "Name": "Becki Kelley",
+    "Order": {
+        "ID": ""
+    },
+    "Patient": {
+        "Demographics": {
+            "Address": {
+                "City": "",
+                "Country": "",
+                "County": "",
+                "State": "",
+                "StreetAddress": "",
+                "ZIP": ""
+            },
+            "DOB": "",
+            "FirstName": "",
+            "LastName": "",
+            "MiddleName": "",
+            "PhoneNumber": {
+                "Home": "",
+                "Mobile": "",
+                "Office": ""
+            },
+            "Sex": ""
+        },
+        "Identifiers": [
+            {
+                "ID": "610408",
+                "IDType": "AthenaNet Enterprise ID"
+            }
+        ]
+    },
+    "PhoneNumber": {
+        "Office": ""
+    },
+    "ProviderSpecialty": "",
+    "Subject": "rkelley21",
+    "TimeZone": "",
+    "UserId": "rkelley21",
+    "Visit": {
+        "Location": {
+            "Department": "442",
+            "Facility": "",
+            "Room": "",
+            "Type": "Preview"
+        },
+        "VisitNumber": ""
+    },
+    "sso": {
+        "EmailAddress": "becki.kelley@mpgus.com",
+        "Expiration": "2021-05-19T19:37:11.523Z",
+        "FirstName": "Becki",
+        "IssuedAt": "2021-05-19T19:27:11.523Z",
+        "LastName": "Kelley",
+        "Locale": "",
+        "Meta": {
+            "DataModel": "SSO",
+            "Destinations": [
+                {
+                    "ID": "3e7c9d6a-d1dd-4986-85f2-74198872f13e",
+                    "Name": "SSO Production MedArrive"
+                }
+            ],
+            "EventDateTime": "",
+            "EventType": "Sign-on",
+            "FacilityCode": "4290",
+            "Source": {
+                "ID": "db330c1e-611c-4d0b-9793-d997b1dfb928",
+                "Name": "Athena SSO Source PREVIEW (p)"
+            },
+            "Test": false,
+            "Transmission": {
+                "ID": 7460164858
+            }
+        },
+        "MiddleName": "",
+        "NPI": "",
+        "Name": "Becki Kelley",
+        "Order": {
+            "ID": ""
+        },
+        "Patient": {
+            "Demographics": {
+                "Address": {
+                    "City": "",
+                    "Country": "",
+                    "County": "",
+                    "State": "",
+                    "StreetAddress": "",
+                    "ZIP": ""
+                },
+                "DOB": "",
+                "FirstName": "",
+                "LastName": "",
+                "MiddleName": "",
+                "PhoneNumber": {
+                    "Home": "",
+                    "Mobile": "",
+                    "Office": ""
+                },
+                "Sex": ""
+            },
+            "Identifiers": [
+                {
+                    "ID": "610408",
+                    "IDType": "AthenaNet Enterprise ID"
+                }
+            ]
+        },
+        "PhoneNumber": {
+            "Office": ""
+        },
+        "ProviderSpecialty": "",
+        "Subject": "rkelley21",
+        "TimeZone": "",
+        "UserId": "rkelley21",
+        "Visit": {
+            "Location": {
+                "Department": "442",
+                "Facility": "",
+                "Room": "",
+                "Type": "Preview"
+            },
+            "VisitNumber": ""
+        }
+    }
+}

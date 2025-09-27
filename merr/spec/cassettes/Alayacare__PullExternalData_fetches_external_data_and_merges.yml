@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/cancelcodes?count=100&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jan 2022 20:17:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 6a2387c0c57bb70bc88d1a249bce5340
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":6,"items":[{"branch":{"id":1000,"name":"medarrive"},"code":"Patient
+        Refused Visit","description":"","id":3},{"branch":{"id":1000,"name":"medarrive"},"code":"Patient
+        No Show","description":"Patient was not home at time of visit","id":4},{"branch":{"id":1000,"name":"medarrive"},"code":"Patient
+        Requested Reschedule","description":"","id":5},{"branch":{"id":1000,"name":"medarrive"},"code":"Patient
+        Reported COVID Exposure","description":"Patient cancelled because of a possible
+        case of COVID or COVID exposure, and should be called later for a reschedule","id":6},{"branch":{"id":1000,"name":"medarrive"},"code":"Patient
+        Hospitalized","description":"","id":7},{"branch":{"id":1000,"name":"medarrive"},"code":"Conflicting
+        Clinical Appointment","description":"","id":8}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

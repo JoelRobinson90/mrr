@@ -1,0 +1,424 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mapbox.com/geocoding/v5/mapbox.places/315+E+Olympia+Ave+PUNTA+GORDA+FL+33950.json?access_token=pk.eyJ1IjoiYmVyZ3NvcmUiLCJhIjoiY2tsZ3h4cThtMTVhcjJ2bXVwdDhyc2JhNyJ9.EEiwRf9O-r0FPGr5Jes2BA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.mapbox.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/vnd.geo+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 09 Aug 2021 19:34:25 GMT
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-rate-limit-interval,x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset
+      Cache-Control:
+      - max-age=604800
+      X-Rate-Limit-Limit:
+      - '600'
+      X-Rate-Limit-Interval:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1628537724'
+      Last-Modified:
+      - Thu, 05 Aug 2021 03:18:08 GMT
+      Etag:
+      - '"88dad4d52bf1d39239bd797b4f04dc56"'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 8ae6af4d17aae7471e5fe2792eb6abcd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - VwUwy-w3UEnNBEYezieJ1gfxjGdDWzbgoJzgx6FprKwdRIae7M1kVA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJxdWVyeSI6WyIzMTUiLCJlIiwib2x5bXBpYSIsImF2ZSIsInB1bnRhIiwiZ29yZGEiLCJmbCIsIjMzOTUwIl0sImZlYXR1cmVzIjpbeyJpZCI6ImFkZHJlc3MuOTQ3NDI2OTIxMjU4Mzc2IiwidHlwZSI6IkZlYXR1cmUiLCJwbGFjZV90eXBlIjpbImFkZHJlc3MiXSwicmVsZXZhbmNlIjoxLCJwcm9wZXJ0aWVzIjp7ImFjY3VyYWN5Ijoicm9vZnRvcCJ9LCJ0ZXh0IjoiT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiMzE1IE9seW1waWEgQXZlbnVlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsIm1hdGNoaW5nX3RleHQiOiJFIE9seW1waWEgQXZlIiwibWF0Y2hpbmdfcGxhY2VfbmFtZSI6IjMxNSBFIE9seW1waWEgQXZlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsImNlbnRlciI6Wy04Mi4wNDU1NzcsMjYuOTM2NjQ2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDQ1NTc3LDI2LjkzNjY0Nl19LCJhZGRyZXNzIjoiMzE1IiwiY29udGV4dCI6W3siaWQiOiJuZWlnaGJvcmhvb2QuMjc2MzY1IiwidGV4dCI6IlB1bnRhIEdvcmRhIElzbGVzIn0seyJpZCI6InBvc3Rjb2RlLjExMDU4MTEwMjAyMzY2NzIwIiwidGV4dCI6IjMzOTUwIn0seyJpZCI6InBsYWNlLjEyMDc0NTIxOTMwNjk2ODkwIiwid2lraWRhdGEiOiJROTUzNTQzIiwidGV4dCI6IlB1bnRhIEdvcmRhIn0seyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX0seyJpZCI6ImFkZHJlc3MuNDQ4MDcxODAyMTA0MjczOCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJhZGRyZXNzIl0sInJlbGV2YW5jZSI6MC44MjIyMjIsInByb3BlcnRpZXMiOnsiYWNjdXJhY3kiOiJzdHJlZXQifSwidGV4dCI6IlcgT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiVyBPbHltcGlhIEF2ZW51ZSwgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJjZW50ZXIiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XX0sImNvbnRleHQiOlt7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyJ9LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInRleHQiOiIzMzk1MCJ9LHsiaWQiOiJwbGFjZS4xMjA3NDUyMTkzMDY5Njg5MCIsIndpa2lkYXRhIjoiUTk1MzU0MyIsInRleHQiOiJQdW50YSBHb3JkYSJ9LHsiaWQiOiJkaXN0cmljdC4xMzY3ODU3MzA3NzEwMzI4MCIsIndpa2lkYXRhIjoiUTQ4ODQ5OSIsInRleHQiOiJDaGFybG90dGUgQ291bnR5In0seyJpZCI6InJlZ2lvbi43ODYyMDA4ODQzMjM1MDEwIiwid2lraWRhdGEiOiJRODEyIiwic2hvcnRfY29kZSI6IlVTLUZMIiwidGV4dCI6IkZsb3JpZGEifSx7ImlkIjoiY291bnRyeS4xOTY3ODgwNTQ1NjM3MjI5MCIsIndpa2lkYXRhIjoiUTMwIiwic2hvcnRfY29kZSI6InVzIiwidGV4dCI6IlVuaXRlZCBTdGF0ZXMifV19LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJwb3N0Y29kZSJdLCJyZWxldmFuY2UiOjAuNjM4ODg5LCJwcm9wZXJ0aWVzIjp7fSwidGV4dCI6IjMzOTUwIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhIDMzOTUwLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTk4Njc5OTk2MTEzLDI2Ljg0MDAyNDk5MDUyOTIsLTgxLjk5MDAzODk5MTQ0NjgsMjYuOTY2NjUyODkwNDkxMV0sImNlbnRlciI6Wy04Mi4wNCwyNi45M10sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0LDI2LjkzXX0sImNvbnRleHQiOlt7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJuZWlnaGJvcmhvb2QiXSwicmVsZXZhbmNlIjowLjU4ODg4OSwicHJvcGVydGllcyI6e30sInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyIsInBsYWNlX25hbWUiOiJQdW50YSBHb3JkYSBJc2xlcywgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJiYm94IjpbLTgyLjA5NzA5NywyNi44OTk4MjUsLTgyLjAzNzI3MiwyNi45NTQxMDhdLCJjZW50ZXIiOlstODIuMDc4NCwyNi45MTc2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDc4NCwyNi45MTc2XX0sImNvbnRleHQiOlt7ImlkIjoicG9zdGNvZGUuMTEwNTgxMTAyMDIzNjY3MjAiLCJ0ZXh0IjoiMzM5NTAifSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ0eXBlIjoiRmVhdHVyZSIsInBsYWNlX3R5cGUiOlsicGxhY2UiXSwicmVsZXZhbmNlIjowLjUzNzAzNywicHJvcGVydGllcyI6eyJ3aWtpZGF0YSI6IlE5NTM1NDMifSwidGV4dCI6IlB1bnRhIEdvcmRhIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTcwMjE5ODYsMjYuNzU1Mzk5MDQyLC04MS41NjIyMDAzNzYsMjcuMDM1MjUyXSwiY2VudGVyIjpbLTgyLjA0NTQsMjYuOTI5OF0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0NTQsMjYuOTI5OF19LCJjb250ZXh0IjpbeyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX1dLCJhdHRyaWJ1dGlvbiI6Ik5PVElDRTogwqkgMjAyMSBNYXBib3ggYW5kIGl0cyBzdXBwbGllcnMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuIFVzZSBvZiB0aGlzIGRhdGEgaXMgc3ViamVjdCB0byB0aGUgTWFwYm94IFRlcm1zIG9mIFNlcnZpY2UgKGh0dHBzOi8vd3d3Lm1hcGJveC5jb20vYWJvdXQvbWFwcy8pLiBUaGlzIHJlc3BvbnNlIGFuZCB0aGUgaW5mb3JtYXRpb24gaXQgY29udGFpbnMgbWF5IG5vdCBiZSByZXRhaW5lZC4gUE9JKHMpIHByb3ZpZGVkIGJ5IEZvdXJzcXVhcmUuIn0=
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.mapbox.com/geocoding/v5/mapbox.places/315+E+Olympia+Ave+PUNTA+GORDA+FL+33950.json?access_token=pk.eyJ1IjoiYmVyZ3NvcmUiLCJhIjoiY2tsZ3h4cThtMTVhcjJ2bXVwdDhyc2JhNyJ9.EEiwRf9O-r0FPGr5Jes2BA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.mapbox.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/vnd.geo+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 09 Aug 2021 19:34:25 GMT
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-rate-limit-interval,x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset
+      Cache-Control:
+      - max-age=604800
+      X-Rate-Limit-Limit:
+      - '600'
+      X-Rate-Limit-Interval:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1628537724'
+      Last-Modified:
+      - Thu, 05 Aug 2021 03:18:08 GMT
+      Etag:
+      - '"88dad4d52bf1d39239bd797b4f04dc56"'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 b838ef1ff22a4a994af82d5178c30e1d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - a_buhw0M7F_8JLb7Tr0PZWgQLuYyUC1MlpVU5k4Df8yJyYPhkzNNtA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJxdWVyeSI6WyIzMTUiLCJlIiwib2x5bXBpYSIsImF2ZSIsInB1bnRhIiwiZ29yZGEiLCJmbCIsIjMzOTUwIl0sImZlYXR1cmVzIjpbeyJpZCI6ImFkZHJlc3MuOTQ3NDI2OTIxMjU4Mzc2IiwidHlwZSI6IkZlYXR1cmUiLCJwbGFjZV90eXBlIjpbImFkZHJlc3MiXSwicmVsZXZhbmNlIjoxLCJwcm9wZXJ0aWVzIjp7ImFjY3VyYWN5Ijoicm9vZnRvcCJ9LCJ0ZXh0IjoiT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiMzE1IE9seW1waWEgQXZlbnVlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsIm1hdGNoaW5nX3RleHQiOiJFIE9seW1waWEgQXZlIiwibWF0Y2hpbmdfcGxhY2VfbmFtZSI6IjMxNSBFIE9seW1waWEgQXZlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsImNlbnRlciI6Wy04Mi4wNDU1NzcsMjYuOTM2NjQ2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDQ1NTc3LDI2LjkzNjY0Nl19LCJhZGRyZXNzIjoiMzE1IiwiY29udGV4dCI6W3siaWQiOiJuZWlnaGJvcmhvb2QuMjc2MzY1IiwidGV4dCI6IlB1bnRhIEdvcmRhIElzbGVzIn0seyJpZCI6InBvc3Rjb2RlLjExMDU4MTEwMjAyMzY2NzIwIiwidGV4dCI6IjMzOTUwIn0seyJpZCI6InBsYWNlLjEyMDc0NTIxOTMwNjk2ODkwIiwid2lraWRhdGEiOiJROTUzNTQzIiwidGV4dCI6IlB1bnRhIEdvcmRhIn0seyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX0seyJpZCI6ImFkZHJlc3MuNDQ4MDcxODAyMTA0MjczOCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJhZGRyZXNzIl0sInJlbGV2YW5jZSI6MC44MjIyMjIsInByb3BlcnRpZXMiOnsiYWNjdXJhY3kiOiJzdHJlZXQifSwidGV4dCI6IlcgT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiVyBPbHltcGlhIEF2ZW51ZSwgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJjZW50ZXIiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XX0sImNvbnRleHQiOlt7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyJ9LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInRleHQiOiIzMzk1MCJ9LHsiaWQiOiJwbGFjZS4xMjA3NDUyMTkzMDY5Njg5MCIsIndpa2lkYXRhIjoiUTk1MzU0MyIsInRleHQiOiJQdW50YSBHb3JkYSJ9LHsiaWQiOiJkaXN0cmljdC4xMzY3ODU3MzA3NzEwMzI4MCIsIndpa2lkYXRhIjoiUTQ4ODQ5OSIsInRleHQiOiJDaGFybG90dGUgQ291bnR5In0seyJpZCI6InJlZ2lvbi43ODYyMDA4ODQzMjM1MDEwIiwid2lraWRhdGEiOiJRODEyIiwic2hvcnRfY29kZSI6IlVTLUZMIiwidGV4dCI6IkZsb3JpZGEifSx7ImlkIjoiY291bnRyeS4xOTY3ODgwNTQ1NjM3MjI5MCIsIndpa2lkYXRhIjoiUTMwIiwic2hvcnRfY29kZSI6InVzIiwidGV4dCI6IlVuaXRlZCBTdGF0ZXMifV19LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJwb3N0Y29kZSJdLCJyZWxldmFuY2UiOjAuNjM4ODg5LCJwcm9wZXJ0aWVzIjp7fSwidGV4dCI6IjMzOTUwIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhIDMzOTUwLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTk4Njc5OTk2MTEzLDI2Ljg0MDAyNDk5MDUyOTIsLTgxLjk5MDAzODk5MTQ0NjgsMjYuOTY2NjUyODkwNDkxMV0sImNlbnRlciI6Wy04Mi4wNCwyNi45M10sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0LDI2LjkzXX0sImNvbnRleHQiOlt7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJuZWlnaGJvcmhvb2QiXSwicmVsZXZhbmNlIjowLjU4ODg4OSwicHJvcGVydGllcyI6e30sInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyIsInBsYWNlX25hbWUiOiJQdW50YSBHb3JkYSBJc2xlcywgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJiYm94IjpbLTgyLjA5NzA5NywyNi44OTk4MjUsLTgyLjAzNzI3MiwyNi45NTQxMDhdLCJjZW50ZXIiOlstODIuMDc4NCwyNi45MTc2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDc4NCwyNi45MTc2XX0sImNvbnRleHQiOlt7ImlkIjoicG9zdGNvZGUuMTEwNTgxMTAyMDIzNjY3MjAiLCJ0ZXh0IjoiMzM5NTAifSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ0eXBlIjoiRmVhdHVyZSIsInBsYWNlX3R5cGUiOlsicGxhY2UiXSwicmVsZXZhbmNlIjowLjUzNzAzNywicHJvcGVydGllcyI6eyJ3aWtpZGF0YSI6IlE5NTM1NDMifSwidGV4dCI6IlB1bnRhIEdvcmRhIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTcwMjE5ODYsMjYuNzU1Mzk5MDQyLC04MS41NjIyMDAzNzYsMjcuMDM1MjUyXSwiY2VudGVyIjpbLTgyLjA0NTQsMjYuOTI5OF0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0NTQsMjYuOTI5OF19LCJjb250ZXh0IjpbeyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX1dLCJhdHRyaWJ1dGlvbiI6Ik5PVElDRTogwqkgMjAyMSBNYXBib3ggYW5kIGl0cyBzdXBwbGllcnMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuIFVzZSBvZiB0aGlzIGRhdGEgaXMgc3ViamVjdCB0byB0aGUgTWFwYm94IFRlcm1zIG9mIFNlcnZpY2UgKGh0dHBzOi8vd3d3Lm1hcGJveC5jb20vYWJvdXQvbWFwcy8pLiBUaGlzIHJlc3BvbnNlIGFuZCB0aGUgaW5mb3JtYXRpb24gaXQgY29udGFpbnMgbWF5IG5vdCBiZSByZXRhaW5lZC4gUE9JKHMpIHByb3ZpZGVkIGJ5IEZvdXJzcXVhcmUuIn0=
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"birthday":"1979-04-29","first_name":"Angela","gender":null,"last_name":"Test","phone_main":"+12392400737","phone_other":"+12392400738","phone_personal":"+12392400737","address":"315
+        E Olympia Ave","address_suite":null,"city":"PUNTA GORDA","state":"FL","zip":"33950"},"external_id":"24","branch_id":2001,"profile_id":12345,"language":"English","timezone":"America/New_York"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Length:
+      - '391'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 19:34:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '115'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 176f553738c6557b36f4dd8ded7211ac
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"message": {"_schema": ["Fields `demographics` and `profile_id` can''t
+        be provided simultaneously"]}, "code": 400}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.redoxengine.com/auth/authenticate
+    body:
+      encoding: UTF-8
+      string: apiKey=<GOOGLE_SERVICES_API_KEY>&secret=<GOOGLE_SERVICES_API_KEY>
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.redoxengine.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 19:34:27 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '15'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=300; includeSubdomains;
+      Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"f-wrqBpHoIpKHXInTVASrQWM4Xb04"
+    body:
+      encoding: UTF-8
+      string: Invalid request
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.mapbox.com/geocoding/v5/mapbox.places/315+E+Olympia+Ave+PUNTA+GORDA+FL+33950.json?access_token=pk.eyJ1IjoiYmVyZ3NvcmUiLCJhIjoiY2tsZ3h4cThtMTVhcjJ2bXVwdDhyc2JhNyJ9.EEiwRf9O-r0FPGr5Jes2BA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.mapbox.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/vnd.geo+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 09 Aug 2021 19:34:25 GMT
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-rate-limit-interval,x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset
+      Cache-Control:
+      - max-age=604800
+      X-Rate-Limit-Limit:
+      - '600'
+      X-Rate-Limit-Interval:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1628537724'
+      Last-Modified:
+      - Thu, 05 Aug 2021 03:18:08 GMT
+      Etag:
+      - '"88dad4d52bf1d39239bd797b4f04dc56"'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 331202b5b8aab67acbf389883133f257.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - vA2C_LmufKHzcAFCvB0lPsGvD4ifcwOZNEkCAEtrH6JRr6lHEdg1Bg==
+      Age:
+      - '5'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJxdWVyeSI6WyIzMTUiLCJlIiwib2x5bXBpYSIsImF2ZSIsInB1bnRhIiwiZ29yZGEiLCJmbCIsIjMzOTUwIl0sImZlYXR1cmVzIjpbeyJpZCI6ImFkZHJlc3MuOTQ3NDI2OTIxMjU4Mzc2IiwidHlwZSI6IkZlYXR1cmUiLCJwbGFjZV90eXBlIjpbImFkZHJlc3MiXSwicmVsZXZhbmNlIjoxLCJwcm9wZXJ0aWVzIjp7ImFjY3VyYWN5Ijoicm9vZnRvcCJ9LCJ0ZXh0IjoiT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiMzE1IE9seW1waWEgQXZlbnVlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsIm1hdGNoaW5nX3RleHQiOiJFIE9seW1waWEgQXZlIiwibWF0Y2hpbmdfcGxhY2VfbmFtZSI6IjMxNSBFIE9seW1waWEgQXZlLCBQdW50YSBHb3JkYSwgRmxvcmlkYSAzMzk1MCwgVW5pdGVkIFN0YXRlcyIsImNlbnRlciI6Wy04Mi4wNDU1NzcsMjYuOTM2NjQ2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDQ1NTc3LDI2LjkzNjY0Nl19LCJhZGRyZXNzIjoiMzE1IiwiY29udGV4dCI6W3siaWQiOiJuZWlnaGJvcmhvb2QuMjc2MzY1IiwidGV4dCI6IlB1bnRhIEdvcmRhIElzbGVzIn0seyJpZCI6InBvc3Rjb2RlLjExMDU4MTEwMjAyMzY2NzIwIiwidGV4dCI6IjMzOTUwIn0seyJpZCI6InBsYWNlLjEyMDc0NTIxOTMwNjk2ODkwIiwid2lraWRhdGEiOiJROTUzNTQzIiwidGV4dCI6IlB1bnRhIEdvcmRhIn0seyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX0seyJpZCI6ImFkZHJlc3MuNDQ4MDcxODAyMTA0MjczOCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJhZGRyZXNzIl0sInJlbGV2YW5jZSI6MC44MjIyMjIsInByb3BlcnRpZXMiOnsiYWNjdXJhY3kiOiJzdHJlZXQifSwidGV4dCI6IlcgT2x5bXBpYSBBdmVudWUiLCJwbGFjZV9uYW1lIjoiVyBPbHltcGlhIEF2ZW51ZSwgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJjZW50ZXIiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDU1MDgxNzEyNDA2LDI2LjkyOTk4MjE1XX0sImNvbnRleHQiOlt7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyJ9LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInRleHQiOiIzMzk1MCJ9LHsiaWQiOiJwbGFjZS4xMjA3NDUyMTkzMDY5Njg5MCIsIndpa2lkYXRhIjoiUTk1MzU0MyIsInRleHQiOiJQdW50YSBHb3JkYSJ9LHsiaWQiOiJkaXN0cmljdC4xMzY3ODU3MzA3NzEwMzI4MCIsIndpa2lkYXRhIjoiUTQ4ODQ5OSIsInRleHQiOiJDaGFybG90dGUgQ291bnR5In0seyJpZCI6InJlZ2lvbi43ODYyMDA4ODQzMjM1MDEwIiwid2lraWRhdGEiOiJRODEyIiwic2hvcnRfY29kZSI6IlVTLUZMIiwidGV4dCI6IkZsb3JpZGEifSx7ImlkIjoiY291bnRyeS4xOTY3ODgwNTQ1NjM3MjI5MCIsIndpa2lkYXRhIjoiUTMwIiwic2hvcnRfY29kZSI6InVzIiwidGV4dCI6IlVuaXRlZCBTdGF0ZXMifV19LHsiaWQiOiJwb3N0Y29kZS4xMTA1ODExMDIwMjM2NjcyMCIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJwb3N0Y29kZSJdLCJyZWxldmFuY2UiOjAuNjM4ODg5LCJwcm9wZXJ0aWVzIjp7fSwidGV4dCI6IjMzOTUwIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhIDMzOTUwLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTk4Njc5OTk2MTEzLDI2Ljg0MDAyNDk5MDUyOTIsLTgxLjk5MDAzODk5MTQ0NjgsMjYuOTY2NjUyODkwNDkxMV0sImNlbnRlciI6Wy04Mi4wNCwyNi45M10sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0LDI2LjkzXX0sImNvbnRleHQiOlt7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoibmVpZ2hib3Job29kLjI3NjM2NSIsInR5cGUiOiJGZWF0dXJlIiwicGxhY2VfdHlwZSI6WyJuZWlnaGJvcmhvb2QiXSwicmVsZXZhbmNlIjowLjU4ODg4OSwicHJvcGVydGllcyI6e30sInRleHQiOiJQdW50YSBHb3JkYSBJc2xlcyIsInBsYWNlX25hbWUiOiJQdW50YSBHb3JkYSBJc2xlcywgUHVudGEgR29yZGEsIEZsb3JpZGEgMzM5NTAsIFVuaXRlZCBTdGF0ZXMiLCJiYm94IjpbLTgyLjA5NzA5NywyNi44OTk4MjUsLTgyLjAzNzI3MiwyNi45NTQxMDhdLCJjZW50ZXIiOlstODIuMDc4NCwyNi45MTc2XSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlstODIuMDc4NCwyNi45MTc2XX0sImNvbnRleHQiOlt7ImlkIjoicG9zdGNvZGUuMTEwNTgxMTAyMDIzNjY3MjAiLCJ0ZXh0IjoiMzM5NTAifSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ3aWtpZGF0YSI6IlE5NTM1NDMiLCJ0ZXh0IjoiUHVudGEgR29yZGEifSx7ImlkIjoiZGlzdHJpY3QuMTM2Nzg1NzMwNzcxMDMyODAiLCJ3aWtpZGF0YSI6IlE0ODg0OTkiLCJ0ZXh0IjoiQ2hhcmxvdHRlIENvdW50eSJ9LHsiaWQiOiJyZWdpb24uNzg2MjAwODg0MzIzNTAxMCIsIndpa2lkYXRhIjoiUTgxMiIsInNob3J0X2NvZGUiOiJVUy1GTCIsInRleHQiOiJGbG9yaWRhIn0seyJpZCI6ImNvdW50cnkuMTk2Nzg4MDU0NTYzNzIyOTAiLCJ3aWtpZGF0YSI6IlEzMCIsInNob3J0X2NvZGUiOiJ1cyIsInRleHQiOiJVbml0ZWQgU3RhdGVzIn1dfSx7ImlkIjoicGxhY2UuMTIwNzQ1MjE5MzA2OTY4OTAiLCJ0eXBlIjoiRmVhdHVyZSIsInBsYWNlX3R5cGUiOlsicGxhY2UiXSwicmVsZXZhbmNlIjowLjUzNzAzNywicHJvcGVydGllcyI6eyJ3aWtpZGF0YSI6IlE5NTM1NDMifSwidGV4dCI6IlB1bnRhIEdvcmRhIiwicGxhY2VfbmFtZSI6IlB1bnRhIEdvcmRhLCBGbG9yaWRhLCBVbml0ZWQgU3RhdGVzIiwiYmJveCI6Wy04Mi4wOTcwMjE5ODYsMjYuNzU1Mzk5MDQyLC04MS41NjIyMDAzNzYsMjcuMDM1MjUyXSwiY2VudGVyIjpbLTgyLjA0NTQsMjYuOTI5OF0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgyLjA0NTQsMjYuOTI5OF19LCJjb250ZXh0IjpbeyJpZCI6ImRpc3RyaWN0LjEzNjc4NTczMDc3MTAzMjgwIiwid2lraWRhdGEiOiJRNDg4NDk5IiwidGV4dCI6IkNoYXJsb3R0ZSBDb3VudHkifSx7ImlkIjoicmVnaW9uLjc4NjIwMDg4NDMyMzUwMTAiLCJ3aWtpZGF0YSI6IlE4MTIiLCJzaG9ydF9jb2RlIjoiVVMtRkwiLCJ0ZXh0IjoiRmxvcmlkYSJ9LHsiaWQiOiJjb3VudHJ5LjE5Njc4ODA1NDU2MzcyMjkwIiwid2lraWRhdGEiOiJRMzAiLCJzaG9ydF9jb2RlIjoidXMiLCJ0ZXh0IjoiVW5pdGVkIFN0YXRlcyJ9XX1dLCJhdHRyaWJ1dGlvbiI6Ik5PVElDRTogwqkgMjAyMSBNYXBib3ggYW5kIGl0cyBzdXBwbGllcnMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuIFVzZSBvZiB0aGlzIGRhdGEgaXMgc3ViamVjdCB0byB0aGUgTWFwYm94IFRlcm1zIG9mIFNlcnZpY2UgKGh0dHBzOi8vd3d3Lm1hcGJveC5jb20vYWJvdXQvbWFwcy8pLiBUaGlzIHJlc3BvbnNlIGFuZCB0aGUgaW5mb3JtYXRpb24gaXQgY29udGFpbnMgbWF5IG5vdCBiZSByZXRhaW5lZC4gUE9JKHMpIHByb3ZpZGVkIGJ5IEZvdXJzcXVhcmUuIn0=
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/patients/clients
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"birthday":"1979-04-29","first_name":"Angela","gender":null,"last_name":"Test","phone_main":"+12392400737","phone_other":"+12392400738","phone_personal":"+12392400737","address":"315
+        E Olympia Ave","address_suite":null,"city":"PUNTA GORDA","state":"FL","zip":"33950"},"external_id":"24","branch_id":2001,"profile_id":12345,"language":"English","timezone":"America/New_York"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Length:
+      - '391'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 19:34:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '115'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 69b2736d64d8b442b3ac74d14e6789c3
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"message": {"_schema": ["Fields `demographics` and `profile_id` can''t
+        be provided simultaneously"]}, "code": 400}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.redoxengine.com/auth/authenticate
+    body:
+      encoding: UTF-8
+      string: apiKey=<GOOGLE_SERVICES_API_KEY>&secret=<GOOGLE_SERVICES_API_KEY>
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.redoxengine.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 09 Aug 2021 19:34:32 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '15'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=300; includeSubdomains;
+      Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Security-Policy:
+      - 'default-src https:; style-src https: ''unsafe-inline''; object-src ''none'''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"f-wrqBpHoIpKHXInTVASrQWM4Xb04"
+    body:
+      encoding: UTF-8
+      string: Invalid request
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

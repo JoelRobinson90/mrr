@@ -1,0 +1,13 @@
+mutation CreateAlayacareVisitNote(
+  $visitNoteParams: CreateAlayacareVisitNoteParams!
+) {
+  createAlayacareVisitNote(input: {
+    visitNoteParams: $visitNoteParams
+  }) {
+    visitNote {
+      createdAt
+      text
+    }
+    errors
+  }
+}

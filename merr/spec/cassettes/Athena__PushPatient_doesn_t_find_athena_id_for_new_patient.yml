@@ -1,0 +1,449 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/oauth2/v1/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.*&client_id=0oag8cvsnzNt58Vwl297&client_secret=3Q4CJrXaY_hgz-nNscFFVm02SpKOrcJS75tesqkl
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '156'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Jan 2023 01:15:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Host:
+      - api.preview.platform.athenahealth.com
+      X-Forwarded-For:
+      - 97.113.199.203
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      X-Forwarded-Host:
+      - api.preview.platform.athenahealth.com
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"6yIW5Eo4Tx9ve5WzlNluFWqMbmAU","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=7524%20Gibson%20Gardens&address2=Suite%20404&city=Faystad&dob=01/11/1943&firstname=Hunter&homephone=7345461234&lastname=Bergnaum&sex=F&state=WI&zip=77744-1628
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Jan 2023 01:15:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49943'
+      X-Request-Id:
+      - rrt-3132137502584591032-b-gwo1-30619-134979413-1
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=674%20Blanche%20Isle&address2=Apt.%20111&city=Bobbiefurt&dob=01/13/1917&firstname=Mary&homephone=7345461234&lastname=Lynch&sex=F&state=IA&zip=64498
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Jan 2023 01:15:39 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49938'
+      X-Request-Id:
+      - rrt-1862861966674668189-a-gwo1-10652-131476239-1
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=3132%20Beer%20River&address2=Suite%20505&city=Boydhaven&dob=09/12/1989&firstname=Benton&homephone=7345461234&lastname=Wisoky&sex=F&state=ME&zip=19545
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 19 Mar 2023 22:26:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-639959609228624226-a-gwo1-18975-42317219-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=82969%20Francis%20Walk&address2=Suite%20236&city=North%20Johnathon&dob=06/16/1921&firstname=Paulette&homephone=7345461234&lastname=Deckow&sex=F&state=WI&zip=69962-3482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 19 Mar 2023 22:27:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-4496086946722584349-c-gwo1-19162-42581617-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=1229%20Stoltenberg%20Village&address2=Suite%20548&city=East%20Jannette&dob=05/06/1955&firstname=Dinah&homephone=7345461234&lastname=Watsica&sex=F&state=MA&zip=13806
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 19 Mar 2023 22:35:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-8672300127860001356-c-gwo1-9486-42460769-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=74658%20Melida%20Neck&address2=Suite%20564&city=Lake%20Arleenmouth&dob=10/05/1932&firstname=Belkis&homephone=7345461234&lastname=Hodkiewicz&sex=F&state=RI&zip=80403-7653
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 19 Mar 2023 22:45:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-533253152509237967-b-gwo1-32733-42330933-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=8378%20Dickinson%20Ports&address2=Apt.%20227&city=Ziemeborough&dob=08/13/1923&firstname=Edison&homephone=7345461234&lastname=Becker&sex=F&state=MA&zip=28106
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 19 Mar 2023 22:58:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-4355622734251395700-a-gwo1-6838-42410518-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/patients/enhancedbestmatch?address1=41907%20Archie%20Bridge&address2=Suite%20524&city=Bahringerville&dob=03/12/1950&firstname=Reggie&homephone=7345461234&lastname=Grady&sex=F&state=VT&zip=03715
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer 6yIW5Eo4Tx9ve5WzlNluFWqMbmAU
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 28 Mar 2023 21:47:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '202'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - 'Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token:
+        Invalid Access Token"'
+      X-Request-Id:
+      - rrt-8764313905186707226-a-gwo1-21688-71931685-1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": "Invalid Access Token.",
+            "detailedmessage": "The access token provided is not valid. Please verify the token is correct and provided as a bearer token in the authorization header."
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

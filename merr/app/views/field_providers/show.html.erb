@@ -1,0 +1,95 @@
+
+
+
+<p>
+  <strong>Organization:</strong>
+  <%= @field_provider.field_org.name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @field_provider.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @field_provider.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @field_provider.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @field_provider.phone %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @field_provider.address.pretty_print %>
+</p>
+
+<p> 
+  <strong>Avatar:</strong>
+  <%= image_tag @field_provider.avatar.variant(resize_to_limit: [100, nil]) if @field_provider.avatar.attached? %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @field_provider.bio %>
+</p>
+
+<h3>Trainings</h3>
+<table>
+  <thead>
+    <td>Name</td>
+    <td></td>
+    <td>Quiz Score</td>
+    <td>Date</td>
+    <td>Admin only</td>
+  </thead>
+  <tbody>
+    <% @proficiency_presenter.training_rows.each do |row| %>
+      <tr>
+        <td><%= row[:name] %></td>
+        <td><%= link_to "take training", row[:training_url] %></td>
+        <% if row[:quiz_score].present? %>
+          <td><%= row[:quiz_score] %>%</td>
+        <% else %>
+          <td><%= button_to "take quiz", row[:quiz_url] %></td>
+        <% end %>
+        <td><%= row[:date] %></td>
+        <td><%= link_to "Upload", new_provider_training_path(training_id: row[:training_id], field_provider_id: @field_provider.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3>Certifications</h3>
+<table>
+  <thead>
+    <td>Name</td>
+    <td>File</td>
+    <td></td>
+    <td></td>
+  </thead>
+  <tbody>
+    <% @proficiency_presenter.certification_rows.each do |row| %>
+      <tr>
+        <td><%= row[:name] %></td>
+        <td><%= render partial: 'field_provider_certifications/attachment_thumbnails',
+                                locals: {documents: row[:documents], allow_delete: true} %>
+        </td>
+        <td><%= link_to row[:link_label], row[:link_url] %></td>
+        <td><%= link_to "delete", row[:delete_link_url], {method: :delete} if row[:delete_link_url] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+<%= link_to 'Edit', edit_field_provider_path(@field_provider) %> |
+<%= link_to 'Back', field_providers_path %>

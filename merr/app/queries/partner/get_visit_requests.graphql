@@ -1,0 +1,23 @@
+query GetVisitRequests($pending: Boolean) {
+  getVisitRequests(pending: $pending) {
+    id
+    createdAt
+    status
+    patient {
+      id
+      displayName
+    }
+    program {
+      id
+      name
+    }
+    creator {
+      id
+      displayName
+    }
+    services {
+      id
+      name
+    }
+  }
+}

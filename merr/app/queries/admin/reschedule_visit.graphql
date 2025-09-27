@@ -1,0 +1,14 @@
+mutation RescheduleVisit(
+  $visitParams: RescheduleVisitParams!,
+  $runId: String,
+  $logString: String
+) {
+  rescheduleVisit(input: {
+    visitParams: $visitParams,
+    runId: $runId,
+    logString: $logString
+  }) {
+    visitId
+    errors
+  }
+}

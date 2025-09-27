@@ -1,0 +1,9 @@
+mutation PatientSubmitRequest($patient: CreatePatientParams!) {
+  createPatient(input: { attributes: $patient }) {
+    patient {
+      id
+      firstName
+    }
+    errors
+  }
+}

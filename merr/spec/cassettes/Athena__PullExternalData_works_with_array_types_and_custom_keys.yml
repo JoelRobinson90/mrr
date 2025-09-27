@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/customfields?limit=5000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer tlPAACyh4U2nRE1zJsNt2vYe7f1b
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2023 21:09:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '279'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49993'
+      X-Request-Id:
+      - rrt-1862861966674668189-a-gwo1-24779-186814665-1
+    body:
+      encoding: UTF-8
+      string: '[{"customfieldid":"1","disallowupdate":false,"select":false,"casesensitive":true,"name":"MedArrive
+        Patient ID","searchable":true,"type":"TEXT"},{"customfieldid":"23","disallowupdate":false,"select":false,"casesensitive":false,"name":"Primary
+        Program","type":"REFERRINGPROVIDER"}]'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointments/customfields?limit=5000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer tlPAACyh4U2nRE1zJsNt2vYe7f1b
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2023 21:09:13 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '322'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49994'
+      X-Request-Id:
+      - rrt-1862861966674668189-a-gwo1-24776-186814677-1
+    body:
+      encoding: UTF-8
+      string: '{"appointmentcustomfields":[{"customfieldid":21,"disallowupdate":false,"select":false,"casesensitive":true,"name":"MedArrive
+        Visit ID","searchable":true,"length":100,"type":"TEXT"},{"customfieldid":22,"disallowupdate":false,"select":false,"casesensitive":false,"name":"Program","type":"REFERRINGPROVIDER"}],"totalcount":2}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

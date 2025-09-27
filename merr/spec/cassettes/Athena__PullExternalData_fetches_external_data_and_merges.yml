@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.preview.platform.athenahealth.com/oauth2/v1/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.*&client_id=0oag8cvsnzNt58Vwl297&client_secret=3Q4CJrXaY_hgz-nNscFFVm02SpKOrcJS75tesqkl
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Content-Length:
+      - '156'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2023 21:09:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Host:
+      - api.preview.platform.athenahealth.com
+      X-Forwarded-For:
+      - 104.28.235.57
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Headers:
+      - '{:content_type=>"application/x-www-form-urlencoded"}'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      X-Forwarded-Host:
+      - api.preview.platform.athenahealth.com
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"tlPAACyh4U2nRE1zJsNt2vYe7f1b","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.preview.platform.athenahealth.com/v1/27646/appointmentcancelreasons?limit=5000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer tlPAACyh4U2nRE1zJsNt2vYe7f1b
+      Accept-Encoding:
+      - identity
+      Host:
+      - api.preview.platform.athenahealth.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Feb 2023 21:09:12 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2087'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Pragma:
+      - No-cache
+      Expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store
+      Accept-Ch:
+      - Sec-CH-UA-Platform-Version
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49994'
+      X-Request-Id:
+      - rrt-7173971013983615968-a-gwo1-8808-25994135-1
+    body:
+      encoding: UTF-8
+      string: '{"totalcount":13,"appointmentcancelreasons":[{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Conflicting
+        clinical appointments","slotavailable":true,"appointmentcancelreasonid":24},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Decreased
+        acuity","slotavailable":true,"appointmentcancelreasonid":26},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"PATIENT
+        CANCELLED","slotavailable":true,"appointmentcancelreasonid":13},{"noshow":true,"providerunavailable":false,"patientrescheduled":false,"name":"PATIENT
+        NO SHOW","slotavailable":false,"appointmentcancelreasonid":10},{"noshow":false,"providerunavailable":false,"patientrescheduled":true,"name":"PATIENT
+        REQUESTED RESCHEDULED","slotavailable":true,"appointmentcancelreasonid":11},{"noshow":false,"providerunavailable":true,"patientrescheduled":false,"name":"PROVIDER
+        UNAVAILABLE","slotavailable":false,"appointmentcancelreasonid":12},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Patient
+        Hospitalized","slotavailable":true,"appointmentcancelreasonid":23},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Patient
+        Refused Visit","slotavailable":true,"appointmentcancelreasonid":21},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Patient
+        reported COVID exposure","slotavailable":true,"appointmentcancelreasonid":22},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Regression
+        cancel code","slotavailable":true,"appointmentcancelreasonid":28},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"Rescheduled
+        to optimize route","slotavailable":true,"appointmentcancelreasonid":25},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"SCHEDULING
+        ERROR","slotavailable":true,"appointmentcancelreasonid":14},{"noshow":false,"providerunavailable":false,"patientrescheduled":false,"name":"SYSTEM
+        CANCELLATION- DO NOT USE","slotavailable":true,"appointmentcancelreasonid":27}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

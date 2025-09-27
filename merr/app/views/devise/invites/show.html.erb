@@ -1,0 +1,28 @@
+<h1>Welcome to MedArrive</h1>
+
+<p>Fill out the form to continue with <%= @user.account.field_org.name %></p>
+
+<%= form_with model: @user, url: users_invites_path, local: true do |form| %>
+  <%= form.hidden_field :reset_password_token, value: @token %>
+
+  <%= form.fields_for :account do |account_form| %>
+    <%= account_form.label :first_name %>
+    <%= account_form.text_field :first_name %>
+    <br/><br/>
+
+    <%= account_form.label :last_name %>
+    <%= account_form.text_field :last_name %>
+    <br/><br/>
+  <% end %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password, value: '', minlength: 8 %>
+  <small>Min. 8 characters</small>
+  <br/><br/>
+
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation, value: '' %>
+  <br/><br/>
+
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,499 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=%20Seattle%20WA%2098103&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Sep 2021 18:58:39 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Seattle, WA
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=264
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443";
+        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
+        ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "98103",
+                       "short_name" : "98103",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Seattle, WA 98103, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.7014659,
+                          "lng" : -122.326291
+                       },
+                       "southwest" : {
+                          "lat" : 47.6395199,
+                          "lng" : -122.3594931
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.6600087,
+                       "lng" : -122.3425575
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.7014659,
+                          "lng" : -122.326291
+                       },
+                       "southwest" : {
+                          "lat" : 47.6395199,
+                          "lng" : -122.3594931
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJFT-C4gEUkFQRl6YWwUtrexc",
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=1%20Seattle%20WA%2098103&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Sep 2021 19:00:47 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Seattle, WA
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=797
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443";
+        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
+        ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "1",
+                       "short_name" : "1",
+                       "types" : [ "subpremise" ]
+                    },
+                    {
+                       "long_name" : "1710",
+                       "short_name" : "1710",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "North 45th Street",
+                       "short_name" : "N 45th St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Wallingford",
+                       "short_name" : "Wallingford",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "98103",
+                       "short_name" : "98103",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "6855",
+                       "short_name" : "6855",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "1710 N 45th St #1, Seattle, WA 98103, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 47.6615135,
+                       "lng" : -122.3370284
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.66286248029149,
+                          "lng" : -122.3356794197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.6601645197085,
+                          "lng" : -122.3383773802915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJVdPoNVcUkFQR4Y3rW7vJFzc",
+                 "types" : [ "establishment", "food", "liquor_store", "point_of_interest", "store" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Discovery%20Park%20Seattle%20WA%2098103&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Sep 2021 19:01:59 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Seattle, WA
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=677
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443";
+        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
+        ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Discovery Park",
+                       "short_name" : "Discovery Park",
+                       "types" : [ "establishment", "park", "point_of_interest", "tourist_attraction" ]
+                    },
+                    {
+                       "long_name" : "3801",
+                       "short_name" : "3801",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Discovery Park Boulevard",
+                       "short_name" : "Discovery Park Blvd",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "98199",
+                       "short_name" : "98199",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "Discovery Park, 3801 Discovery Park Blvd, Seattle, WA 98199, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 47.6580466,
+                       "lng" : -122.4180885
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.6593955802915,
+                          "lng" : -122.4167395197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.6566976197085,
+                          "lng" : -122.4194374802915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJn0CO4fAVkFQRIGP6pMpCmFE",
+                 "plus_code" : {
+                    "compound_code" : "MH5J+6Q Seattle, WA, USA",
+                    "global_code" : "84VVMH5J+6Q"
+                 },
+                 "types" : [ "establishment", "park", "point_of_interest", "tourist_attraction" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Wallingford%20Seattle%20WA%2098103&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Sep 2021 19:02:52 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Seattle, WA
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=310
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443";
+        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
+        ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "98103",
+                       "short_name" : "98103",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Seattle, WA 98103, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.7014659,
+                          "lng" : -122.326291
+                       },
+                       "southwest" : {
+                          "lat" : 47.6395199,
+                          "lng" : -122.3594931
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.6600087,
+                       "lng" : -122.3425575
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.7014659,
+                          "lng" : -122.326291
+                       },
+                       "southwest" : {
+                          "lat" : 47.6395199,
+                          "lng" : -122.3594931
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJFT-C4gEUkFQRl6YWwUtrexc",
+                 "types" : [ "postal_code" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

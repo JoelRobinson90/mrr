@@ -1,0 +1,223 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+git_source(:github) {|repo| "https://github.com/#{repo}.git" }
+
+ruby "2.7.4"
+
+gem 'lograge', '~> 0.11.2'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "rails", ">= 6.1.4.1"
+
+# Pin required to address https://nvd.nist.gov/vuln/detail/cve-2018-8048
+gem "loofah", ">= 2.2.1"
+
+# Use postgresql as the database for Active Record
+gem "pg", ">= 0.18", "< 2.0"
+# Use Puma as the app server
+gem "puma", "~> 4.3"
+# Use SCSS for stylesheets
+gem "sass-rails", ">= 6"
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem "webpacker", "~> 4.0"
+gem "webpacker-react", "~> 0.3.2"
+# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem "turbolinks", "~> 5"
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem "jbuilder", "~> 2.7"
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 4.0'
+# Use Active Model has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Active Storage variant
+# gem 'image_processing', '~> 1.2'
+
+# for generating PDFs
+gem "prawn", "~>2.4.0"
+gem "prawn-table", "~> 0.2.2"
+
+# Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", ">= 1.4.2", require: false
+
+# for authentication
+gem "devise"
+# for JWT tokens
+gem "devise-token_authenticatable"
+# for authorization
+gem "cancancan"
+
+# for API calls
+gem "rest-client"
+
+# To get around requiring a db connection string when precompiling assets
+gem "activerecord-nulldb-adapter"
+
+# Background jobs
+gem "daemons"
+gem "delayed_job_active_record"
+
+# Recurring scheduled jobs
+gem "delayed_cron_job"
+
+# For a web interface to view background job statuses
+gem "delayed_job_web"
+
+# for processing active storage images
+gem "image_processing"
+
+# for uploading files to S3 buckets with active storage
+gem "aws-sdk-s3"
+
+# for managing event driven architecture
+gem "rails_event_store", "~> 1.1.1"
+
+# for full-text Postgres search
+gem "pg_search"
+
+# for email integration
+gem "postmark-rails"
+
+# for an admin interface
+gem "rails_admin", "~> 2.1"
+
+# for auditing
+gem "paper_trail"
+gem "paper_trail-association_tracking"
+gem "paper_trail_scrapbook", "0.1.22", git: "https://github.com/medarrive/paper_trail_scrapbook"
+
+# For pagination
+gem "will_paginate", "~> 3.1.0"
+
+# for sending SMS messages
+gem "twilio-ruby"
+
+# For sentry application monitoring
+gem "sentry-rails", "~> 4.6.4"
+gem "sentry-ruby", "~> 4.6.4"
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem "rack-cors"
+
+# for patient and appointment tags
+gem "acts-as-taggable-on", "~> 7.0"
+
+# for JSON validation
+gem "json-schema", "~> 2.8.1"
+
+# For Rails routes helpers in the front end
+# gem "js-routes"
+gem "ts_routes"
+
+gem "paranoia", "~> 2.2"
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+
+# Okta
+gem "omniauth-oktaoauth"
+
+# Slack notifications the easy way
+# https://github.com/slack-notifier/slack-notifier
+gem "slack-notifier"
+
+# To calculate distance
+gem "haversine"
+
+# GraphQL API
+gem "graphql"
+
+# State machines
+gem "aasm"
+
+# Feature flags
+gem "flipper"
+gem "flipper-active_record"
+gem "flipper-ui"
+
+# Salesforce API
+gem 'restforce', '~> 6.0.0'
+
+# Allow DB sequences for ma_ids
+gem "ar-sequence"
+
+group :production do
+  # For datadog application and network monitoring
+  gem "ddtrace", "~> 0.46.0"
+end
+
+group :development, :test do
+  # Introspection and dependency graphing
+  gem "solargraph", require: false
+  gem "spoom"
+  gem "tapioca", "~>0.4.21", require: false
+
+  # security
+  gem "brakeman", "~> 5.0.1"
+
+  # RSpec testing framework
+  gem "parallel_tests", "~> 3.7.0"
+  gem "rspec-rails", "~> 4.0.1"
+
+  # RSpec add-ons
+  gem "rails-controller-testing"
+  gem "rspec-collection_matchers"
+  gem "rspec-its"
+
+  # To generate fake data
+  gem "database_cleaner"
+  gem "factory_bot_rails"
+  gem "faker"
+
+  # Capture inbound requests for POST endpoints
+  gem "rack-vcr", "~> 0.1.6"
+  gem "vcr", "6.0.0"
+
+  # guard - to run tests in 'watch' mode
+  gem "guard"
+  gem "guard-brakeman"
+  gem "guard-bundler", require: false
+  gem "guard-rspec"
+  gem "guard-rubocop"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
+
+  # generate erd diagram of our models
+  gem "rails-erd"
+
+  # N+1 Database query guards
+  gem "bullet", "6.1.3"
+
+  # Coverage Reporting
+  gem "simplecov", "0.21.2", require: false
+
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "pry-byebug"
+  gem "pry-rails"
+  gem "pry-rescue", ">= 1.5.1"
+  gem "pry-stack_explorer", ">= 0.6.0"
+
+  gem "webmock"
+
+  # Pretty formatting for pry
+  gem "rainbow"
+end
+
+group :development do
+  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem "web-console", ">= 3.3.0"
+  # gem 'listen', '~> 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem "spring"
+  # gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "annotate", "~> 3.1.1"
+
+  # GraphQL query GUI
+  gem 'graphiql-rails'
+end
+
+group :test do
+  gem "nokogiri", "~> 1.14.3"
+  gem "timecop"
+end

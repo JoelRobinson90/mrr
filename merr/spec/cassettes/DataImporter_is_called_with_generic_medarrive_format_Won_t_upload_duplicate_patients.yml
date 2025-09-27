@@ -1,0 +1,234 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/FieldProvider_vNcniZWRK63AZp43
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"first_name":"Lashaunda","last_name":"Corkery","email":"marisha@mayert.com"},"username":"marisha@mayert.com"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '126'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Mon, 18 Apr 2022 20:37:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 4033e31e593a5b7ec62717626519290b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/roles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Apr 2022 20:37:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 83d35b8c86c9d458e50b0a3b2af3b062
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":16,"items":[{"branch":null,"category":"admin","description":"System
+        Administrator","id":1,"name":"admin"},{"branch":null,"category":"admin","description":"Coordinator","id":10,"name":"csc"},{"branch":null,"category":"staff","description":"Home
+        Care Nurse","id":20,"name":"nurse"},{"branch":null,"category":"staff","description":"Personal
+        Support Worker","id":21,"name":"psw"},{"branch":null,"category":"client","description":"Patient","id":30,"name":"patient"},{"branch":null,"category":"client","description":"Family","id":31,"name":"family"},{"branch":{"id":1000,"name":"medarrive"},"category":"staff","description":"Field
+        Providers","id":32,"name":"field-providers_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"Support
+        Access","id":33,"name":"support-access_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"Clinical
+        Access","id":34,"name":"clinical-access_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"Field
+        Dispatchers","id":35,"name":"field-dispatchers_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"office","description":"Office
+        Admin","id":36,"name":"office-admin_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"Customer
+        Service Agent","id":37,"name":"customer-service-agent_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"staff","description":"Partner
+        Field Operations Manager","id":38,"name":"partner-field-operations-manager_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"Partner
+        Field Operations Manager","id":39,"name":"partner-field-operations-manager_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"MedArrive
+        Care Coordinator","id":40,"name":"medarrive-care-coordinator_1000"},{"branch":{"id":1000,"name":"medarrive"},"category":"admin","description":"MedArrive
+        Operations Manager","id":41,"name":"medarrive-operations-manager_1000"}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees
+    body:
+      encoding: UTF-8
+      string: '{"demographics":{"first_name":"Lashaunda","last_name":"Corkery","email":"marisha@mayert.com"},"username":"marisha@mayert.com","external_id":"FieldProvider_vNcniZWRK63AZp43","roles":[{"branch":{"id":1000,"name":"medarrive"},"category":"staff","description":"Field
+        Providers","id":32,"name":"field-providers_1000"}],"status":"active"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '332'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Date:
+      - Mon, 18 Apr 2022 20:37:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '59'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 661443627bde83c92a8f82b6895544a4
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"FieldProvider_vNcniZWRK63AZp43","id":1456}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: post
+    uri: https://api.wheniwork.com/2/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"marisha@mayert.com","first_name":"Lashaunda","last_name":"Corkery","phone_number":null,"employee_code":"FieldProvider_vNcniZWRK63AZp43"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <GOOGLE_SERVICES_API_KEY>
+      Content-Length:
+      - '146'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 18 Apr 2022 20:37:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - ro
+      X-State:
+      - 'RequestId: 6e25fdf0-bf57-11ec-9e53-2aea4e72f659, LoginId: 0, AccountId: 0'
+      X-Timer-Database:
+      - '0'
+      X-Timer-Total:
+      - '0.0034999847412109'
+    body:
+      encoding: UTF-8
+      string: '{"error":"User login required for this resource.","code":1000}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

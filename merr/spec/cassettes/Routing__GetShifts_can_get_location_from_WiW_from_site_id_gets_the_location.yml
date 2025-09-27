@@ -1,0 +1,215 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wheniwork.com/2/shifts?end=2022-08-15&start=2022-08-14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <WHENIWORK_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2022 12:46:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Set-Cookie:
+      - wheniwork_cred=cd9615cd871830e27c4fe1a6c83e6f69; expires=Fri, 12-Aug-2022
+        12:46:12 GMT; Max-Age=86400; path=/; domain=.wheniwork.com; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - ro
+      X-State:
+      - 'RequestId: 94e0b8ce-1973-11ed-b40f-da19b5a6df89, LoginId: 19274266, AccountId:
+        3788256'
+      X-Timer-Database:
+      - '0.0073001384735107'
+      X-Timer-Total:
+      - '0.059560060501099'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"start":"Sun, 14 Aug 2022 00:00:00 -0400","end":"Mon, 15 Aug 2022
+        00:00:00 -0400","shifts":[{"id":2894024847,"account_id":3788256,"user_id":43521995,"location_id":5204524,"position_id":0,"site_id":4884059,"start_time":"Sun,
+        14 Aug 2022 09:00:00 -0400","end_time":"Sun, 14 Aug 2022 17:00:00 -0400","break_time":0,"color":"cccccc","notes":"","alerted":false,"linked_users":null,"shiftchain_key":"","published":true,"published_date":"Thu,
+        11 Aug 2022 07:24:12 -0400","notified_at":"Thu, 11 Aug 2022 07:24:12 -0400","instances":1,"created_at":"Thu,
+        11 Aug 2022 07:24:03 -0400","updated_at":"Thu, 11 Aug 2022 07:52:29 -0400","acknowledged":0,"acknowledged_at":null,"creator_id":42656040,"is_open":false,"actionable":false,"block_id":0,"requires_openshift_approval":false,"openshift_approval_request_id":0}],"users":[{"id":43521995,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Dallas","last_name":"FP","phone_number":"","employee_code":"FieldProvider_NKVMBzw5FQuHzhc5","activated":true,"is_hidden":false,"uuid":"6667d3a5dc92407e8d7d3c67920437129c0b7466","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"absences":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":null,"notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-05-24 20:46:40","created_at":"Tue,
+        24 May 2022 16:46:40 -0400","updated_at":"Fri, 05 Aug 2022 09:39:28 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/7eeaee17e9b03ca3cafd64bad1d744d73c83a412\/%s","size":"%s"},"positions":[],"locations":[5204524,5306500],"position_rates":[],"position_quality":[],"sort":{"5204524":0,"5306500":0}}],"locations":[{"id":5204524,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Molina- Houston","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        10 Jan 2022 09:07:47 -0500","updated_at":"Mon, 10 Jan 2022 09:07:58 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null},{"id":5306500,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Superior Texas- Dallas","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Wed,
+        27 Jul 2022 11:46:22 -0400","updated_at":"Wed, 27 Jul 2022 11:46:33 -0400","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null}],"sites":[{"id":4884059,"account_id":3788256,"location_id":0,"name":"Greensboro","color":"cccccc","description":"","address":"36.05742520300541,
+        -79.82550615748458","latitude":36.057426,"longitude":-79.825508,"place_id":"","created_at":"Sun,
+        07 Aug 2022 19:50:26 -0400","updated_at":"Tue, 09 Aug 2022 10:51:23 -0400","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":[36.057426,-79.825508],"radius":100}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/FieldProvider_NKVMBzw5FQuHzhc5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Aug 2022 13:00:49 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b408cf81749db5d2df906829285a7871
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000049673","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"400
+        N Ervay St","city":"Dallas","first_name":"Dallas","last_name":"FP","location":{"lat":32.78385,"lon":-96.79827,"zip":"75201"},"state":"TX","uid":"FieldProvider_NKVMBzw5FQuHzhc5","zip":"75201"},"departments":[],"designation":null,"employment_type":null,"external_id":"FieldProvider_NKVMBzw5FQuHzhc5","groups":[],"id":1469,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":22007,"roles":[{"id":32,"name":"Field
+        Providers"}],"sin_ssn":null,"skills":[],"status":"active","timezone":"America/New_York","username":"FieldProvider_NKVMBzw5FQuHzhc5"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://api.wheniwork.com/2/shifts?end=2022-08-14T23:59:59Z&start=2022-08-14T00:00:00Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <WHENIWORK_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.wheniwork.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Aug 2022 01:48:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.28
+      Set-Cookie:
+      - wheniwork_cred=6806c9ac62a1d65cd9fd51d4362ef08e; expires=Wed, 17-Aug-2022
+        01:48:19 GMT; Max-Age=86400; path=/; domain=.wheniwork.com; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, W-Date-Format, Content-Type, Accept,
+        W-Token, W-UserId, W-Key, branch
+      X-Database:
+      - ro
+      X-State:
+      - 'RequestId: 80e47d7a-1d05-11ed-a631-3a0b7c38bb30, LoginId: 19274266, AccountId:
+        3788256'
+      X-Timer-Database:
+      - '0.007673978805542'
+      X-Timer-Total:
+      - '0.072592973709106'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"start":"Sat, 13 Aug 2022 20:00:00 -0400","end":"Sun, 14 Aug 2022
+        19:59:59 -0400","shifts":[{"id":2894024847,"account_id":3788256,"user_id":43521995,"location_id":5204524,"position_id":0,"site_id":4884059,"start_time":"Sun,
+        14 Aug 2022 09:00:00 -0400","end_time":"Sun, 14 Aug 2022 17:00:00 -0400","break_time":0,"color":"cccccc","notes":"","alerted":true,"linked_users":null,"shiftchain_key":"","published":true,"published_date":"Thu,
+        11 Aug 2022 07:24:12 -0400","notified_at":"Mon, 15 Aug 2022 18:03:59 -0400","instances":1,"created_at":"Thu,
+        11 Aug 2022 07:24:03 -0400","updated_at":"Mon, 15 Aug 2022 18:03:59 -0400","acknowledged":0,"acknowledged_at":null,"creator_id":42656040,"is_open":false,"actionable":false,"block_id":0,"requires_openshift_approval":false,"openshift_approval_request_id":0}],"users":[{"id":43521995,"account_id":3788256,"login_id":0,"timezone_id":0,"created_by":42672280,"role":3,"is_payroll":false,"is_trusted":0,"type":1,"email":"","first_name":"Dallas","last_name":"FP","phone_number":"","employee_code":"FieldProvider_NKVMBzw5FQuHzhc5","activated":true,"is_hidden":false,"uuid":"6667d3a5dc92407e8d7d3c67920437129c0b7466","notes":"","is_private":true,"hours_preferred":0,"hours_max":40,"hourly_rate":0,"alert_settings":{"timeoff":{"sms":false,"email":true},"swaps":{"sms":false,"email":true},"schedule":{"sms":false,"email":true},"reminders":{"sms":false,"email":true},"availability":{"sms":false,"email":true},"new_employee":{"sms":false,"email":true},"attendance":{"sms":true,"email":false},"payroll":{"sms":true},"hire":{"sms":false,"email":true},"workchat":{"alerts":true,"badge_icon":true,"in_app":true},"reporting":{"sms":false,"email":true},"shift-bidding":{"sms":true,"email":true},"workplace_alerts":{"sms":true,"email":true},"absences":{"sms":true,"email":true},"ot_alerts":{"sms":true,"email":true}},"reminder_time":2,"sleep_start":"23:00:00","sleep_end":"05:00:00","my_positions":[],"is_onboarded":false,"last_login":"Sun,
+        29 Nov -001 19:03:58 -0456","hired_on":null,"terminated_at":"","dismissed_at":null,"notified_at":"Sun,
+        29 Nov -001 19:03:58 -0456","invited_at":"2022-05-24 20:46:40","created_at":"Tue,
+        24 May 2022 16:46:40 -0400","updated_at":"Fri, 05 Aug 2022 09:39:28 -0400","deleted_at":"","is_deleted":false,"is_active":true,"password":false,"country_id":0,"c2dm_auth_key":0,"migration_id":0,"affiliate":0,"infotips":"","timezone_name":"America\/New_York","avatar":{"url":"https:\/\/avatars.wheniwork-production.com\/7eeaee17e9b03ca3cafd64bad1d744d73c83a412\/%s","size":"%s"},"positions":[],"locations":[5204524,5306500],"position_rates":[],"position_quality":[],"sort":{"5204524":0,"5306500":0}}],"locations":[{"id":5204524,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Molina- Houston","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Mon,
+        10 Jan 2022 09:07:47 -0500","updated_at":"Mon, 10 Jan 2022 09:07:58 -0500","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null},{"id":5306500,"account_id":3788256,"is_default":0,"name":"SANDBOX
+        Superior Texas- Dallas","sort":0,"max_hours":0,"address":"","latitude":0,"longitude":0,"place_id":0,"place_confirmed":true,"ip_address":"","created_at":"Wed,
+        27 Jul 2022 11:46:22 -0400","updated_at":"Wed, 27 Jul 2022 11:46:33 -0400","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":null,"place":null}],"sites":[{"id":4884059,"account_id":3788256,"location_id":0,"name":"Greensboro","color":"cccccc","description":"","address":"36.05742520300541,
+        -79.82550615748458","latitude":36.057426,"longitude":-79.825508,"place_id":"","created_at":"Sun,
+        07 Aug 2022 19:50:26 -0400","updated_at":"Tue, 09 Aug 2022 10:51:23 -0400","is_deleted":false,"deleted_at":"","updated_by":"42656040","coordinates":[36.057426,-79.825508],"radius":100}]}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

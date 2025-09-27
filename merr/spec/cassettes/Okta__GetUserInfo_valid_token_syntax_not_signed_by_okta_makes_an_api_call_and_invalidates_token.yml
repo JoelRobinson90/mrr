@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://medarrive.okta.com/oauth2/v1/userinfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE2Njg1Mzk2MDN9.SYon4U8fv6zpF2B9n0ZR67KUuYcBnyNZit4mbdxIGZg
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.okta.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 15 Nov 2022 16:43:07 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Public-Key-Pins-Report-Only:
+      - pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ=";
+        pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg=";
+        max-age=60; report-uri="https://okta.report-uri.com/r/default/hpkp/reportOnly"
+      X-Okta-Request-Id:
+      - Y3PBm6FK3YBg4WhWZfofdwAADXs
+      X-Xss-Protection:
+      - '0'
+      P3p:
+      - CP="HONK"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate
+      Www-Authenticate:
+      - Bearer authorization_uri="http://medarrive.okta.com/oauth2/v1/authorize",
+        realm="http://medarrive.okta.com", scope="openid", error="invalid_token",
+        error_description="The access token is invalid.", resource="/oauth2/v1/userinfo"
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=315360000; includeSubDomains
+      Set-Cookie:
+      - autolaunch_triggered=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+      - sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 15 Nov 2022 16:41:43 GMT
+recorded_with: VCR 6.0.0

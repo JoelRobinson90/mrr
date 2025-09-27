@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+bundle exec solargraph download-core
+bundle exec yard gems
+bundle exec solargraph scan

@@ -1,0 +1,124 @@
+query GetSchedulerData($patient_id: ID, $program_id: String, $service_code_id: String, $start_date: String, $end_date: String, $duration: String, $top_suggestions: String, $existing_visit_alayacare_id: String, $external_id: String, $limit_arrival_times: String, $ignore_existing_visit_conflicts: Boolean, $visit_type_id: String) {
+  getSchedulerData(
+    patientId: $patient_id,
+    programId: $program_id,
+    serviceCodeId: $service_code_id,
+    startDate: $start_date,
+    endDate: $end_date,
+    duration: $duration,
+    topSuggestions: $top_suggestions,
+    existingVisitAlayacareId: $existing_visit_alayacare_id,
+    externalId: $external_id,
+    limitArrivalTimes: $limit_arrival_times,
+    ignoreExistingVisitConflicts: $ignore_existing_visit_conflicts,
+    visitTypeId: $visit_type_id
+  ) {
+    suggestedVisits {
+      fp_id: fpId
+      fp_name: fpName
+      start_time: startTime
+      end_time: endTime
+      cx_start: cxStart
+      cx_end: cxEnd
+      expected_drive: expectedDrive
+      run_id: runId
+      total_score: totalScore
+      drive_score: driveScore
+      proximity_score: proximityScore
+      utilization_score: utilizationScore
+      shift_shortening_penalty_score: shiftShorteningPenaltyScore
+      rank_category: rankCategory
+      grace_period: gracePeriod
+      arrival_window_start: arrivalWindowStart
+      arrival_window_end: arrivalWindowEnd
+      resources {
+        start_time: startTime,
+        end_time: endTime,
+        resource_id: resourceId,
+        in_home: inHome,
+        name,
+        provider_role: providerRole
+        preferred
+      }
+    }
+    success
+    errorMessage
+  }
+  getPatient(id: $patient_id) {
+    id
+    first_name: firstName
+    last_name: lastName
+    medical_record_number: medicalRecordNumber
+    address {
+      address_line_one: addressLineOne
+      address_line_two: addressLineTwo
+      city
+      state
+      zipcode
+      created_at: createdAt
+      updated_at: updatedAt
+      latitude
+      longitude
+      notes
+      timezone
+      addressable_type: addressableType
+      addressable_id: addressableId
+      county
+    }
+    programs {
+      id
+      name
+      active
+      alayacare_service_code_id: alayacareServiceCodeId
+      created_at: createdAt
+      demand_partner_id: demandPartnerId
+      udpated_at: updatedAt
+      demand_partner: demandPartner {
+        id
+        name
+        created_at: createdAt
+        updated_at: updatedAt
+      }
+      services {
+        id
+        name
+        duration
+        alayacare_id: alayacareId
+      }
+      visit_types: visitTypes {
+        id
+        name
+        duration
+        alayacare_id: alayacareId
+        services {
+          id
+          name
+          duration
+          alayacare_id: alayacareId
+        }
+        requirements {
+          providerRole
+          duration
+          offset
+          inHome
+          usePreferredProvider
+        }
+      }
+    }
+    serviceRequests(status: "requested") {
+      id
+      programId
+      serviceId
+    }
+  }
+}
+
+query getPreferredProviders($patient_id: ID!) {
+  getPreferredProviders(
+    patientId: $patient_id
+  ) {
+    fpId
+    displayName
+    role
+  }
+}

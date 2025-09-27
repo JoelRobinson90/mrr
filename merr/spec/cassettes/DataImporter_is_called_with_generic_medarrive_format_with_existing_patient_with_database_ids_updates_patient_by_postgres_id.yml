@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=1812%20E%20Republican%20St%20Seattle%20WA%2098112&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 07 Mar 2023 02:45:54 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Seattle, WA
+      Server:
+      - mafe
+      Content-Length:
+      - '2410'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=50
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "1812",
+                       "short_name" : "1812",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "East Republican Street",
+                       "short_name" : "E Republican St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Miller Park",
+                       "short_name" : "Miller Park",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Seattle",
+                       "short_name" : "Seattle",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "King County",
+                       "short_name" : "King County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "WA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "98112",
+                       "short_name" : "98112",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "4605",
+                       "short_name" : "4605",
+                       "types" : [ "postal_code_suffix" ]
+                    }
+                 ],
+                 "formatted_address" : "1812 E Republican St, Seattle, WA 98112, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 47.6233967,
+                       "lng" : -122.3078382
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.6248184802915,
+                          "lng" : -122.3065099197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.6221205197085,
+                          "lng" : -122.3092078802915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJyxSllCoVkFQRjKHwnWqAV_E",
+                 "plus_code" : {
+                    "compound_code" : "JMFR+9V Seattle, WA",
+                    "global_code" : "84VVJMFR+9V"
+                 },
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

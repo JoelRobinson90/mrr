@@ -1,0 +1,53 @@
+$euiColorPrimary: #006bb4;
+$euiColorAccent: #223e7d;
+$euiFontFamily: 'Raleway';
+
+.react-datepicker__day.datePickerPurpleDay {
+    color: #1f4fff;
+    font-weight: 900;
+  }
+  
+  .react-datepicker__day.react-datepicker__day--selected.datePickerPurpleDay {
+    color: white;
+  }
+  
+  .datePicker {
+    background-color: white !important;
+  }
+
+@import '@elastic/eui/src/theme_light.scss';
+
+* {
+  font-family: "Inter" !important;
+}
+
+.mbsc-ios.mbsc-event.mbsc-list-item {
+  height: 50px;
+  width: 90%;
+  overflow: visible;
+}
+
+.mbsc-hover {
+  background: none !important;
+}
+
+.mbsc-ios.mbsc-list-item.mbsc-hover {
+  background: none;
+}
+
+.mbsc-ios.mbsc-event.mbsc-list-item:after, .mbsc-ios.mbsc-event.mbsc-list-item:before {
+  border: none;
+}
+
+// NOTE: hidding weird extra border and time showing in new scheduling flow X more popup.
+.mbsc-popup-content .mbsc-ios.mbsc-event-color {
+  display: none;
+}
+
+.mbsc-popup-content .mbsc-ios.mbsc-event-end {
+  display: none;
+}
+
+.euiToolTipPopover.euiToolTip.euiToolTip--top {
+  z-index: 100000;
+}

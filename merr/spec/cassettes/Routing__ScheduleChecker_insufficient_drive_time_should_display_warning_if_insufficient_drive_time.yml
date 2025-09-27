@@ -1,0 +1,1475 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:15:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - ca383ffa97d81f9bdf0247ab8362fe8b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:15:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 4d2fc5e677321e1e67499c694ff2f317
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/directions/json?destination=29.803413,-95.325936&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origin=&waypoints=29.803413,-95.325936%7C29.803413,-95.325936
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 03 Mar 2022 21:15:46 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=17
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "error_message" : "Invalid request. Missing the 'origin' parameter.",
+           "routes" : [],
+           "status" : "INVALID_REQUEST"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:17:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 6d716c2befb101a05818d9f362fd7916
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:17:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - c13ab91cf4537047bf30bfaf755f7ff2
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:18:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 454b1064c5c2792ddf2975d76af242ec
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:18:02 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - f12243a99f12fa32aeccd6d50815d0a5
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:18:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 6c321816bd95028b04cd700989f8ca94
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:18:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - ecbd51b08ddf6b4341397eef642e15d4
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:20:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - f722d5d1afb2c2d8cd3c6d0c0a605960
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:20:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - cd0d26197abd386e686b1c10b7fb3f0c
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:21:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - f2ea601078bde43a5737f36e5aaa611d
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:21:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - e29bfda2a4aeabd7791c68858e8e89f8
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:28:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 7a8905113b0a259108f824e3b1b8ad54
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:28:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 6ee0c586460d14bf799140634845c438
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:31:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 18f4729b52b0f97967f8c928cb90916d
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:31:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 6c7f6a8675ec8e2e4327f812fc7b6b41
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:31:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 8dfe9de203c82e4e74a6ab48281b0696
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:31:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 7995a34a362dbf71ab26d20d7cedd63f
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:32:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 378e987fcc51e34a6f0d386e3097a217
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:32:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 1bdf2baa6177789ec62c32a6d719f195
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:34:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 668b42a26c71c17fca43cc20ce4e86c4
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:34:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 955004430d614a6103db2c78a631aa63
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:35:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 8057526f688aca669ec80891492bb02f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000034","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","first_name":"API","last_name":"Integration","location":null,"uid":"13"},"departments":[],"designation":null,"employment_type":null,"external_id":"13","groups":[],"id":107,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":15,"roles":[{"id":1,"name":"System
+        Administrator"}],"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:35:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 972c7f0ab234d2f7ccb0ac82f3412121
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000034","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","first_name":"API","last_name":"Integration","location":null,"uid":"13"},"departments":[],"designation":null,"employment_type":null,"external_id":"13","groups":[],"id":107,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":15,"roles":[{"id":1,"name":"System
+        Administrator"}],"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:42:07 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - 4ad51aedc79fff40dc731a94eedd1d4f
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/directions/json?destination=29.803413,-95.325936&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM&origin=29.76018,-95.36935&waypoints=29.803413,-95.325936%7C29.803413,-95.325936
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 03 Mar 2022 21:42:32 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      X-Goog-Maps-Metro-Area:
+      - Houston, TX
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=90
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICAiZ2VvY29kZWRfd2F5cG9pbnRzIiA6IFsKICAgICAgewogICAgICAgICAiZ2VvY29kZXJfc3RhdHVzIiA6ICJPSyIsCiAgICAgICAgICJwbGFjZV9pZCIgOiAiQ2hJSi1TdTZWLTJfUUlZUjBFQTE1YXRJczQ0IiwKICAgICAgICAgInR5cGVzIiA6IFsgInN0cmVldF9hZGRyZXNzIiBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAgImdlb2NvZGVyX3N0YXR1cyIgOiAiT0siLAogICAgICAgICAicGxhY2VfaWQiIDogIkNoSUpNWWhoXzJ1NVFJWVJ4Sk9SSUxRRy1WQSIsCiAgICAgICAgICJ0eXBlcyIgOiBbICJwcmVtaXNlIiBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAgImdlb2NvZGVyX3N0YXR1cyIgOiAiT0siLAogICAgICAgICAicGxhY2VfaWQiIDogIkNoSUpNWWhoXzJ1NVFJWVJ4Sk9SSUxRRy1WQSIsCiAgICAgICAgICJ0eXBlcyIgOiBbICJwcmVtaXNlIiBdCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAgImdlb2NvZGVyX3N0YXR1cyIgOiAiT0siLAogICAgICAgICAicGxhY2VfaWQiIDogIkNoSUpNWWhoXzJ1NVFJWVJ4Sk9SSUxRRy1WQSIsCiAgICAgICAgICJ0eXBlcyIgOiBbICJwcmVtaXNlIiBdCiAgICAgIH0KICAgXSwKICAgInJvdXRlcyIgOiBbCiAgICAgIHsKICAgICAgICAgImJvdW5kcyIgOiB7CiAgICAgICAgICAgICJub3J0aGVhc3QiIDogewogICAgICAgICAgICAgICAibGF0IiA6IDI5LjgwMzQxMzEsCiAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMyNTg2MzIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgInNvdXRod2VzdCIgOiB7CiAgICAgICAgICAgICAgICJsYXQiIDogMjkuNzYwNTU0NiwKICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzcxOTQwNzk5OTk5OTkKICAgICAgICAgICAgfQogICAgICAgICB9LAogICAgICAgICAiY29weXJpZ2h0cyIgOiAiTWFwIGRhdGEgwqkyMDIyIiwKICAgICAgICAgImxlZ3MiIDogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICJkaXN0YW5jZSIgOiB7CiAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICI1LjYgbWkiLAogICAgICAgICAgICAgICAgICAidmFsdWUiIDogOTAzMAogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewogICAgICAgICAgICAgICAgICAidGV4dCIgOiAiOSBtaW5zIiwKICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDU1OAogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAiZW5kX2FkZHJlc3MiIDogIjQ3MTEgV2F5bmUgU3QsIEhvdXN0b24sIFRYIDc3MDI2LCBVU0EiLAogICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAic3RhcnRfYWRkcmVzcyIgOiAiMTIwMCBXIFdhbGtlciBUdW5uZWwgIzQsIEhvdXN0b24sIFRYIDc3MDAyLCBVU0EiLAogICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2MDU1NDYsCiAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM2OTA2Mjc5OTk5OTk5CiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJzdGVwcyIgOiBbCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjM4MSBmdCIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAxMTYKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDE4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2MTE0MTksCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM3MDA2MTE5OTk5OTk5CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiSGVhZCBcdTAwM2NiXHUwMDNlbm9ydGh3ZXN0XHUwMDNjL2JcdTAwM2Ugb24gXHUwMDNjYlx1MDAzZVdhbGtlciBTdFx1MDAzYy9iXHUwMDNlIHRvd2FyZCBcdTAwM2NiXHUwMDNlQmFnYnkgU3RcdTAwM2MvYlx1MDAzZSIsCiAgICAgICAgICAgICAgICAgICAgICJwb2x5bGluZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJwb2ludHMiIDogIm1yc3REcndhZVFnQGJBR0xJTkVIZ0BkQU1UIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2MDU1NDYsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM2OTA2Mjc5OTk5OTk5CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIKICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMC42IG1pIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDEwMjgKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDYwCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2Njg4NTYsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM2NjM2MTkKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25zIiA6ICJNZXJnZSBvbnRvIFx1MDAzY2JcdTAwM2VJLTQ1IE5cdTAwM2MvYlx1MDAzZSB2aWEgdGhlIHJhbXAgb24gdGhlIFx1MDAzY2JcdTAwM2VsZWZ0XHUwMDNjL2JcdTAwM2UgdG8gXHUwMDNjYlx1MDAzZURhbGxhc1x1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJyYW1wLWxlZnQiLAogICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewogICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRzIiA6ICJjdnN0RHp9YWVRR2BAP0RBSEFMQVBDZkBJbkFBUkFQP0Q/RENMQUpBQEFEQUZBRklQQ0ZDRkFARUZFREFAQT9DQkVCR0RHQENARUBDP0dART9JP0U/R0FHQUVBRUNHQ0NBQUFDQUVDSUdHR0NDR0dRV0VJQUFdb0BDRUFDQT8/QUtDU2dASVVdZUFRZ0BDQ1VPR1E/QUtZZ0F7Q1t5QGVAaUFBRVNjQFdjQFNZTVNTV1FRUVNdW1NRbUBhQEE/U01xQF1zQFlrQFVpQWFAdUBXcUBVIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2MTE0MTksCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM3MDA2MTE5OTk5OTk5CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIKICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMS40IG1pIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDIyNzkKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjIgbWlucyIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA5NQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS43NjkyMDE5LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zNDQ0NTQKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25zIiA6ICJUYWtlIGV4aXQgXHUwMDNjYlx1MDAzZTQ4QVx1MDAzYy9iXHUwMDNlIHRvIG1lcmdlIG9udG8gXHUwMDNjYlx1MDAzZUktMTAgRVx1MDAzYy9iXHUwMDNlIHRvd2FyZCBcdTAwM2NiXHUwMDNlQmVhdW1vbnRcdTAwM2MvYlx1MDAzZSIsCiAgICAgICAgICAgICAgICAgICAgICJtYW5ldXZlciIgOiAicmFtcC1yaWdodCIsCiAgICAgICAgICAgICAgICAgICAgICJwb2x5bGluZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJwb2ludHMiIDogImF6dHREdmZhZVFDSUVHSUdFQ0dDS0VPRUlFSUVDQUlFT01LSUFBUU1TU09TSVFRVUdTRVNHV0VZQVM/Q0FXP08/S0BXP0VCV0BPQE9CWT9JSF9AQEdGY0BASUBHSmlAUmVBRFM/QT9BQk9AQT9BQlFARUhjQFp1QT9BTGtAQktIXUJHRltCS0BPQVdEUUplQEhhQEBLSG1AQFdCXUBbP2tAQWVAP0FBWUFLRWFAQ1c/R0VTR2NAW3lBSV9AeUBnREtdSV1BRT9BQUVbbUFNZUBLW0NJT2VAT2tASVdJU3FAb0JRZ0BXb0B1QG9CRUttQH1BZ0B7QU9lQFlpQUVXS11BQ1F5QUNVQUtHeUBBa0BBRT9FP0E/QT9JQGlAQVE/Uz9fQEN7Qz9zQz9LP2NCQm1BQl9BSGlBQmNARF1GaUBIY0BEW0ZZP0FGW0ZfQFB3QEBPQk9QeUBOc0Bac0EiCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJzdGFydF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMjkuNzY2ODg1NiwKICAgICAgICAgICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzY2MzYxOQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEuNSBtaSIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAyNDEwCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIyIG1pbnMiLAogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogOTAKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMjkuNzg3NTA1NywKICAgICAgICAgICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzM5NjQ4NAogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiaHRtbF9pbnN0cnVjdGlvbnMiIDogIlRha2UgZXhpdCBcdTAwM2NiXHUwMDNlNzcwQ1x1MDAzYy9iXHUwMDNlIG9uIHRoZSBcdTAwM2NiXHUwMDNlbGVmdFx1MDAzYy9iXHUwMDNlIHRvIG1lcmdlIG9udG8gXHUwMDNjYlx1MDAzZUktNjlcdTAwM2MvYlx1MDAzZS9cdTAwM2N3YnIvXHUwMDNlXHUwMDNjYlx1MDAzZVVTLTU5IE5cdTAwM2MvYlx1MDAzZSB0b3dhcmQgXHUwMDNjYlx1MDAzZUNsZXZlbGFuZFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJyYW1wLWxlZnQiLAogICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewogICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRzIiA6ICJvaHV0RHh9fGRRQV0/UU59QEBXSmlBP0k/Vz9lQT9BP0tAZUE/X0JBb0FBWUVVQ00/Q0FJQUdDSUNJQ0lHT0dNR09JTUlNRUdFRUVFRUVFR01JSUdJRUlHS0VNRUlDb0BPX0BHR0FfQU9vQEtfQEVXSXtARXFAQ2tAQWFAQWNBP3VBQmlHRWlAP1U/QT9pQD9LQXVAP3VBQUU/eUFBaUBBWz9jQD9hQEFlQEBNQE1GT0hTQ19AQWtBQWFAQX1AQXVBQ3FFSW1DR3lBQ3tBQ1NBbUJDTz97QD9hQj9vQ0BLP0E/XT9dP0U/ST9RP1U/YUJAYUJAaUJAeUE/Vz9tQEFdP0c/Z0E/Z0FBIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc2OTIwMTksCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjM0NDQ1NAogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjAuMiBtaSIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAzMzMKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDE4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5Ljc5MDQ1OTQsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMzOTE4MTA5OTk5OTk5CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiVGFrZSBleGl0IFx1MDAzY2JcdTAwM2UxMzNBXHUwMDNjL2JcdTAwM2UgdG93YXJkIFx1MDAzY2JcdTAwM2VDb2xsaW5nc3dvcnRoIFN0XHUwMDNjL2JcdTAwM2UvXHUwMDNjd2JyL1x1MDAzZVx1MDAzY2JcdTAwM2VDYXZhbGNhZGUgU3RcdTAwM2MvYlx1MDAzZS9cdTAwM2N3YnIvXHUwMDNlXHUwMDNjYlx1MDAzZUtlbGxleSBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJyYW1wLXJpZ2h0IiwKICAgICAgICAgICAgICAgICAgICAgInBvbHlsaW5lIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInBvaW50cyIgOiAifXp4dER4X3xkUWNBV19AQXNDU0M/X0BDYUBDQT9dQ0NBT0FTQWNAQXdBSWVAQ1VDQUFNRyIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS43ODc1MDU3LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMzk2NDg0CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIKICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMC43IG1pIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDExNzcKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjIgbWlucyIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA5OAogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDEwNDQ3LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMzkzMzE4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiTWVyZ2Ugb250byBcdTAwM2NiXHUwMDNlRWFzdGV4IEZyZWV3YXkgU2VydmljZSBSZFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJtZXJnZSIsCiAgICAgICAgICAgICAgICAgICAgICJwb2x5bGluZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJwb2ludHMiIDogImtteXREenx7ZFF7Qj9jQ0B9QkBrQkJpQEB5QD9XQHtAQFk/e0BAX0NBY0E/d0BBc0VAcURAaUJAb0RCc0RCaUJAVT9LP3dAQHdAPyIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS43OTA0NTk0LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMzkxODEwOTk5OTk5OQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjAuOCBtaSIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAxMzMxCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIyIG1pbnMiLAogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogMTA4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5LjgwMDIwOTIsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMyNTg2MzIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25zIiA6ICJUdXJuIFx1MDAzY2JcdTAwM2VyaWdodFx1MDAzYy9iXHUwMDNlIG9udG8gXHUwMDNjYlx1MDAzZUNhdmFsY2FkZSBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJ0dXJuLXJpZ2h0IiwKICAgICAgICAgICAgICAgICAgICAgInBvbHlsaW5lIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInBvaW50cyIgOiAib297dER4fXtkUUtLQUFBQUFBQ0FBP0VDQUFBQUFDQUNLW1BrQXhAb0Y/RVpjQmxAZUNQc0BKZUBEWURZRF1Gb0BKa0FGcUJCYUFEX0FAX0BCc0FBaUNFc0RHc0NBc0E/Z0FBUT9jQD95QkFlQz9XQXFFQXtGIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDI5LjgwMTA0NDcsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMzOTMzMTgKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInRyYXZlbF9tb2RlIiA6ICJEUklWSU5HIgogICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICJkaXN0YW5jZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIwLjIgbWkiLAogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogMzU2CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiA3MQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiaHRtbF9pbnN0cnVjdGlvbnMiIDogIlR1cm4gXHUwMDNjYlx1MDAzZWxlZnRcdTAwM2MvYlx1MDAzZSBvbnRvIFx1MDAzY2JcdTAwM2VXYXluZSBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgIm1hbmV1dmVyIiA6ICJ0dXJuLWxlZnQiLAogICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewogICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRzIiA6ICJpant0RHJpeWRRX0BCY0I/ZUBAdUA/Sz9lQD9HQFM/Wz97QD9xQEBxQkB1QT8iCiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJzdGFydF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMjkuODAwMjA5MiwKICAgICAgICAgICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzI1ODYzMgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgInRyYWZmaWNfc3BlZWRfZW50cnkiIDogW10sCiAgICAgICAgICAgICAgICJ2aWFfd2F5cG9pbnQiIDogW10KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMSBmdCIsCiAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAwCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAwCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJlbmRfYWRkcmVzcyIgOiAiNDcxMSBXYXluZSBTdCwgSG91c3RvbiwgVFggNzcwMjYsIFVTQSIsCiAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAibGF0IiA6IDI5LjgwMzQxMzEsCiAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMyNTkyMzgwMDAwMDAxCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJzdGFydF9hZGRyZXNzIiA6ICI0NzExIFdheW5lIFN0LCBIb3VzdG9uLCBUWCA3NzAyNiwgVVNBIiwKICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAic3RlcHMiIDogWwogICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICJkaXN0YW5jZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIGZ0IiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDAKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDAKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMjkuODAzNDEzMSwKICAgICAgICAgICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzI1OTIzODAwMDAwMDEKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25zIiA6ICJIZWFkIG9uIFx1MDAzY2JcdTAwM2VXYXluZSBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgInBvbHlsaW5lIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInBvaW50cyIgOiAiaX57dER+aXlkUSIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgInRyYWZmaWNfc3BlZWRfZW50cnkiIDogW10sCiAgICAgICAgICAgICAgICJ2aWFfd2F5cG9pbnQiIDogW10KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMSBmdCIsCiAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAwCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJkdXJhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIG1pbiIsCiAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAwCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJlbmRfYWRkcmVzcyIgOiAiNDcxMSBXYXluZSBTdCwgSG91c3RvbiwgVFggNzcwMjYsIFVTQSIsCiAgICAgICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAibGF0IiA6IDI5LjgwMzQxMzEsCiAgICAgICAgICAgICAgICAgICJsbmciIDogLTk1LjMyNTkyMzgwMDAwMDAxCiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICJzdGFydF9hZGRyZXNzIiA6ICI0NzExIFdheW5lIFN0LCBIb3VzdG9uLCBUWCA3NzAyNiwgVVNBIiwKICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAic3RlcHMiIDogWwogICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICJkaXN0YW5jZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0ZXh0IiA6ICIxIGZ0IiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDAKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDAKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMjkuODAzNDEzMSwKICAgICAgICAgICAgICAgICAgICAgICAgImxuZyIgOiAtOTUuMzI1OTIzODAwMDAwMDEKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25zIiA6ICJIZWFkIG9uIFx1MDAzY2JcdTAwM2VXYXluZSBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAgICAgInBvbHlsaW5lIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInBvaW50cyIgOiAiaX57dER+aXlkUSIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAyOS44MDM0MTMxLAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC05NS4zMjU5MjM4MDAwMDAwMQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgInRyYWZmaWNfc3BlZWRfZW50cnkiIDogW10sCiAgICAgICAgICAgICAgICJ2aWFfd2F5cG9pbnQiIDogW10KICAgICAgICAgICAgfQogICAgICAgICBdLAogICAgICAgICAib3ZlcnZpZXdfcG9seWxpbmUiIDogewogICAgICAgICAgICAicG9pbnRzIiA6ICJtcnN0RHJ3YWVRX0FqQnVAekFHZkBJcEFNekJHYEBPZkBPWE1KWUxXQl9AQ1dLVU9lQGtAaUBhQU9JbUFrRFlTR1NzQXVEYUFjQ1VpQGtAfUBlQXFBcUBtQG9AYUBlQWtAX0JvQF9DeUBxQFVDSU9PTUdvQFdpQF9AU09jQGdAW2dATWdATXFAQVdBZ0BAY0BGfUBOa0FWX0JiQGNDZkFfRkpnQD9nQFxcZUJKZUFEeUBDbUJLZUFpQHlDe0FpR2tBZ0V1QWdFZUJzRXVBeURpQG9CU3lAVW9CSWVBQ3lAQ2tMP29CRm1DTG1CTGdBVntBTntAUmdBYEFxRUFvQFB1QUpzQT99QUBzRENpQkljQEdfQFdxQGFAc0BXWWtAX0BZS3lAU3dDZUB3QE9tQkltQUN5Q0JrSUVrQkFhSUdzQEJdUHNARW1CQ3NOV3dITWlKQHdEQH1IQntDQWdBQWNBV3NEVWdBR2VBSXdEU09JX0dAbUlGc0FCdUFAb01BY1lOd0A/S0tDQ01HR0tLW1BrQXhAdUZaY0JsQGVDXFx5QVhhQ0prQUZxQkhhQ0RzQkd9SEthSUF7SENtTWNDQm1DQG1KRCIKICAgICAgICAgfSwKICAgICAgICAgInN1bW1hcnkiIDogIkktMTAgRSIsCiAgICAgICAgICJ3YXJuaW5ncyIgOiBbXSwKICAgICAgICAgIndheXBvaW50X29yZGVyIiA6IFsgMCwgMSBdCiAgICAgIH0KICAgXSwKICAgInN0YXR1cyIgOiAiT0siCn0K
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:46:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 1148d40250f21d946f2db5e614b5af68
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000013","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"address":"1301
+        Hemlock","city":"Charlotte","country":"US","email":"baylee@medarrive.com","first_name":"Baylee","last_name":"Mabe","location":{"lat":35.19853,"lon":-80.84791,"zip":"28203"},"state":"NC","uid":"15","zip":"28203"},"departments":[],"designation":null,"employment_type":null,"external_id":"15","groups":[{"id":1033,"name":"FCC"}],"id":101,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":4,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":10,"name":"Coordinator"},{"id":33,"name":"Support Access"},{"id":34,"name":"Clinical
+        Access"},{"id":35,"name":"Field Dispatchers"},{"id":20,"name":"Home Care Nurse"},{"id":21,"name":"Personal
+        Support Worker"},{"id":32,"name":"Field Providers"}],"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/16
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:49:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Request-Id:
+      - bafeb1d55aa4b8731227cd4012df5601
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: UTF-8
+      string: '{"code": 404, "message": "Employee not found"}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/employees/employees/by_id/17
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Mar 2022 21:50:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 8131e59c4670f5938b4f7648cdd588b3
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ac_id":"AC000000019","branch_id":1000,"contacts":[],"cost_centre":null,"demographics":{"country":"US","email":"bo@medarrive.com","first_name":"Bo","last_name":"Cross","location":null,"uid":"17"},"departments":[{"id":1001,"name":"Amphibious"}],"designation":null,"employment_type":null,"external_id":"17","groups":[{"id":1178,"name":"Bright
+        Healthcare"}],"id":104,"language":null,"max_weekly_capacity":null,"min_weekly_capacity":"0","payroll_number":null,"profile_id":7,"roles":[{"id":1,"name":"System
+        Administrator"},{"id":41,"name":"MedArrive Operations Manager"}],"skills":[],"status":"active","timezone":"America/New_York","username":null}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

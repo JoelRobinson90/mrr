@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://3.237.224.45:8002/sources_to_targets
+    body:
+      encoding: UTF-8
+      string: '{"sources":[{"lat":29.734886,"lon":-95.322579},{"lat":29.717654,"lon":-95.387073}],"targets":[{"lat":29.658141,"lon":-95.355308}],"costing":"auto","directions_options":{"units":"miles"}}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Length:
+      - '186'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - 3.237.224.45:8002
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '419'
+    body:
+      encoding: UTF-8
+      string: '{"warnings":[{"text":"path distance exceeds the max distance limit
+        for time-dependent matrix, ignoring date_time","code":200}],"sources":[[{"lon":-95.322579,"lat":29.734886},{"lon":-95.387073,"lat":29.717654}]],"targets":[[{"lon":-95.355308,"lat":29.658141}]],"sources_to_targets":[[{"distance":9.629,"time":829,"to_index":0,"from_index":0}],[{"distance":6.907,"time":630,"to_index":0,"from_index":1}]],"units":"miles"}'
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+- request:
+    method: post
+    uri: http://3.237.224.45:8002/sources_to_targets
+    body:
+      encoding: UTF-8
+      string: '{"sources":[{"lat":29.658141,"lon":-95.355308}],"targets":[{"lat":29.717654,"lon":-95.387073},{"lat":29.734886,"lon":-95.322579}],"costing":"auto","directions_options":{"units":"miles"}}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Length:
+      - '186'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - 3.237.224.45:8002
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '417'
+    body:
+      encoding: UTF-8
+      string: '{"warnings":[{"text":"path distance exceeds the max distance limit
+        for time-dependent matrix, ignoring date_time","code":200}],"sources":[[{"lon":-95.355308,"lat":29.658141}]],"targets":[[{"lon":-95.387073,"lat":29.717654},{"lon":-95.322579,"lat":29.734886}]],"sources_to_targets":[[{"distance":7.017,"time":645,"to_index":0,"from_index":0},{"distance":9.635,"time":824,"to_index":1,"from_index":0}]],"units":"miles"}'
+  recorded_at: Wed, 20 Oct 2021 12:00:00 GMT
+recorded_with: VCR 6.0.0

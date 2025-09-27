@@ -1,0 +1,19 @@
+<h2>History for <%= @object.to_s %></h2>
+
+<table style="width:20%;white-space:nowrap;">
+  <% @story.each do |event| %>
+    <tr>
+      <td colspan="3" style="<%= event[:is_association] ? 'background-color: #EEE;' : '' %>">
+          <i><%= event[:title] %></i>
+      </td>
+    </tr>
+    <% event[:changes].each do |change| %>
+      <tr>
+        <td><b><%= change[0] %>:</b>&nbsp;&nbsp;</td>
+        <td><%= change[1] %></td>
+        <td style="width:100%;"></td>
+      </tr>
+    <% end %>
+    <tr><td><br /></td></tr>
+  <% end %>
+</table>

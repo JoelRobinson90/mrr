@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Magic to only run rubocop on the changed files that end in rb
+# - Get changed files
+# - get only file names
+# - ignore Schema file
+# - Ignore routes file
+# - Execute the rubocop command with "Auto change" flag and error level only
+TO_CHECK=$(git status | xargs ls -1 2>/dev/null | grep '\.rb$' | grep -v 'schema' | grep -v 'routes')
+
+if [ -z "$TO_CHECK" ]
+then 
+  echo "No files to RuboCop found"
+else 
+  echo "Checking Files:"
+  echo "$TO_CHECK"
+  echo "$TO_CHECK" |  xargs bundle exec rubocop -A --fail-level error --display-only-fail-level-offenses
+fi

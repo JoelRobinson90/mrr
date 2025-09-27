@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  eval "/sbin/md5 -q $*"
+else
+  eval "/usr/bin/md5sum $*"
+fi

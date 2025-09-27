@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=655%20W%20Church%20St%20Orlando%20FL%2032805&key=AIzaSyBepKqwdkNKFWWydPgtaxSJNUlpAR4h3fM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 01 Feb 2022 00:57:03 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Goog-Maps-Metro-Area:
+      - Orlando, FL
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=342
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "655",
+                       "short_name" : "655",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "West Church Street",
+                       "short_name" : "W Church St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Parramore",
+                       "short_name" : "Parramore",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Orlando",
+                       "short_name" : "Orlando",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Orange County",
+                       "short_name" : "Orange County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Florida",
+                       "short_name" : "FL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "32805",
+                       "short_name" : "32805",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "655 W Church St, Orlando, FL 32805, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 28.5406794,
+                          "lng" : -81.3881928
+                       },
+                       "southwest" : {
+                          "lat" : 28.5404019,
+                          "lng" : -81.38836569999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 28.5405206,
+                       "lng" : -81.38827019999999
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 28.5418896302915,
+                          "lng" : -81.38693026970849
+                       },
+                       "southwest" : {
+                          "lat" : 28.5391916697085,
+                          "lng" : -81.38962823029151
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJbdoQuVR654gRAWEubUgkewI",
+                 "types" : [ "premise" ]
+              }
+           ],
+           "status" : "OK"
+        }
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

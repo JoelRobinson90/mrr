@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Force Webpack to rebuild locally
+touch app/javascript/src/d.ts

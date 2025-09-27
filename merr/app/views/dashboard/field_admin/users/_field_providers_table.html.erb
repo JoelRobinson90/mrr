@@ -1,0 +1,64 @@
+<table>
+  <thead>
+    <tr>
+      <td>Provider Name</td>
+      <td>Profile Completion</td>
+      <td>Profile Verification</td>
+      <td>Trainings</td>
+      <td>Certifications</td>
+
+      <td>Background Check</td>
+      <td>DMV Check</td>
+      <td>EMT Card Check</td>
+      <td>Status</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accounts.each do |account| %>
+      <% proficiency_presenter = ProficiencyPresenter.new(account) %>
+
+      <tr>
+        <%# TODO: link to show page %>
+        <td><%= account.first_name %> <%= account.last_name %></td>
+        <td>?</td>
+        <td>?</td>
+
+        <td>
+          <ul>
+            <% proficiency_presenter.training_rows.each do |row| %>
+              <li>
+                <%= row[:name] %>
+                (<%= row[:status] %>)
+              </li>
+            <% end %>
+          </ul>
+        </td>
+
+        <td>
+          <ul>
+            <% proficiency_presenter.certification_rows.each do |row| %>
+              <li>
+                <%= row[:name] %>
+                (<%= row[:status] %>)
+              </li>
+            <% end %>
+          </ul>
+        </td>
+
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+
+        <td>
+          <% if account.user.has_random_password? %>
+            Invited
+            <%= button_to 'Resend Invite', resend_invite_dashboard_field_admin_user_path(id: account.user.id), method: :post %>
+          <% else %>
+            Active
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+query GetOutreachCampaigns($active: Boolean) {
+  outreachCampaigns(active: $active) {
+    id
+    name
+    active
+    contactsTotalCount
+    contactsCreatedCount
+    contactsPendingCount
+    contactsSuccessCount
+    contactsFailedCount
+  }
+}

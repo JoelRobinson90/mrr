@@ -1,0 +1,39 @@
+# Reference: https://docs.convox.com/configuration/convox-yml
+
+resources:
+  database:
+    type: postgres
+    options:
+      class: ${CONVOX_DATABASE_CLASS}
+      storage: ${CONVOX_DATABASE_STORAGE}
+      durable: ${CONVOX_DATABASE_FAILOVER}
+      encrypted: true
+      version: '12.3'
+
+services:
+  web:
+    build: .
+    domain: ${HOST}
+    health: /health
+    test: bin/run_tests
+    port: 3000
+    resources:
+      - database
+    environment:
+      - "*"
+    scale:
+      count: 1
+      cpu: 512
+      memory: 1024
+  
+  worker:
+    build: .
+    command: bin/delayed_job run
+    resources:
+      - database
+    environment:
+      - "*"
+    scale:
+      count: 1
+      cpu: 512
+      memory: 1024

@@ -1,0 +1,1166 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=100&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Feb 2022 19:29:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 157567cf8807fe7848f2f996bcd2bea7
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":100,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":91,"name":"000
+        COVID-19","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":108,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":109,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":72,"name":"000A
+        Consent to Treatment","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":33,"name":"000Z
+        Lab Specimen - Prior to Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":36,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":68,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":9,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":20,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":58,"name":"001B
+        Standard Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":56,"name":"001B
+        Standard Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":10,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":21,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":37,"name":"001C
+        Post Hospitalization Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":46,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":60,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":52,"name":"001C
+        Post Hospitalization Visit - COVID - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":50,"name":"001C
+        Post Hospitalization Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":11,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":22,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":47,"name":"002C
+        Post Hospitalization Visit - CHF - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":38,"name":"002C
+        Post Hospitalization Visit - COPD - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":39,"name":"003A
+        Post Hospitalization Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":12,"name":"003A
+        Standard Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":59,"name":"003B
+        Standard Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":57,"name":"003B
+        Standard Visit - COPD - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":13,"name":"003B
+        Standard Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":53,"name":"003BC
+        Standard/Post Hospitalization Visit - COVID - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":48,"name":"003C
+        Post Hospitalization Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":40,"name":"003C
+        Post Hospitalization Visit - COPD - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":51,"name":"003C
+        Post Hospitalization Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":15,"name":"004A
+        Standard/Post Hospitalization Visit - Vitals","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":16,"name":"004Z
+        Standard/Post Hospitalization Visit - Add On - Finger Stick Blood Glucose","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":18,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":63,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":23,"name":"005B
+        Standard Visit - Diabetes - Add On - Foot Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":24,"name":"005B
+        Standard Visit - Diabetes - Add On - Retinal Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":41,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Exercise Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":42,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":61,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":25,"name":"006A
+        Standard/Post Hospitalization Visit - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":49,"name":"006BC
+        Standard/Post Hospitalization Visit - CHF - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":26,"name":"006BC
+        Standard/Post Hospitalization Visit - Diabetes - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":43,"name":"007A
+        Post Hospitalization Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":27,"name":"007A
+        Standard Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":54,"name":"007C
+        Post Hospitalization Visit - COVID - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":69,"name":"008A
+        Standard/Post Hospitalization Visit - Exercise & Mobility SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":70,"name":"009A
+        Standard/Post Hospitalization Visit - Allergen SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":28,"name":"010A
+        Standard/Post Hospitalization Visit - Capture Tobacco SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":29,"name":"011A
+        Standard/Post Hospitalization Visit - Appointments SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":71,"name":"012A
+        Standard/Post Hospitalization Visit - Home Assessment SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":31,"name":"013Z
+        Lab Specimen - Sputum Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":32,"name":"013Z
+        Lab Specimen - Urine Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":30,"name":"013Z
+        Lab Specimen - Venipuncture","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":45,"name":"014Z
+        Standard/Post Hospitalization Visit - Document Specimens","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":44,"name":"015A
+        Standard/Post Hospitalization Visit - Review Plan with Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":34,"name":"016Z
+        Lab Specimen - At Vehicle Prior to Departure","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":35,"name":"017Z
+        Lab Specimen - Centralized Location","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":106,"name":"1000
+        JD Master","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":76,"name":"100A
+        Post Hospitalization","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":96,"name":"100A
+        Post Hospitalization","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":97,"name":"100A
+        Post Hospitalization","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":102,"name":"100A
+        Post Hospitalization","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":103,"name":"100A
+        Post Hospitalization","status":"archived","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":104,"name":"100A
+        Post Hospitalization","status":"archived","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":80,"name":"100B
+        CHF Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":81,"name":"100C
+        COPD Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":83,"name":"100D
+        Diabetes Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":98,"name":"100D
+        Diabetes Add-On","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":84,"name":"100E
+        COVID Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":100,"name":"Alert
+        Task","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":112,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":113,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":114,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":117,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":123,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":124,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":126,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":7},{"branch":{"id":1000,"name":"medarrive"},"id":128,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":8},{"branch":{"id":1000,"name":"medarrive"},"id":134,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":9},{"branch":{"id":1000,"name":"medarrive"},"id":156,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":10},{"branch":{"id":1000,"name":"medarrive"},"id":191,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":11},{"branch":{"id":1000,"name":"medarrive"},"id":192,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":12},{"branch":{"id":1000,"name":"medarrive"},"id":194,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":13},{"branch":{"id":1000,"name":"medarrive"},"id":195,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":14},{"branch":{"id":1000,"name":"medarrive"},"id":224,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":15},{"branch":{"id":1000,"name":"medarrive"},"id":187,"name":"Bright
+        Health Standard Visit (v102821) - Backup (1028)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":115,"name":"Bright
+        Health- Telemedicine","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":119,"name":"Bright
+        Health- Telemedicine","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":121,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":127,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":129,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":146,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":196,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":202,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":2,"name":"CHF
+        Checklist","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":3,"name":"CHF
+        Checklist","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":159,"name":"Clean
+        Catch Urine","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":178,"name":"Consent
+        to Treatment","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":198,"name":"Consent
+        to Treatment","status":"draft","version":1}],"items_per_page":100,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=50&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Feb 2022 20:14:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 80bbcf1a44bcf5747b004e1434196a57
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":50,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":91,"name":"000
+        COVID-19","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":108,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":109,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":72,"name":"000A
+        Consent to Treatment","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":33,"name":"000Z
+        Lab Specimen - Prior to Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":36,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":68,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":9,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":20,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":58,"name":"001B
+        Standard Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":56,"name":"001B
+        Standard Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":10,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":21,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":37,"name":"001C
+        Post Hospitalization Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":46,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":60,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":52,"name":"001C
+        Post Hospitalization Visit - COVID - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":50,"name":"001C
+        Post Hospitalization Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":11,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":22,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":47,"name":"002C
+        Post Hospitalization Visit - CHF - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":38,"name":"002C
+        Post Hospitalization Visit - COPD - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":39,"name":"003A
+        Post Hospitalization Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":12,"name":"003A
+        Standard Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":59,"name":"003B
+        Standard Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":57,"name":"003B
+        Standard Visit - COPD - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":13,"name":"003B
+        Standard Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":53,"name":"003BC
+        Standard/Post Hospitalization Visit - COVID - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":48,"name":"003C
+        Post Hospitalization Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":40,"name":"003C
+        Post Hospitalization Visit - COPD - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":51,"name":"003C
+        Post Hospitalization Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":15,"name":"004A
+        Standard/Post Hospitalization Visit - Vitals","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":16,"name":"004Z
+        Standard/Post Hospitalization Visit - Add On - Finger Stick Blood Glucose","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":18,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":63,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":23,"name":"005B
+        Standard Visit - Diabetes - Add On - Foot Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":24,"name":"005B
+        Standard Visit - Diabetes - Add On - Retinal Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":41,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Exercise Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":42,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":61,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":25,"name":"006A
+        Standard/Post Hospitalization Visit - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":49,"name":"006BC
+        Standard/Post Hospitalization Visit - CHF - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":26,"name":"006BC
+        Standard/Post Hospitalization Visit - Diabetes - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":43,"name":"007A
+        Post Hospitalization Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":27,"name":"007A
+        Standard Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":54,"name":"007C
+        Post Hospitalization Visit - COVID - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":69,"name":"008A
+        Standard/Post Hospitalization Visit - Exercise & Mobility SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":70,"name":"009A
+        Standard/Post Hospitalization Visit - Allergen SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":28,"name":"010A
+        Standard/Post Hospitalization Visit - Capture Tobacco SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":29,"name":"011A
+        Standard/Post Hospitalization Visit - Appointments SDoH","status":"archived","version":1}],"items_per_page":50,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=50&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Feb 2022 20:14:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 6af2812cd7fee0f56092e21d0f1c8c8c
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":50,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":71,"name":"012A
+        Standard/Post Hospitalization Visit - Home Assessment SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":31,"name":"013Z
+        Lab Specimen - Sputum Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":32,"name":"013Z
+        Lab Specimen - Urine Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":30,"name":"013Z
+        Lab Specimen - Venipuncture","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":45,"name":"014Z
+        Standard/Post Hospitalization Visit - Document Specimens","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":44,"name":"015A
+        Standard/Post Hospitalization Visit - Review Plan with Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":34,"name":"016Z
+        Lab Specimen - At Vehicle Prior to Departure","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":35,"name":"017Z
+        Lab Specimen - Centralized Location","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":106,"name":"1000
+        JD Master","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":76,"name":"100A
+        Post Hospitalization","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":96,"name":"100A
+        Post Hospitalization","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":97,"name":"100A
+        Post Hospitalization","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":102,"name":"100A
+        Post Hospitalization","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":103,"name":"100A
+        Post Hospitalization","status":"archived","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":104,"name":"100A
+        Post Hospitalization","status":"archived","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":80,"name":"100B
+        CHF Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":81,"name":"100C
+        COPD Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":83,"name":"100D
+        Diabetes Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":98,"name":"100D
+        Diabetes Add-On","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":84,"name":"100E
+        COVID Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":100,"name":"Alert
+        Task","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":112,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":113,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":114,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":117,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":123,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":124,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":126,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":7},{"branch":{"id":1000,"name":"medarrive"},"id":128,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":8},{"branch":{"id":1000,"name":"medarrive"},"id":134,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":9},{"branch":{"id":1000,"name":"medarrive"},"id":156,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":10},{"branch":{"id":1000,"name":"medarrive"},"id":191,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":11},{"branch":{"id":1000,"name":"medarrive"},"id":192,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":12},{"branch":{"id":1000,"name":"medarrive"},"id":194,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":13},{"branch":{"id":1000,"name":"medarrive"},"id":195,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":14},{"branch":{"id":1000,"name":"medarrive"},"id":224,"name":"Bright
+        Health Standard Visit (v021522)","status":"active","version":15},{"branch":{"id":1000,"name":"medarrive"},"id":187,"name":"Bright
+        Health Standard Visit (v102821) - Backup (1028)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":115,"name":"Bright
+        Health- Telemedicine","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":119,"name":"Bright
+        Health- Telemedicine","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":121,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":127,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":129,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":146,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":196,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":202,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v111721)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":2,"name":"CHF
+        Checklist","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":3,"name":"CHF
+        Checklist","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":159,"name":"Clean
+        Catch Urine","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":178,"name":"Consent
+        to Treatment","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":198,"name":"Consent
+        to Treatment","status":"draft","version":1}],"items_per_page":50,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=50&page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Feb 2022 20:14:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - a81c7a72da7bed5098d1588ea7a70108
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":50,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":199,"name":"Consent
+        to Treatment","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":207,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":212,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":218,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":215,"name":"COVID
+        Vaccine - Booster - With Prevax Checklist (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":225,"name":"COVID
+        Vaccine - Booster - With Prevax Checklist (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":213,"name":"COVID
+        Vaccine - First Dose - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":216,"name":"COVID
+        Vaccine - First Dose - With Prevax Checklist (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":227,"name":"COVID
+        Vaccine - First Dose - With Prevax Checklist (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":214,"name":"COVID
+        Vaccine - Second Dose - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":217,"name":"COVID
+        Vaccine - Second Dose - With Prevax Checklist (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":228,"name":"COVID
+        Vaccine - Second Dose - With Prevax Checklist (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":87,"name":"Demographic
+        Form Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":164,"name":"Diabetic
+        Retinal Exam","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":65,"name":"Example
+        Form","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":157,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":165,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":167,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":205,"name":"Flu
+        Vaccination (v112421)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":169,"name":"HIPAA
+        Privacy Authorization Form","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":130,"name":"History
+        & Physical (Demo)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":160,"name":"History
+        & Physical (Demo)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":226,"name":"History
+        & Physical (Demo)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":1,"name":"Intake
+        Req (CHF) - Diabetic Checklist","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":131,"name":"LJA
+        Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":175,"name":"Master
+        Form v1.0","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":182,"name":"MasterForm-WorkingCopy","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":220,"name":"MedArrive
+        Internal Test Form","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":221,"name":"MedArrive
+        Internal Test Form","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":163,"name":"Media
+        Release Form (v101321)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":4,"name":"Medication
+        Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":145,"name":"MOLINA
+        Follow Up Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":148,"name":"MOLINA
+        Follow Up Visit","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":135,"name":"Molina
+        Initial Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":136,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":138,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":140,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":147,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":149,"name":"Molina
+        Initial Visit - Merged Initial w Follow Up","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":151,"name":"Molina
+        Master Visit Form For Testing Logic","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":132,"name":"Molina
+        Standard Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":172,"name":"Molina
+        Visit Form (10/20)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":173,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":185,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":186,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":150,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":152,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":153,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":155,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":158,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":5}],"items_per_page":50,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=50&page=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Feb 2022 20:14:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 0f74c5a868713f27617a3f6d23bd6d36
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":23,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":174,"name":"Molina
+        Visit Form (v.101421)","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":184,"name":"Molina
+        Visit Form (v021522)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":189,"name":"Molina
+        Visit Form (v021522)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":190,"name":"Molina
+        Visit Form (v021522)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":193,"name":"Molina
+        Visit Form (v021522)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":200,"name":"Molina
+        Visit Form (v021522)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":223,"name":"Molina
+        Visit Form (v021522)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":177,"name":"Molina
+        Visit Form (v102521)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":170,"name":"Molina:
+        Telehealth ESCALATION Only","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":211,"name":"Multiselect
+        Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":206,"name":"SCAN
+        Flu Vaccine (v120321)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":168,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":183,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":201,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":188,"name":"Scheduling
+        Follow Up Visits","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":73,"name":"test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":85,"name":"test","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":219,"name":"<GOOGLE_SERVICES_API_KEY>","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":8,"name":"Vault
+        - Phlebotomy","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":14,"name":"Vault
+        - Phlebotomy","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":162,"name":"Venipuncture
+        Checklist","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":166,"name":"Venipuncture
+        Checklist","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":209,"name":"Venipuncture
+        Checklist","status":"active","version":3}],"items_per_page":50,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 5c4732fd3d89f6a5fbaf876cfdb99b8a
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":91,"name":"000
+        COVID-19","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":108,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":109,"name":"000
+        COVID-19","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":72,"name":"000A
+        Consent to Treatment","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":33,"name":"000Z
+        Lab Specimen - Prior to Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":36,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":68,"name":"001A
+        Post Hospitalization Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":9,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":20,"name":"001A
+        Standard Visit - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":58,"name":"001B
+        Standard Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":56,"name":"001B
+        Standard Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":10,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":21,"name":"001B
+        Standard Visit - Diabetes - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":37,"name":"001C
+        Post Hospitalization Visit - CHF - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":46,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":60,"name":"001C
+        Post Hospitalization Visit - COPD - Medical History","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":52,"name":"001C
+        Post Hospitalization Visit - COVID - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":50,"name":"001C
+        Post Hospitalization Visit - Diabetes - Medical History","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":11,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":22,"name":"002A
+        Standard/Post Hospitalization Visit - Past Medical History and Allergies","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":47,"name":"002C
+        Post Hospitalization Visit - CHF - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":38,"name":"002C
+        Post Hospitalization Visit - COPD - Past Medical History and Allergies","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":39,"name":"003A
+        Post Hospitalization Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":12,"name":"003A
+        Standard Visit - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":59,"name":"003B
+        Standard Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":57,"name":"003B
+        Standard Visit - COPD - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":13,"name":"003B
+        Standard Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":53,"name":"003BC
+        Standard/Post Hospitalization Visit - COVID - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":48,"name":"003C
+        Post Hospitalization Visit - CHF - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":40,"name":"003C
+        Post Hospitalization Visit - COPD - Medication Reconciliation","status":"archived","version":1}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:03 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - f9e394bb895c89d1573454c4087c419f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":51,"name":"003C
+        Post Hospitalization Visit - Diabetes - Medication Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":15,"name":"004A
+        Standard/Post Hospitalization Visit - Vitals","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":16,"name":"004Z
+        Standard/Post Hospitalization Visit - Add On - Finger Stick Blood Glucose","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":18,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":63,"name":"005A
+        Standard/Post Hospitalization Visit - Examine Patient","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":23,"name":"005B
+        Standard Visit - Diabetes - Add On - Foot Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":24,"name":"005B
+        Standard Visit - Diabetes - Add On - Retinal Exam","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":41,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Exercise Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":42,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":61,"name":"005Z
+        Standard/Post Hospitalization Visit - Add On - Nebulizer Spirometry","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":25,"name":"006A
+        Standard/Post Hospitalization Visit - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":49,"name":"006BC
+        Standard/Post Hospitalization Visit - CHF - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":26,"name":"006BC
+        Standard/Post Hospitalization Visit - Diabetes - Capture Diet SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":43,"name":"007A
+        Post Hospitalization Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":27,"name":"007A
+        Standard Visit - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":54,"name":"007C
+        Post Hospitalization Visit - COVID - Capture Medication SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":69,"name":"008A
+        Standard/Post Hospitalization Visit - Exercise & Mobility SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":70,"name":"009A
+        Standard/Post Hospitalization Visit - Allergen SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":28,"name":"010A
+        Standard/Post Hospitalization Visit - Capture Tobacco SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":29,"name":"011A
+        Standard/Post Hospitalization Visit - Appointments SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":71,"name":"012A
+        Standard/Post Hospitalization Visit - Home Assessment SDoH","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":31,"name":"013Z
+        Lab Specimen - Sputum Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":32,"name":"013Z
+        Lab Specimen - Urine Collection","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":30,"name":"013Z
+        Lab Specimen - Venipuncture","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":45,"name":"014Z
+        Standard/Post Hospitalization Visit - Document Specimens","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":44,"name":"015A
+        Standard/Post Hospitalization Visit - Review Plan with Patient","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":34,"name":"016Z
+        Lab Specimen - At Vehicle Prior to Departure","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":35,"name":"017Z
+        Lab Specimen - Centralized Location","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":76,"name":"100A
+        Post Hospitalization","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":96,"name":"100A
+        Post Hospitalization","status":"archived","version":2}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 42069f778cf2986233a41a3c05f9f37e
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":97,"name":"100A
+        Post Hospitalization","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":102,"name":"100A
+        Post Hospitalization","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":103,"name":"100A
+        Post Hospitalization","status":"archived","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":104,"name":"100A
+        Post Hospitalization","status":"archived","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":80,"name":"100B
+        CHF Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":81,"name":"100C
+        COPD Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":83,"name":"100D
+        Diabetes Add-On","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":98,"name":"100D
+        Diabetes Add-On","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":84,"name":"100E
+        COVID Add-on","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":100,"name":"Alert
+        Task","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":280,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":21},{"branch":{"id":1000,"name":"medarrive"},"id":281,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":22},{"branch":{"id":1000,"name":"medarrive"},"id":288,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":23},{"branch":{"id":1000,"name":"medarrive"},"id":293,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":24},{"branch":{"id":1000,"name":"medarrive"},"id":112,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":113,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":114,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":117,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":123,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":124,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":126,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":7},{"branch":{"id":1000,"name":"medarrive"},"id":128,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":8},{"branch":{"id":1000,"name":"medarrive"},"id":134,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":9},{"branch":{"id":1000,"name":"medarrive"},"id":156,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":10},{"branch":{"id":1000,"name":"medarrive"},"id":191,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":11},{"branch":{"id":1000,"name":"medarrive"},"id":192,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":12},{"branch":{"id":1000,"name":"medarrive"},"id":194,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":13},{"branch":{"id":1000,"name":"medarrive"},"id":195,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":14},{"branch":{"id":1000,"name":"medarrive"},"id":224,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":15},{"branch":{"id":1000,"name":"medarrive"},"id":233,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":16}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 3af04b2b949790328cf9576d5d91750f
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":250,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":17},{"branch":{"id":1000,"name":"medarrive"},"id":251,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":18},{"branch":{"id":1000,"name":"medarrive"},"id":252,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":19},{"branch":{"id":1000,"name":"medarrive"},"id":253,"name":"Bright
+        Health Standard Visit (v071822)","status":"active","version":20},{"branch":{"id":1000,"name":"medarrive"},"id":187,"name":"Bright
+        Health Standard Visit (v102821) - Backup (1028)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":115,"name":"Bright
+        Health- Telemedicine","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":119,"name":"Bright
+        Health- Telemedicine","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":275,"name":"Bright
+        Health:  Zoom link","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":276,"name":"Bright
+        Health:  Zoom link","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":121,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":127,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":129,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":146,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":196,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":202,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":249,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422)","status":"active","version":7},{"branch":{"id":1000,"name":"medarrive"},"id":274,"name":"Bright
+        Health: Telehealth, Member Hub, Document Upload (v052422) - ZOOM Link","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":246,"name":"Case
+        Management Telephonic Follow-up (v052322)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":247,"name":"Case
+        Management Telephonic Follow-up (v052322)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":248,"name":"Case
+        Management Telephonic Follow-up (v052322)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":2,"name":"CHF
+        Checklist","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":3,"name":"CHF
+        Checklist","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":159,"name":"Clean
+        Catch Urine","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":230,"name":"Clean
+        Catch Urine","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":178,"name":"Consent
+        to Treatment","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":255,"name":"COVID
+        Screening (v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":207,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":212,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":218,"name":"COVID
+        Vaccine - Booster - No Prevax Checklist (v011422)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":215,"name":"COVID
+        Vaccine - Booster - With Prevax Checklist (v021622)","status":"active","version":1}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 450a7e913c3c4e2ff805a6d134231102
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":225,"name":"COVID
+        Vaccine - Booster - With Prevax Checklist (v021622)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":232,"name":"COVID
+        Vaccine - Booster - With Prevax Checklist (v021622)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":213,"name":"COVID
+        Vaccine - First Dose - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":216,"name":"COVID
+        Vaccine - First Dose - With Prevax Checklist (v021622)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":227,"name":"COVID
+        Vaccine - First Dose - With Prevax Checklist (v021622)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":234,"name":"COVID
+        Vaccine - First Dose - With Prevax Checklist (v021622)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":243,"name":"COVID
+        Vaccine - Second Booster - No Prevax Checklist (v041422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":244,"name":"COVID
+        Vaccine - Second Booster - With Prevax Checklist (v041422)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":214,"name":"COVID
+        Vaccine - Second Dose - No Prevax Checklist (v011422)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":217,"name":"COVID
+        Vaccine - Second Dose - With Prevax Checklist (v021622)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":228,"name":"COVID
+        Vaccine - Second Dose - With Prevax Checklist (v021622)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":245,"name":"COVID
+        Vaccine - Second Dose - With Prevax Checklist (v021622)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":87,"name":"Demographic
+        Form Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":164,"name":"Diabetic
+        Retinal Exam","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":65,"name":"Example
+        Form","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":157,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":165,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":167,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":236,"name":"FCC
+        Standard Visit (v101421)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":205,"name":"Flu
+        Vaccination (v112421)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":169,"name":"HIPAA
+        Privacy Authorization Form","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":235,"name":"HIPAA
+        Privacy Authorization Form","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":130,"name":"History
+        & Physical (Demo)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":160,"name":"History
+        & Physical (Demo)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":226,"name":"History
+        & Physical (Demo)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":1,"name":"Intake
+        Req (CHF) - Diabetic Checklist","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":131,"name":"LJA
+        Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":175,"name":"Master
+        Form v1.0","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":182,"name":"MasterForm-WorkingCopy","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":220,"name":"MedArrive
+        Internal Test Form","status":"active","version":1}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - 5bb0516563ed4a08b28743b3901a7ef9
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":221,"name":"MedArrive
+        Internal Test Form","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":240,"name":"MedArrive
+        Internal Test Form","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":163,"name":"Media
+        Release Form (v101321)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":237,"name":"Media
+        Release Form (v101321)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":257,"name":"Medical
+        History (v060222)","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":265,"name":"Medical
+        History, Physical, and Vitals (v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":267,"name":"Medical
+        History, Physical, and Vitals (v060222)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":4,"name":"Medication
+        Reconciliation","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":258,"name":"Medication
+        Reconciliation (v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":145,"name":"MOLINA
+        Follow Up Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":148,"name":"MOLINA
+        Follow Up Visit","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":242,"name":"Molina
+        Grad<ALAYACARE_ENVIRONMENT>ion Checklist (033022)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":135,"name":"Molina
+        Initial Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":136,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":138,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":140,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":147,"name":"Molina
+        Initial Visit - 10/6","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":149,"name":"Molina
+        Initial Visit - Merged Initial w Follow Up","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":151,"name":"Molina
+        Master Visit Form For Testing Logic","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":132,"name":"Molina
+        Standard Visit","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":173,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":185,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":186,"name":"Molina
+        Visit Form (10/20) - Simple Medication Version","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":150,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":152,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":153,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":155,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":158,"name":"Molina
+        Visit Form (10/7)","status":"archived","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":260,"name":"Molina
+        Visit Form (abridged, v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":261,"name":"Molina
+        Visit Form (abridged, v060222)","status":"active","version":2}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - b9c7a213d7bd4e542e263406bc8b41ad
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":30,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":266,"name":"Molina
+        Visit Form (abridged, v060222)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":174,"name":"Molina
+        Visit Form (v.101421)","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":282,"name":"Molina
+        Visit Form (v071822)","status":"active","version":8},{"branch":{"id":1000,"name":"medarrive"},"id":285,"name":"Molina
+        Visit Form (v071822)","status":"active","version":9},{"branch":{"id":1000,"name":"medarrive"},"id":291,"name":"Molina
+        Visit Form (v071822)","status":"active","version":10},{"branch":{"id":1000,"name":"medarrive"},"id":292,"name":"Molina
+        Visit Form (v071822)","status":"active","version":11},{"branch":{"id":1000,"name":"medarrive"},"id":295,"name":"Molina
+        Visit Form (v071822)","status":"active","version":12},{"branch":{"id":1000,"name":"medarrive"},"id":184,"name":"Molina
+        Visit Form (v071822)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":189,"name":"Molina
+        Visit Form (v071822)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":190,"name":"Molina
+        Visit Form (v071822)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":193,"name":"Molina
+        Visit Form (v071822)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":200,"name":"Molina
+        Visit Form (v071822)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":223,"name":"Molina
+        Visit Form (v071822)","status":"active","version":6},{"branch":{"id":1000,"name":"medarrive"},"id":231,"name":"Molina
+        Visit Form (v071822)","status":"active","version":7},{"branch":{"id":1000,"name":"medarrive"},"id":263,"name":"Molina
+        Visit Review (v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":268,"name":"Molina
+        Visit Review (v060222)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":272,"name":"Molina
+        Visit Review (v060222)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":269,"name":"Molina
+        Visit Review (v060722)","status":"draft","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":170,"name":"Molina:
+        Telehealth ESCALATION Only (v040622)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":238,"name":"Molina:
+        Telehealth ESCALATION Only (v040622)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":211,"name":"Multiselect
+        Test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":206,"name":"SCAN
+        Flu Vaccine (v120321)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":168,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":183,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":201,"name":"SCAN
+        Medication Adherence (v.102821)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":188,"name":"Scheduling
+        Follow Up Visits","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":256,"name":"Social
+        Determinants of Health (v060222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":73,"name":"test","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":85,"name":"test","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":219,"name":"<GOOGLE_SERVICES_API_KEY>","status":"draft","version":1}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+- request:
+    method: get
+    uri: https://medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com/ext/api/v2/scheduler/services/forms?count=30&page=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Authorization:
+      - "<BASIC ALAYACARE_PUBLIC_KEY>Ok1lN0lnZmphdDdBT05sSm5JYnc3NFI3SG1jRWdEcVExY1JaQlZjZkRqM1k="
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - medarrive.<ALAYACARE_ENVIRONMENT>.alayacare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Aug 2022 16:37:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Request-Id:
+      - f9c6f64fbe6259aa51558ba969be5a00
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Feature-Policy:
+      - geolocation; sync-xhr; microphone; camera; fullscreen;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":12,"items":[{"branch":{"id":1000,"name":"medarrive"},"id":229,"name":"Test
+        Pathway Checklist","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":294,"name":"Test:Superior
+        Visit Form","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":264,"name":"Transitional
+        Care (v062222)","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":271,"name":"Transitional
+        Care (v062222)","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":273,"name":"Transitional
+        Care (v062222)","status":"active","version":3},{"branch":{"id":1000,"name":"medarrive"},"id":277,"name":"Transitional
+        Care (v062222)","status":"active","version":4},{"branch":{"id":1000,"name":"medarrive"},"id":278,"name":"Transitional
+        Care (v062222)","status":"active","version":5},{"branch":{"id":1000,"name":"medarrive"},"id":8,"name":"Vault
+        - Phlebotomy","status":"archived","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":14,"name":"Vault
+        - Phlebotomy","status":"archived","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":162,"name":"Venipuncture
+        Checklist","status":"active","version":1},{"branch":{"id":1000,"name":"medarrive"},"id":166,"name":"Venipuncture
+        Checklist","status":"active","version":2},{"branch":{"id":1000,"name":"medarrive"},"id":270,"name":"Zoom
+        link test","status":"active","version":1}],"items_per_page":30,"page":1,"total_pages":1}
+
+'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

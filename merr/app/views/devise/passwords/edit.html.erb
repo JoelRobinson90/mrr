@@ -1,0 +1,5 @@
+<% @react_view = true %>
+<%= react_component('ChangePasswordPage', props_with_layout(
+  reset_password_token: resource.reset_password_token,
+  errors: resource.errors.full_messages,
+)) %>

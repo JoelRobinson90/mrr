@@ -1,0 +1,15 @@
+---
+authtoken: 1ow942c7AeGX50MJq1O2sEqYyFi_6ts7ummf32UXWSoDH3Kks
+tunnels:
+  med:
+    proto: http
+    hostname: medarrive.ngrok.io
+    addr: 0.0.0.0:3000
+
+    # -------------------------
+    # Additional options
+    # -------------------------
+    # auth: "username:password"
+    # host_header: rewrite
+    # inspect: true
+    # bind_tls: true

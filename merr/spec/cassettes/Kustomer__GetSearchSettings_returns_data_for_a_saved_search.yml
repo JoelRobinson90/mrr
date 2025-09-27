@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kustomerapp.com/v1/customers/searches/624f2a240c8bfe002199fd35
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/2.7.4p191
+      Content-Type:
+      - application/json; charset=utf-8
+      Authorization:
+      - Bearer <KUSTOMER_API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.kustomerapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 11 Apr 2022 01:19:32 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Kustomer-Pod:
+      - prod1
+      Timing-Allow-Origin:
+      - "*"
+      X-Request-Ip:
+      - 23.121.94.61
+      X-Ratelimit-Limit:
+      - '2000'
+      X-Ratelimit-Remaining:
+      - '1999'
+      Cache-Control:
+      - no-cache,private
+      Etag:
+      - W/"504-WVCc4GhA5eYvQpz/SqwilWe1/O0"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2c65bede0f52554bf32fd64f7dfa83d0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL56-C3
+      X-Amz-Cf-Id:
+      - 4BgXqBNR1-YIHYPCCheq3TllFZqTFyNznb62TqigKhbkJG8KlDQ04Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"type":"search","id":"624f2a240c8bfe002199fd35","attributes":{"name":"erik
+        test","data":{"and":[{"customer_custom_demandPartnerStr":{"is_set":true}}],"or":[],"fields":[{"key":"activity"},{"key":"customer"},{"key":"lastMessage"},{"key":"status"},{"key":"updatedAt"}],"queryContext":"customer","sort":[{"customer_activity_at":"asc"}],"timeZone":"America/New_York"},"dataHash":"d2cc6871d2dfa8bf07e0fbdedca1efe4","icon":"account-search","badgeColor":null,"showBadge":false,"position":1649355300244,"createdAt":"2022-04-07T18:15:00.244Z","modifiedAt":"2022-04-10T16:53:33.878Z","updatedAt":"2022-04-10T16:53:33.878Z","defaultVisibility":"all","teamVisibilities":[],"userVisibilities":[{"id":"611e8711e81cf3001a147a3b","visibility":"all"}],"private":false,"accessTeams":[],"accessUsers":["611e8711e81cf3001a147a3b"],"cacheable":true},"relationships":{"org":{"links":{"self":"/v1/orgs/611be9d451ec6b63a1011d3c"},"data":{"type":"org","id":"611be9d451ec6b63a1011d3c"}},"createdBy":{"links":{"self":"/v1/users/611e8711e81cf3001a147a3b"},"data":{"type":"user","id":"611e8711e81cf3001a147a3b"}},"modifiedBy":{"links":{"self":"/v1/users/611e8711e81cf3001a147a3b"},"data":{"type":"user","id":"611e8711e81cf3001a147a3b"}}},"links":{"self":"/v1/customer/searches/624f2a240c8bfe002199fd35"}}}'
+  recorded_at: Sat, 21 Mar 2020 00:00:00 GMT
+recorded_with: VCR 6.0.0

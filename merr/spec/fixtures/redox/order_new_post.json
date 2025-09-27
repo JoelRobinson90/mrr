@@ -1,0 +1,302 @@
+{
+  "Meta": {
+    "DataModel": "Order",
+    "EventType": "New",
+    "EventDateTime": "2021-05-26T20:48:28.941Z",
+    "Test": false,
+    "Source": {
+      "ID": "82bd7efa-a21a-4325-958f-eba4d2604204",
+      "Name": "Millenium Physician Group Athena PREVIEW"
+    },
+    "Destinations": [
+      {
+        "ID": "3d22e6d4-5ea4-4085-ba0e-706ae3772c35",
+        "Name": "MedArrive Production"
+      }
+    ],
+    "Message": {
+      "ID": 7587176163
+    },
+    "Transmission": {
+      "ID": 7589145773
+    },
+    "FacilityCode": null
+  },
+  "Patient": {
+    "Identifiers": [
+      {
+        "ID": "610408",
+        "IDType": "AthenaNet Enterprise ID"
+      }
+    ],
+    "Demographics": {
+      "FirstName": "Angela",
+      "MiddleName": null,
+      "LastName": "Test",
+      "DOB": "1979-04-29",
+      "SSN": null,
+      "Sex": "Female",
+      "Race": "White",
+      "IsHispanic": false,
+      "MaritalStatus": "Married",
+      "IsDeceased": null,
+      "DeathDateTime": null,
+      "PhoneNumber": {
+        "Home": "+12392400738",
+        "Office": null,
+        "Mobile": "+12392400737"
+      },
+      "EmailAddresses": [
+        "becki.kelley@mpgus.com"
+      ],
+      "Language": "en",
+      "Citizenship": [],
+      "Address": {
+        "StreetAddress": "315 E Olympia Ave",
+        "City": "PUNTA GORDA",
+        "State": "FL",
+        "ZIP": "33950",
+        "County": null,
+        "Country": "USA"
+      }
+    },
+    "Notes": []
+  },
+  "Visit": {
+    "VisitNumber": null,
+    "AccountNumber": null,
+    "PatientClass": null,
+    "VisitDateTime": null,
+    "AttendingProvider": {
+      "ID": null,
+      "IDType": null,
+      "FirstName": null,
+      "LastName": null,
+      "Credentials": [],
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "EmailAddresses": [],
+      "PhoneNumber": {
+        "Office": null
+      },
+      "Location": {
+        "Type": null,
+        "Facility": null,
+        "Department": null,
+        "Room": null
+      }
+    },
+    "ConsultingProvider": {
+      "ID": null,
+      "IDType": null,
+      "FirstName": null,
+      "LastName": null,
+      "Credentials": [],
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "EmailAddresses": [],
+      "PhoneNumber": {
+        "Office": null
+      },
+      "Location": {
+        "Type": null,
+        "Facility": null,
+        "Department": null,
+        "Room": null
+      }
+    },
+    "ReferringProvider": {
+      "ID": null,
+      "IDType": null,
+      "FirstName": null,
+      "LastName": null,
+      "Credentials": [],
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "EmailAddresses": [],
+      "PhoneNumber": {
+        "Office": null
+      },
+      "Location": {
+        "Type": null,
+        "Facility": null,
+        "Department": null,
+        "Room": null
+      }
+    },
+    "Guarantor": {
+      "Number": null,
+      "FirstName": null,
+      "MiddleName": null,
+      "LastName": null,
+      "SSN": null,
+      "DOB": null,
+      "Sex": null,
+      "Spouse": {
+        "FirstName": null,
+        "LastName": null
+      },
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "PhoneNumber": {
+        "Home": null,
+        "Business": null,
+        "Mobile": null
+      },
+      "EmailAddresses": [],
+      "Type": null,
+      "RelationToPatient": null,
+      "Employer": {
+        "Name": null,
+        "Address": {
+          "StreetAddress": null,
+          "City": null,
+          "State": null,
+          "ZIP": null,
+          "County": null,
+          "Country": null
+        },
+        "PhoneNumber": null
+      }
+    },
+    "Insurances": [],
+    "Location": {
+      "Type": null,
+      "Facility": null,
+      "Department": "442",
+      "Room": null,
+      "Bed": null
+    }
+  },
+  "Order": {
+    "ID": "141702002",
+    "ApplicationOrderID": null,
+    "Status": "New",
+    "TransactionDateTime": "2021-05-26T16:41:00.000Z",
+    "CollectionDateTime": null,
+    "Specimen": {
+      "Source": null,
+      "BodySite": null,
+      "ID": null
+    },
+    "Procedure": {
+      "Code": "439697",
+      "Codeset": null,
+      "Description": "IN HOME SUPPORTIVE CARE PROVIDER REFERRAL - 05/26/2021  4:42"
+    },
+    "Provider": {
+      "NPI": "1891082467",
+      "ID": "1016",
+      "IDType": "AthenaNet Enterprise ID",
+      "FirstName": "Technology",
+      "LastName": "Test Provider",
+      "Credentials": [
+        "MD"
+      ],
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "EmailAddresses": [],
+      "PhoneNumber": {
+        "Office": "+12754973468"
+      },
+      "Location": {
+        "Type": null,
+        "Facility": null,
+        "Department": null,
+        "Room": null
+      }
+    },
+    "ResultCopyProviders": [],
+    "OrderingFacility": {
+      "Name": "442",
+      "Address": {
+        "StreetAddress": null,
+        "City": null,
+        "State": null,
+        "ZIP": null,
+        "County": null,
+        "Country": null
+      },
+      "PhoneNumber": null
+    },
+    "Priority": null,
+    "Expiration": null,
+    "Comments": null,
+    "Notes": [],
+    "Diagnoses": [
+      {
+        "Code": "E119",
+        "Codeset": "ICD-10",
+        "Name": "Type 2 diabetes mellitus without complications",
+        "Type": null,
+        "DocumentedDateTime": null
+      },
+      {
+        "Code": "E111",
+        "Codeset": "ICD-10",
+        "Name": "Type 2 diabetes mellitus with ketoacidosis",
+        "Type": null,
+        "DocumentedDateTime": null
+      }
+    ],
+    "ClinicalInfo": [
+      {
+        "Code": "internalnote",
+        "Codeset": null,
+        "Description": "internalnote",
+        "Value": "History Since Discharge nMedical History nMedication ReconciliationnRecord WeightnRecord HeightnSDOH: Diet + Low Carb/Glucosenn'95 CBCn'95 Comprehensive paneln'95 INRn'95 Hgb A1Cn'95 Covid PCRn'95 Urinalysisn'95 Lipid paneln'95 Thyroid paneln'95 STDs, excluding culturesn'95 Sputum Culturen'95 Any other venous draws MPG has supplies (we can't do arterial blood gas)n",
+        "Units": null,
+        "Abbreviation": null,
+        "Notes": []
+      },
+      {
+        "Code": "receivernote",
+        "Codeset": null,
+        "Description": "receivernote",
+        "Value": "Notes for the receipt of an order",
+        "Units": null,
+        "Abbreviation": null,
+        "Notes": []
+      },
+      {
+        "Code": "clinicalprovidername",
+        "Codeset": null,
+        "Description": "clinicalprovidername",
+        "Value": "Medarrive",
+        "Units": null,
+        "Abbreviation": null,
+        "Notes": []
+      }
+    ]
+  }
+}
